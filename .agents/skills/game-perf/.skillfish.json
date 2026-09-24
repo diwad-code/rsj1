@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "game-perf",
+  "owner": "rbergman",
+  "repo": "dark-matter-marketplace",
+  "path": "plugins/game-dev/skills/game-perf",
+  "branch": "main",
+  "sha": "66a9f04150dea5a16cb5d6a123976b62c180de0b",
+  "source": "manual"
+}

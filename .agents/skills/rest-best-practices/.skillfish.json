@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "rest-best-practices",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/rest-best-practices",
+  "branch": "main",
+  "sha": "2ac17b21ce0843c1f16872fc63b9da8f7a2dc1f3",
+  "source": "manual"
+}

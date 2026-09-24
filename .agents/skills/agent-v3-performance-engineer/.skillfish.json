@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-v3-performance-engineer",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-v3-performance-engineer",
+  "branch": "main",
+  "sha": "68c1debec3bfa819c21bfca59a6729cf45202f2e",
+  "source": "manual"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "ui-visual-validator",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/ui-visual-validator",
+  "branch": "main",
+  "sha": "916e3f24b5d518e6d10fee625e62a0b8c44d6588",
+  "source": "manual"
+}

@@ -1,0 +1,209 @@
+[
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "ls -la && echo \"---WERSJE---\" && ls -la wersje/ 2>/dev/null",
+      "description": "List repo root and wersje directory"
+    },
+    "tool_response": {
+      "stdout": "total 113\ndrwxr-xr-x 1 admin 197121    0 Aug 29 03:50 .\ndrwxr-xr-x 1 admin 197121    0 Aug 29 03:52 ..\ndrwxr-xr-x 1 admin 197121    0 Jul 27 10:30 .claude\ndrwxr-xr-x 1 admin 197121    0 Jul 27 10:30 .github\n-rw-r--r-- 1 admin 197121  290 Jul 27 10:30 .gitignore\n-rw-r--r-- 1 admin 197121  704 Jul 27 10:30 .mcp.json\n-rw-r--r-- 1 admin 197121 4268 Jul 27 10:30 CLAUDE.md\n-rw-r--r-- 1 admin 197121 1576 Jul 27 10:30 CONTRIBUTING.md\n-rw-r--r-- 1 admin 197121 9093 Jul 27 10:30 README.md\ndrwxr-xr-x 1 admin 197121    0 Aug 29 03:52 logs\ndrwxr-xr-x 1 admin 197121    0 Jul 27 10:30 references\ndrwxr-xr-x 1 admin 197121    0 Jul 27 10:30 research\ndrwxr-xr-x 1 admin 197121    0 Jul 27 10:30 scripts\ndrwxr-xr-x 1 admin 197121    0 Aug 16 16:02 skill-files\ndrwxr-xr-x 1 admin 197121    0 Aug 16 15:59 wersje\n---WERSJE---\ntotal 40\ndrwxr-xr-x 1 admin 197121     0 Aug 16 15:59 .\ndrwxr-xr-x 1 admin 197121     0 Aug 29 03:50 ..\n-rw-r--r-- 1 admin 197121 11388 Aug 16 15:59 SYNTEZA.md\ndrwxr-xr-x 1 admin 197121     0 Aug 17 03:49 cc_deepseek\ndrwxr-xr-x 1 admin 197121     0 Aug 17 01:30 claude\ndrwxr-xr-x 1 admin 197121     0 Aug 17 01:58 codex\ndrwxr-xr-x 1 admin 197121     0 Aug 16 16:47 gemini\ndrwxr-xr-x 1 admin 197121     0 Aug 16 16:40 minimax3",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false,
+      "noOutputExpected": false
+    },
+    "tool_use_id": "toolu_01AB2wuqf3d24LKYdv7smVne",
+    "duration_ms": 4622
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd /c/Users/admin/serio-po-polsku-skill && ls references/ && echo \"--- domains ---\" && ls references/domains/ 2>/dev/null && echo \"--- skills ---\" && ls .claude/skills/ && echo \"--- agents ---\" && ls .claude/agents/ 2>/dev/null && echo \"--- skill-files ---\" && ls -R skill-files/ | head -50",
+      "description": "Survey repo references and skills"
+    },
+    "tool_response": {
+      "stdout": "citation-standards.md\ncritical-appraisal-tools.md\ndatabase-guide.md\ndomains\nevidence-hierarchy.md\npredatory-and-sponsored-sources.md\nreproducible-search.md\nstatistics-red-flags.md\n--- domains ---\nREADME.md\nclimate.md\ncomputer-science.md\nmedicine.md\nsocial-sciences.md\n--- skills ---\ncitation-verification\ncritical-appraisal\ndata-extraction\nevidence-synthesis\nfact-check\nliterature-search\nresearch\nresearch-protocol\nresearch-question\nresearch-report\nscientific-consensus\nsource-credibility\n--- agents ---\nliterature-scout.md\nskeptic.md\n--- skill-files ---\nskill-files/:\nSTART-SKILL.md\nready-skill\n\nskill-files/ready-skill:",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false,
+      "noOutputExpected": false
+    },
+    "tool_use_id": "toolu_019YngyTguJyCqM5PzNprkWX",
+    "duration_ms": 307
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "ToolSearch",
+    "tool_input": {
+      "query": "select:mcp__paper-search__search_openalex,mcp__paper-search__search_crossref,mcp__paper-search__search_semantic,mcp__paper-search__search_arxiv,mcp__paper-search__get_crossref_paper_by_doi,mcp__paper-search__search_google_scholar,WebSearch,WebFetch",
+      "max_results": 10
+    },
+    "tool_response": {
+      "matches": [
+        "mcp__paper-search__search_openalex",
+        "mcp__paper-search__search_crossref",
+        "mcp__paper-search__search_semantic",
+        "mcp__paper-search__search_arxiv",
+        "mcp__paper-search__get_crossref_paper_by_doi",
+        "mcp__paper-search__search_google_scholar",
+        "WebSearch",
+        "WebFetch"
+      ],
+      "query": "select:mcp__paper-search__search_openalex,mcp__paper-search__search_crossref,mcp__paper-search__search_semantic,mcp__paper-search__search_arxiv,mcp__paper-search__get_crossref_paper_by_doi,mcp__paper-search__search_google_scholar,WebSearch,WebFetch",
+      "total_deferred_tools": 653
+    },
+    "tool_use_id": "toolu_019pPusBSA55HGnJKjYeNoqy",
+    "duration_ms": 114
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat references/evidence-hierarchy.md && echo \"########## CITATION\" && cat references/citation-standards.md",
+      "description": "Read evidence hierarchy and citation standards"
+    },
+    "tool_response": {
+      "stdout": "# Evidence hierarchy \u00e2\u20ac\u201d how much to trust a source\n\nUse this to weight sources when synthesizing. Higher tiers dominate lower ones\nwhen they conflict. Always weight by **methodological quality within a tier**,\nnot tier alone \u00e2\u20ac\u201d a large, pre-registered RCT can outweigh a weak meta-analysis\nof poor studies.\n\n## Tiers (strongest \u00e2\u2020\u2019 weakest)\n\n1. **Systematic reviews & meta-analyses** of high-quality studies (Cochrane,\n   Campbell, well-conducted PRISMA reviews). Living systematic reviews and\n   umbrella reviews sit here too.\n2. **Consensus statements from authoritative scientific bodies** \u00e2\u20ac\u201d WHO, IPCC,\n   national academies of science, major professional societies, government\n   statistical agencies. These represent expert-aggregated consensus.\n3. **Randomized controlled trials (RCTs)** and, in non-clinical fields,\n   pre-registered controlled experiments with adequate power.\n4. **Quasi-experimental & cohort studies**, natural experiments, large\n   longitudinal observational studies.\n5. **Case-control and cross-sectional studies**, smaller observational work.\n6. **Case reports, case series, mechanistic/animal/in-vitro studies** \u00e2\u20ac\u201d\n   hypothesis-generating, not confirmatory.\n7. **Expert opinion, narrative reviews, editorials, textbooks** \u00e2\u20ac\u201d useful for\n   background and framing, weak for specific factual claims.\n8. **Preprints** (arXiv, bioRxiv, medRxiv, SSRN) \u00e2\u20ac\u201d not yet peer-reviewed. Cite\n   with an explicit \"preprint, not peer-reviewed\" flag; upgrade the claim once a\n   peer-reviewed version exists.\n\n## Quality signals to check inside any tier\n\n- **Replication**: has the finding been independently reproduced? A single\n  striking result is provisional.\n- **Sample size & power**; pre-registration; conflicts of interest / funding\n  source; effect size and confidence intervals (not just p-values).\n- **Recency vs. landmark status**: prefer current evidence, but recognise\n  foundational work a field still relies on.\n- **Retraction status**: check the source has not been retracted or issued a\n  correction (Retraction Watch / Crossref).\n- **Citations in context**: highly-cited \u00e2\u2030\u00a0 correct; look at *how* it is cited\n  (supported, disputed, superseded).\n\n## GRADE-style summary language\n\nWhen stating confidence, use calibrated wording:\n- **High certainty** \u00e2\u20ac\u201d consistent high-quality evidence; consensus.\n- **Moderate certainty** \u00e2\u20ac\u201d generally consistent but with limitations.\n- **Low certainty** \u00e2\u20ac\u201d sparse, conflicting, or low-quality evidence.\n- **Very low / contested** \u00e2\u20ac\u201d active scientific debate; state both sides.\n########## CITATION\n# Citation standards\n\nDefault style for this repository: **APA 7th edition**. Switch on request to\nVancouver (biomedicine), IEEE (engineering/CS), Chicago, or MLA \u00e2\u20ac\u201d keep one style\nconsistent within a document.\n\n## Every citation must carry\n\n- Authors, year, title, venue (journal/conference/publisher), volume/issue/pages\n  where applicable, and a **resolvable DOI** (or stable URL / arXiv ID).\n- For preprints: the server + ID and an explicit **\"preprint, not peer-reviewed\"**\n  note.\n\n## APA 7 quick patterns\n\n- **Journal article**: Author, A. A., & Author, B. B. (Year). Title of article.\n  *Journal Name, Volume*(Issue), pages. https://doi.org/xxxxx\n- **Book**: Author, A. A. (Year). *Title of work*. Publisher.\n- **Report / body**: Organization. (Year). *Title of report* (Report No. if any).\n  Publisher/URL.\n- **In-text**: (Author, Year) or Author (Year); direct quote adds a page/locator.\n\n## Anti-fabrication rules\n\n1. Do not invent DOIs, page numbers, or author lists. If a field is unknown,\n   leave it blank and flag it \u00e2\u20ac\u201d never guess.\n2. Confirm each DOI resolves (Crossref) before including it.\n3. Match the in-text claim to the specific passage in the source; note the\n   section/page you relied on.\n4. If a claimed source cannot be located in any database, remove the claim or\n   mark it `UNVERIFIED \u00e2\u20ac\u201d no retrievable source`.",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false,
+      "noOutputExpected": false
+    },
+    "tool_use_id": "toolu_01E1U4Ro89JmC9dGGmcTYaDW",
+    "duration_ms": 139
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat references/reproducible-search.md && echo \"########## DOMAINS-CS\" && cat references/domains/computer-science.md",
+      "description": "Read reproducible-search and CS domain pack"
+    },
+    "tool_response": {
+      "stdout": "# Reproducibility pack \u00e2\u20ac\u201d search logs, PRISMA, retraction & citation audit, BibTeX\n\nConcrete formats and checks so a review can be re-run and trusted.\n\n## 1. Machine-readable search log\n\nSave alongside each review as `research/<slug>-searchlog.yaml`:\n\n```yaml\nquestion: \"<one sentence>\"\ndate_run: 2026-07-23\ndatabases:\n  - name: PubMed\n    query: '(\"intervention\"[tiab] AND \"outcome\"[tiab]) AND 2015:2026[dp]'\n    hits: 214\n    kept_after_screen: 18\n  - name: OpenAlex\n    query: \"intervention outcome, type:review, from_publication_date:2015-01-01\"\n    hits: 96\n    kept_after_screen: 11\ninclusion: [\"systematic reviews\", \"RCTs\", \"human\", \"English/Polish\", \"2015-2026\"]\nexclusion: [\"preprints for final claims\", \"case reports\", \"non-scholarly\"]\ncounts: { identified: 310, deduplicated: 271, screened: 271, full_text: 44, included: 29 }\n```\n\n## 2. PRISMA flow diagram (mermaid)\n\nEmbed in systematic reviews; fill the counts from the log above:\n\n```mermaid\nflowchart TD\n  A[Records identified<br/>n = 310] --> B[After duplicates removed<br/>n = 271]\n  B --> C[Records screened<br/>n = 271]\n  C -->|Excluded n = 227| D[Full-text assessed<br/>n = 44]\n  D -->|Excluded n = 15<br/>with reasons| E[Studies included<br/>n = 29]\n```\n\n## 3. Retraction & correction check (do before citing)\n\nFor each source with a DOI:\n1. Resolve it via Crossref (`mcp__paper-search__get_crossref_paper_by_doi` or\n   `search_crossref`). Confirm authors/year/title/venue match.\n2. Inspect Crossref metadata for an `update-to` / relation of type\n   *\"is-retracted-by\"*, *\"has-correction\"*, or a title prefixed\n   `RETRACTED:` / `EXPRESSION OF CONCERN`.\n3. Cross-check the DOI/title against **Retraction Watch** (scholarly WebSearch).\n4. If retracted: do **not** cite as valid evidence \u00e2\u20ac\u201d cite only when discussing\n   the retraction itself, and drop any claim that depended on it.\n\n## 4. Citation \u00e2\u2020\u201d claim audit\n\nBefore finalising, for every in-text citation confirm all four:\n\n- [ ] **Exists** \u00e2\u20ac\u201d resolvable DOI/record, metadata matches.\n- [ ] **Supports** \u00e2\u20ac\u201d the specific passage backs the exact claim (not just the\n      title/topic).\n- [ ] **Scope** \u00e2\u20ac\u201d no overreach (correlation\u00e2\u2030\u00a0causation, sample/population fits,\n      single study/preprint not stated as settled).\n- [ ] **Live** \u00e2\u20ac\u201d not retracted; still current or explicitly flagged as historical.\n\nRecord failures as `DROPPED` or `DOWNGRADED` with a reason; never leave a\nmismatched citation in place.\n\n## 5. BibTeX / Zotero export\n\nEmit `research/<slug>.bib` for reuse. One verified entry per cited source:\n\n```bibtex\n@article{key2023,\n  author  = {Family, Given and Family2, Given2},\n  title   = {Exact title},\n  journal = {Journal Name},\n  year    = {2023},\n  volume  = {12}, number = {3}, pages = {45--67},\n  doi     = {10.xxxx/xxxxx}\n}\n```\n\nOnly include entries whose DOI resolved in step 3. Flag preprints with\n`note = {Preprint, not peer-reviewed}`.\n########## DOMAINS-CS\n# Domain pack \u00e2\u20ac\u201d computer science, ML/AI & engineering\n\n## Sources & databases\n- **arXiv** (cs.*), **DBLP**, **ACL Anthology**, **IEEE Xplore**, **ACM Digital\n  Library**, **Semantic Scholar**, **OpenReview** (peer reviews are public).\n- Venues carry weight: top conferences (**NeurIPS, ICML, ICLR, ACL, CVPR, OSDI,\n  SIGCOMM, POPL**, \u00e2\u20ac\u00a6) are the field's peer-reviewed record \u00e2\u20ac\u201d often more than\n  journals. Check acceptance vs. workshop/non-archival tracks.\n\n## Field specifics\n- **arXiv is preprint-first.** Flag \"not peer-reviewed\" unless a peer-reviewed\n  (conference/journal) version exists; prefer the published version and note the\n  venue.\n- Value **reproducibility artifacts**: code, datasets, model cards, and\n  **artifact-evaluation / reproducibility badges**. A result without runnable\n  code or a benchmark others can reproduce is weaker.\n- For empirical ML claims: check **baselines, ablations, seeds/variance,\n  compute**, dataset contamination/leakage, and whether the benchmark actually\n  measures the claimed capability. Beware **SOTA-chasing** on a single metric.\n\n## Red flags specific to the field\n- **Benchmark hacking / overfitting to the test set**, cherry-picked baselines,\n  no error bars, non-reproducible \"SOTA\", undisclosed hyperparameter tuning.\n- Vendor/marketing \"research\" and product blogs presented as evidence (treat as\n  `OBJECT-OF-STUDY`); demo-driven claims without evaluation.\n- Citation of a withdrawn/updated arXiv version; benchmark leaderboards without\n  peer review.\n\n## Consensus & framing\nFewer formal \"consensus bodies\"; rely on **surveys/systematic reviews**,\nreproduced results across independent groups, and standards bodies (**IETF, W3C,\nISO/IEC, NIST**) where relevant. State that a claim is \"an active research area\"\nwhen reproduction is thin.",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false,
+      "noOutputExpected": false
+    },
+    "tool_use_id": "toolu_011oYkWG9cZXf5iAoFV57Ght",
+    "duration_ms": 140
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd /c/Users/admin/serio-po-polsku-skill && echo \"=== wersje/ (nowe pliki) ===\" && ls -la wersje/*.md wersje/*.yaml wersje/*.bib 2>/dev/null && echo && echo \"=== kontrola nienaruszalnosci (mtime katalogow modeli i skill-files) ===\" && for d in wersje/cc_deepseek wersje/claude wersje/codex wersje/gemini wersje/minimax3 skill-files references; do printf \"%-24s \" \"$d\"; ls -la --time-style=+%Y-%m-%d\\ %H:%M \"$d\" | head -1; find \"$d\" -newermt \"2026-08-29\" -type f | wc -l | xargs echo \"  plikow zmienionych dzis:\"; done",
+      "description": "Verify outputs written and source dirs untouched"
+    },
+    "tool_response": {
+      "stdout": "=== wersje/ (nowe pliki) ===\n-rw-r--r-- 1 admin 197121 22002 Aug 29 04:16 wersje/SYNTEZA-CLAIM-AUDIT.md\n-rw-r--r-- 1 admin 197121 27032 Aug 29 04:14 wersje/SYNTEZA-EVIDENCE-TABLE.md\n-rw-r--r-- 1 admin 197121 83820 Aug 29 04:28 wersje/SYNTEZA-RAPORT.md\n-rw-r--r-- 1 admin 197121 26112 Aug 29 04:11 wersje/SYNTEZA-SEARCHLOG.yaml\n-rw-r--r-- 1 admin 197121 23257 Aug 29 04:18 wersje/SYNTEZA-SOURCES.bib\n-rw-r--r-- 1 admin 197121 11388 Aug 16 15:59 wersje/SYNTEZA.md\n\n=== kontrola nienaruszalnosci (mtime katalogow modeli i skill-files) ===\nwersje/cc_deepseek       total 204\n  plikow zmienionych dzis: 2\nwersje/claude            total 156\n  plikow zmienionych dzis: 2\nwersje/codex             total 184\n  plikow zmienionych dzis: 2\nwersje/gemini            total 64\n  plikow zmienionych dzis: 2\nwersje/minimax3          total 212\n  plikow zmienionych dzis: 2\nskill-files              total 28\n  plikow zmienionych dzis: 0\nreferences               total 40\n  plikow zmienionych dzis: 0",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false,
+      "noOutputExpected": false
+    },
+    "tool_use_id": "toolu_01Nv9557pG1A5mc8eS1TJScs",
+    "duration_ms": 1690
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "for d in wersje/cc_deepseek wersje/claude; do echo \"=== $d ===\"; find \"$d\" -newermt \"2026-08-29\" -type f -exec ls -la --time-style=+%Y-%m-%d\\ %H:%M:%S {} \\; ; done",
+      "description": "Identify which files appear modified today"
+    },
+    "tool_response": {
+      "stdout": "=== wersje/cc_deepseek ===\n-rw-r--r-- 1 admin 197121 3056868 2026-08-29 04:28:36 wersje/cc_deepseek/logs/post_tool_use.json\n-rw-r--r-- 1 admin 197121 320366 2026-08-29 04:28:46 wersje/cc_deepseek/logs/pre_tool_use.json\n=== wersje/claude ===\n-rw-r--r-- 1 admin 197121 149230 2026-08-29 03:54:50 wersje/claude/logs/post_tool_use.json\n-rw-r--r-- 1 admin 197121 3696 2026-08-29 03:54:54 wersje/claude/logs/pre_tool_use.json",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false,
+      "noOutputExpected": false
+    },
+    "tool_use_id": "toolu_011ShungvxekMwysEz8i2TEN",
+    "duration_ms": 257
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "for d in cc_deepseek claude codex gemini minimax3; do echo \"=== $d ===\"; ls -la --time-style=+%Y-%m-%d\\ %H:%M \"wersje/$d\"/*.md \"wersje/$d\"/*.yaml \"wersje/$d\"/*.bib 2>/dev/null | awk '{print $6, $7, $8}'; done",
+      "description": "Confirm package artefacts unmodified"
+    },
+    "tool_response": {
+      "stdout": "=== cc_deepseek ===\n2026-08-17 03:48 wersje/cc_deepseek/CLAIM-AUDIT.md\n2026-08-17 03:48 wersje/cc_deepseek/EVIDENCE-TABLE.md\n2026-08-17 03:39 wersje/cc_deepseek/EXCLUDED.md\n2026-08-16 15:58 wersje/cc_deepseek/PROMPT_CC_DEEPSEEK.md\n2026-08-17 03:40 wersje/cc_deepseek/PROTOKOL.md\n2026-08-17 03:47 wersje/cc_deepseek/RAPORT.md\n2026-08-17 03:49 wersje/cc_deepseek/SEARCHLOG.yaml\n2026-08-17 03:49 wersje/cc_deepseek/SOURCES.bib\n=== claude ===\n2026-08-17 01:21 wersje/claude/CLAIM-AUDIT.md\n2026-08-17 01:19 wersje/claude/EVIDENCE-TABLE.md\n2026-08-16 15:58 wersje/claude/PROMPT_CLAUDE.md\n2026-08-17 01:11 wersje/claude/PROTOKOL.md\n2026-08-17 01:27 wersje/claude/RAPORT.md\n2026-08-17 01:16 wersje/claude/SEARCHLOG.yaml\n2026-08-17 01:30 wersje/claude/SOURCES.bib\n=== codex ===\n2026-08-17 01:46 wersje/codex/CLAIM-AUDIT.md\n2026-08-17 02:01 wersje/codex/EVIDENCE-TABLE.md\n2026-08-17 01:38 wersje/codex/EXCLUDED.md\n2026-08-16 15:58 wersje/codex/PROMPT_CODEX.md\n2026-08-17 01:22 wersje/codex/PROTOKOL.md\n2026-08-17 02:07 wersje/codex/RAPORT.md\n2026-08-17 02:05 wersje/codex/SEARCHLOG.yaml\n2026-08-17 02:05 wersje/codex/SOURCES.bib\n=== gemini ===\n2026-08-16 16:46 wersje/gemini/CLAIM-AUDIT.md\n2026-08-16 16:46 wersje/gemini/EVIDENCE-TABLE.md\n2026-08-16 16:47 wersje/gemini/EXCLUDED.md\n2026-08-16 15:58 wersje/gemini/PROMPT_GEMINI.md\n2026-08-16 16:42 wersje/gemini/PROTOKOL.md\n2026-08-16 16:47 wersje/gemini/RAPORT.md\n2026-08-16 16:46 wersje/gemini/SEARCHLOG.yaml\n2026-08-16 16:46 wersje/gemini/SOURCES.bib\n=== minimax3 ===\n2026-08-16 16:29 wersje/minimax3/CLAIM-AUDIT.md\n2026-08-16 16:28 wersje/minimax3/EVIDENCE-TABLE.md\n2026-08-16 16:22 wersje/minimax3/PROTOKOL.md\n2026-08-16 16:36 wersje/minimax3/RAPORT.md\n2026-08-16 16:32 wersje/minimax3/SEARCHLOG.yaml\n2026-08-16 16:31 wersje/minimax3/SOURCES.bib",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false,
+      "noOutputExpected": false
+    },
+    "tool_use_id": "toolu_01PjjAMY64WC28U1bPiqj6nr",
+    "duration_ms": 410
+  }
+]

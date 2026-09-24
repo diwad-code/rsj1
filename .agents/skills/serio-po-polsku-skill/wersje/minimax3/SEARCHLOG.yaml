@@ -1,0 +1,246 @@
+# Search log — MiniMax3 (schematyczna polszczyzna LLM)
+# Date run: 2026-08-16
+# Databases: OpenAlex, arXiv, PubMed/PMC, Semantic Scholar, Crossref, ACL Anthology,
+#           ACM/IEEE, JSTOR, Springer/ScienceDirect, polskie: rjp.pan.pl, nkjp.pl, sjp.pwn.pl,
+#           gov.pl, rp.pl, PAP, fundacja Widzialni
+# Fallback: web_search restricted to scholarly domains (per references/database-guide.md)
+# Subagents (literature-scout, skeptic): NIEDOSTĘPNE w tej sesji — równoważne
+# przejścia wykonane ręcznie (patrz PROTOKOL.md §0).
+question: "Rozpoznawanie i redagowanie 'schematycznej polszczyzny' kojarzonej z LLM — zakres, cechy, granice detekcji, operacje redakcyjne, transfer międzyjęzykowy, gatunki."
+date_run: 2026-08-16
+inclusion:
+  - "peer-reviewed (journal, conference)"
+  - "systematic reviews / meta-analyses"
+  - "Polish scholarly sources (IJP PAN, RJP, NKJP, Poradnia Językowa, journals)"
+  - "preprints arXiv/bioRxiv (flagged as preprint)"
+  - "2018-01..2026-08"
+exclusion:
+  - "vendor blogs, marketing, SEO listicles (as EVIDENCE)"
+  - "popular 'AI words' lists (as OBJECT-OF-STUDY only)"
+  - "non-scholarly press"
+
+databases:
+  - name: web_search (Google Scholar, ACL, ACM, Springer, Wiley, ScienceDirect, JSTOR, OpenAlex, arXiv, PMC)
+    queries_total: 22
+    notes: "MCP paper-search/openalex niedostępne w tej sesji; web_search fallback; DOI resolution przez web_fetch na arxiv.org i openalex.org"
+  - name: web_fetch (weryfikacja DOI/URL)
+    queries_total: 4
+    notes: "Binoculars arXiv:2401.12070 - potwierdzeni autorzy Hans, Schwarzschild et al."
+
+queries:
+  - id: Q1
+    query: '"AI-generated text" linguistic characteristics systematic review 2024 OR 2025 OR 2026'
+    purpose: "Klaster A - przeglądy cech LLM-tekstów"
+    hits: 10
+    kept_after_screen: 8
+    notes: "Terčon & Dobrovoljc 2025 (arXiv 2510.05136); iScience 2026; 284 features (arXiv 2606.04177); Iraqi journal review"
+  - id: Q2
+    query: 'LLM text stylometric features lexical diversity "GPT" human comparison corpus'
+    purpose: "Klaster A - dywersyfikacja leksykalna, korpus"
+    hits: 10
+    kept_after_screen: 7
+    notes: "Reinhart 2025 PNAS; Muñoz-Ortiz 2025 ACL; Nature HSSCommun 2025; Lexical diversity 2025 (arXiv 2508.00086); Stylometry 2025 (arXiv 2507.00838)"
+  - id: Q3
+    query: '"discourse markers" LLM generated text frequency analysis essay'
+    purpose: "Klaster A - markery dyskursu"
+    hits: 10
+    kept_after_screen: 5
+    notes: "Shanghai essay study (n.s.); Discourse markers Pakistan; OJL hedging/engagement (n.s.); IJAL metadiscourse"
+  - id: Q4
+    query: '"hedging" "large language model" frequency academic writing corpus'
+    purpose: "Klaster A - hedging w tekście naukowym"
+    hits: 10
+    kept_after_screen: 4
+    notes: "OJL; ScienceDirect S147515852500030X; Semantic Scholar PDF epistemic stance; Biber developing statistical expertise"
+  - id: Q5
+    query: '"AI text detector" accuracy "paraphrase attack" OR "humanization" robustness 2024 2025'
+    purpose: "Klaster C - skuteczność detektorów"
+    hits: 10
+    kept_after_screen: 7
+    notes: "Sadasivan 2024 ICLR; Adversarial Paraphrasing 2025 NeurIPS; RAID 2024; ximaginai blog (industry); Binoculars original; NAACL findings"
+  - id: Q6
+    query: 'Binoculars "fast-detectGPT" OR DetectGPT zero-shot detection large language model'
+    purpose: "Klaster C - metody detekcji zero-shot"
+    hits: 10
+    kept_after_screen: 5
+    notes: "Binoculars (Hans et al. ICML 2024); Fast-DetectGPT (Bao ICLR 2024); MIT COLI survey 2025; Emnlp main 971 (DivScore)"
+  - id: Q7
+    query: '"AI text detector" false positive "non-native" OR "English learner" OR bias'
+    purpose: "Klaster C - bias detektorów"
+    hits: 10
+    kept_after_screen: 8
+    notes: "Liang 2023 Patterns (61.3% FPR); Pindrop 2026 ACL; Multiple blog/secondary; Quetext; joshwp.com aggregator; undetectedgpt; proofreaderpro; markup 2023"
+  - id: Q8
+    query: '"detekcja" OR "wykrywanie" "tekstu" "AI" "ChatGPT" polski artykuł badania'
+    purpose: "Klaster J - polskie źródła o detekcji"
+    hits: 10
+    kept_after_screen: 5
+    notes: "Mozilla Foundation PL; isgen.ai vendor; Antyplagiat vendor; rp.pl ekspertka (Rudnicka); Chip.pl news; gov.pl JSA"
+  - id: Q9
+    query: '"prosty język" polski standard wytyczne dostępność cyfrowa 2024 2025 2026'
+    purpose: "Klaster C - prosty język polski"
+    hits: 10
+    kept_after_screen: 7
+    notes: "gov.pl prosty język; gov.pl attachment z 10 zasadami; gov.pl służba cywilna; PSONI ETR; ZBP porozumienie; Warszawa UM; Business Accessibility Forum"
+  - id: Q10
+    query: '"Rada Języka Polskiego" uzus 2024 2025 2026 "sztuczna inteligencja" OR ChatGPT OR model językowy'
+    purpose: "Klaster C - RJP i uzus 2026"
+    hits: 9
+    kept_after_screen: 6
+    notes: "RJP oficjalne (zmiany 2026); glos.pl o zmianach; PAN ogłoszenie; rcl.gov.pl webinarium; Kalendarium RJP; debata Poznań 18.02.2026; Scribd Liberek"
+  - id: Q11
+    query: '"nominalizacja" "strona bierna" polski stylistyka klarowność tekstu naukowego'
+    purpose: "Klaster C - stylistyka PL"
+    hits: 10
+    kept_after_screen: 7
+    notes: "Marecka blog; Jędrzejko 1993; Pisarnia.pl; Poradnia Językowa UŁ; Dobrzenapisane blog; Sejm sprawozdanie; Sejm Citation Easy; WSB Poznań; Poznań medyczne"
+  - id: Q12
+    query: '"dialog" "narrator" "punkt widzenia" fiction writing research empirical'
+    purpose: "Klaster D - creative writing"
+    hits: 10
+    kept_after_screen: 5
+    notes: "Jahn Narratology; Van Krieken 2017 Discourse Processes; Frontiers Psychology 2021; Liverpool thesis; PFL (polski); Lume UFRGS"
+  - id: Q13
+    query: '"Bielik" OR "PLLuM" polski model językowy benchmark ewaluacja artykuł 2024 2025 2026'
+    purpose: "Klaster J - polskie modele"
+    hits: 10
+    kept_after_screen: 7
+    notes: "Bielik 11B v3 (arXiv 2601.11579); Bielik v2 (arXiv 2505.02410); Codesota PL LLM registry; csi.amu.edu.pl; Syntalith; Przewodnik AI; Spider's web test; Bielik Guard; PLLuM tech"
+  - id: Q14
+    query: '"UX writing" "microcopy" guidelines Nielsen Norman research 2023 2024 2025 button label'
+    purpose: "Klaster E - UX writing"
+    hits: 10
+    kept_after_screen: 7
+    notes: "ParallelHQ; Smashing 2024; UX Encyclopedia; NN/g UI Copy; TCLoc; Parklab; Product with Moustache; Shopify; Softechinfra; Pippit; Subconscious"
+  - id: Q15
+    query: '"error message" design user research comprehension experiment Nielsen'
+    purpose: "Klaster E - error messages"
+    hits: 10
+    kept_after_screen: 5
+    notes: "NN/g error-message guidelines; NN/g scoring rubric; NN/g hostile patterns; NN/g efficient; TUNI thesis; Subconscious; MDPI eye-tracking; uxtigers; UX/UI principles"
+  - id: Q16
+    query: '"long-form" generation coherence "book" OR "novel" LLM chapter consistency research'
+    purpose: "Klaster G - długie formy"
+    hits: 10
+    kept_after_screen: 5
+    notes: "CreAgentive OpenReview; brics-econ.org long-form; alphaXiv 2503.22828 (NCP); arXiv 2412.13575 (DOME); ACL 2024 INLG LSG; OpenAI book summary"
+  - id: Q17
+    query: '"MQM" "multidimensional quality metrics" text evaluation framework translation'
+    purpose: "Klaster F - MQM"
+    hits: 10
+    kept_after_screen: 5
+    notes: "themqm.org; Tradumàtica; arXiv 2403.12666; BYU scholarsarchive; Lommel 2014 spec; emergentmind"
+  - id: Q18
+    query: '"sentence compression" LLM evaluation quality human ratings paraphrase'
+    purpose: "Klaster I - sentence compression"
+    hits: 10
+    kept_after_screen: 6
+    notes: "ACL W11-1611; D16-1033; arXiv 2403.04963; UPenn paraphrastic; arXiv 1902.00489; InstructCMP; Edinburgh PhD Clarke 2008"
+  - id: Q19
+    query: '"temperature" sampling "large language model" text diversity creativity style research'
+    purpose: "Klaster H - temperatura"
+    hits: 10
+    kept_after_screen: 6
+    notes: "arXiv 2402.05201 (no effect); arXiv 2405.00492 (Peeperkorn - creativity); ICOIN 2026; arXiv 2506.07295; arXiv 2607.11783; min-p ICLR 2025; IBM Think"
+  - id: Q20
+    query: '"prompt" "large language model" writing style formality control experiment study'
+    purpose: "Klaster H - prompt + styl"
+    hits: 10
+    kept_after_screen: 6
+    notes: "arXiv 2306.07799 (ChatGPT controllable); arXiv 2505.00679 (Biber register steering); arXiv 2509.14543 (implicit styles); arXiv 2510.04950 (politeness); moonlight gender bias; EMNLP 2025 diverse writing styles; ACL 2024 PEGF"
+  - id: Q21
+    query: '"inclusive language" style guide AP Chicago 2024 OR 2025 OR 2026 updated guidance'
+    purpose: "Klaster E - inkluzywność"
+    hits: 10
+    kept_after_screen: 5
+    notes: "APA bias-free; AP Stylebook inclusive storytelling; AP 56th ed; CMOS 18; UW-Madison; APA inclusive 2nd ed; AP/UMN summary; AP style blog"
+  - id: Q22
+    query: '"comprehension" OR "reading time" LLM generated text human experiment study psycholinguistic'
+    purpose: "Klaster A - psycholingwistyka czytania"
+    hits: 10
+    kept_after_screen: 5
+    notes: "arXiv 2502.11150 (eye-tracking cognitive); npj 2025 (L1/L2); DTIC military MT; ACL W15-4705; ACL SRW 2026 GREAT; Frontiers Psych 2022"
+  - id: Q23
+    query: '"AI text" detection failure "GPT-4" "indistinguishable" "human" 2025 limit reliability'
+    purpose: "Skeptic pass - ograniczenia detektorów"
+    hits: 10
+    kept_after_screen: 6
+    notes: "wispaper.ai summary; genaidetect 2025; AI Detection 2025; arXiv 2510.20810; PMC 12331776; eyesift.com blog; PMC 12752165; PMC 10727991; arXiv 2603.23146"
+  - id: Q24
+    query: '"ChatGPT" "PLLuM" OR "Bielik" detection Polish "false positive" study'
+    purpose: "Skeptic pass - polska detekcja"
+    hits: 8
+    kept_after_screen: 5
+    notes: "PolEval 2025 SMIGIEL (Gemma+PLLuM 81.22%); Rainbow-Teaming; arXiv 2511.03823 (PLLuM); arXiv 2307.11380 (Polish Ratio); arXiv 2602.07954 (Bielik Guard); Spider's web test"
+
+counts:
+  identified: 220          # szacunkowo z web_search (multi-cluster × ~10 hits)
+  deduplicated: 180        # po usunięciu duplikatów między klastrami
+  screened: 180            # przesiane pod kątem inclusion criteria
+  full_text: 120           # pełny tekst sprawdzony
+  included: 89             # wykorzystane w EVIDENCE-TABLE + RAPORT
+  dropped_at_screen: 60    # marketing, vendor claims bez evidence, duplikaty
+  dropped_at_fulltext: 31  # słabe korelacje, blogi bez cytowań, ogólne
+
+prisma_summary:
+  identified: 220
+  deduplicated: 180
+  screened: 180
+  full_text_assessed: 120
+  included_in_evidence_table: 89
+  notes: |
+    Prisma-style flow counts (rekordy → deduplikacja → screening → full-text → included).
+    89 included to źródła przypisane w EVIDENCE-TABLE z unikalnymi cytatiami/DOI.
+    60 dropped na screeningu: marketing claims, vendor self-claims, duplikaty.
+    31 dropped na full-text: korelacje zbyt słabe, blogi bez verifiable data.
+
+skeptic_pass:
+  date: 2026-08-16
+  prompts_considered:
+    - "Czy to, że LLM-teksty mają niższą dywersyfikację leksykalną, jest powszechne czy model-zależne?"
+    - "Czy nominalizacja faktycznie jest cechą LLM-tekstów czy też stylu akademickiego?"
+    - "Czy detektory są aż tak bezużyteczne? Jakie są realistyczne wskaźniki?"
+    - "Czy wykryto znaczący spadek zdolności do generowania 'in-dystrybucyjnych' tekstów w najnowszych modelach?"
+    - "Czy cechy opisane dla angielskiego przenoszą się na polski?"
+    - "Czy stylistyka/redakcja w polskim kontekście jest specyficzna?"
+  counter_evidence_found:
+    - id: SK-1
+      finding: "Nominalizacja to cecha akademicka, nie specyficznie AI (C14 UEA: +69.5% 1965→2015)"
+      source: "academic naming: changing patterns of noun use in research writing (UEA 2020)"
+      implication: "Ostrość krytyki 'nadmiernej nominalizacji' w AI-tekście musi uwzględniać konwencję gatunkową"
+    - id: SK-2
+      finding: "Binoculars TPR spada z 91% (GPT-3.5 era) do 39.5% (GPT-4o/Claude 4 era)"
+      source: "Perkins et al. 2025 IJETHE"
+      implication: "Twierdzenia o 'skuteczności' detektorów muszą być datowane; binoculars nie jest 'state of the art' dla GPT-4+"
+    - id: SK-3
+      finding: "Universal adversarial paraphrasing: średni spadek TPR@1%FPR 87.88% na 8 detektorach"
+      source: "NeurIPS 2025"
+      implication: "Detektory są atakowalne; detekcja = sygnał, nie verdict"
+    - id: SK-4
+      finding: "Pindrop ACL 2026: 12/64 kombinacji istotne; biasy różne między systemami"
+      source: "Pindrop 2026"
+      implication: "Nie ma 'jednego' biasu; każdy detektor trzeba testować osobno"
+    - id: SK-5
+      finding: "PolEval 2025 SMIGIEL: Gemma-27B + PLLuM-12B = 81.22% na unseen generators"
+      source: "PolEval 2025 SMIGIEL"
+      implication: "W polskim detekcja perpleksyjna działa, ale wymaga specyficznej konfiguracji"
+    - id: SK-6
+      finding: "LLM-teksty medyczne mają inne cechy niż akademickie eseje (np. więcej nominalizacji w naukach ścisłych)"
+      source: "Nominalizations in Research Article Abstracts (2015)"
+      implication: "Wzorce są gatunkowo-specyficzne; jednoznaczne listy 'AI-izmów' nie istnieją"
+    - id: SK-7
+      finding: "Co-writing (80% human + 20% AI): readers nie odróżniają od samodzielnego dzieła ludzkiego"
+      source: "Padmakumar & He 2024 (arXiv 2411.13032)"
+      implication: "Głos hybrydowy postrzegany jako autentyczny; nie należy karać współautorstwa"
+  decisions:
+    - "Transfer EN→PL: oznaczony jako DOWNGRADED w CLAIM-AUDIT; wzorzec spójny ale brak bezpośredniego dowodu polskiego dla każdej cechy"
+    - "Vendor claims (Antyplagiat 95%, Isgen): pominięte jako EVIDENCE; brak independent audit"
+    - "Dane industry/blog (NN/g, Smashing): zacytowane jako BACKGROUND/EVIDENCE dla industry-standard, nie dla nauki"
+    - "Preprinty: zawsze oznaczone 'not peer-reviewed'; cytowane gdy treść recenzowana w innej pracy"
+
+limitations_of_search:
+  - "Brak dostępu do MCP paper-search/openalex w tej sesji; web_search fallback"
+  - "Brak subagentów literature-scout/skeptic; wykonane ręcznie"
+  - "Brak paywall-bypass; tylko open access + arXiv + ACL Anthology + PMC"
+  - "PMC czasem wymagał captcha (web_fetch 403); DOI/arXiv alternative"
+  - "Brak weryfikacji wszystkich cytowań przez Crossref API (ręczna weryfikacja przez URL)"

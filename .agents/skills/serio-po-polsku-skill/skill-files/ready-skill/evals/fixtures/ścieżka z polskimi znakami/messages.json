@@ -1,0 +1,4 @@
+{
+  "profile.save.error": "Nie udało się zapisać profilu {name}.",
+  "cart.count": "{count, plural, one {Masz {count} produkt} few {Masz {count} produkty} many {Masz {count} produktów} other {Masz {count} produktu}}"
+}

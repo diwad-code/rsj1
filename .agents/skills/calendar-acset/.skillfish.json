@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "calendar-acset",
+  "owner": "plurigrid",
+  "repo": "asi",
+  "path": "plugins/asi/skills/calendar-acset",
+  "branch": "main",
+  "sha": "1ba2351372b0015d5c26016d088b21b39eab10e0",
+  "source": "manual"
+}

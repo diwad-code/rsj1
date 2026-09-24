@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "frontend-developer",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/frontend-developer",
+  "branch": "main",
+  "sha": "6c42d7a50e7398a59c617422a2757a8610120a0c",
+  "source": "manual"
+}

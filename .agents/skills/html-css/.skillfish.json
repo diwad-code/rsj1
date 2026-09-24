@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "html-css",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/html-css",
+  "branch": "main",
+  "sha": "772c2ee893eba1e86bc52e3390979f85dd86ce1c",
+  "source": "manual"
+}

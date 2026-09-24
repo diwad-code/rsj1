@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-code-goal-planner",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-code-goal-planner",
+  "branch": "main",
+  "sha": "95d8c5897524142707c7ead874bea06b8efc6ba2",
+  "source": "manual"
+}

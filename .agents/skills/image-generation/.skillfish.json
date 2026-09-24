@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "image-generation",
+  "owner": "freema",
+  "repo": "ai-skills",
+  "path": "skills/image-generation",
+  "branch": "main",
+  "sha": "5c3516a15a185f964332b9487d7a806528575cb7",
+  "source": "manual"
+}

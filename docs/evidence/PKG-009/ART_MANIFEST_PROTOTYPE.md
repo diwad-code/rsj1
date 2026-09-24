@@ -1,0 +1,17 @@
+# PKG-009 — H01 provisional prototype art manifest
+
+**Scope:** Archived H01 Lysgårdsbakken normal K90/HS98 art prototype. It is original, procedural Canvas2D pixel art on the existing 480×270 logical grid, not an imported image/texture/atlas. Shared bitmap text, athlete and sport marks are also drawn by project code. H01 is D BLOCKED and excluded from the playable catalog; these source descriptions do **not** claim a currently shipped/playable H01 runtime asset. No externally copied photographs, FIS PDF images, SJ3/DSJ2 screenshots or other third-party images are included as runtime assets.
+
+| Archived prototype source | Role and authorship / adaptation | SHA-256 (source file, retained) |
+|---|---|---|
+| `src/render/hillView.ts` | Project-authored H01 prototype panorama (Mjøsa shoreline, exterior steps, chairlift/station), judges' annex, floodlights, shared inrun/takeoff, jumper and snow. Drawn with integer-pixel primitives; no traced source imagery. H01 scene branch is retained for continuation but is not current playable H01 content. Historical takeoff table value: H01 94.08 − 87.98 = **6.10 m**; unchanged K120 94.35 − 87.64 = **6.71 m**. | `EC75A7C9194AE11A160F94861B8A95DA7A553A34D960CEB5CE24FDC1C3452DBB` |
+| `src/render/sportMarkers.ts` | Project-authored procedural P/K/HS/fall-line and metrage positions from hill geometry; shared across hills. | `1FF51DE6752F90AC39CB9856E786706C1318741D1B9BD84F183D2494F54A70FC` |
+| `src/render/pixelFont.ts` | Project-authored bitmap glyph rendering; shared across hills. | `519B85B51F3C20FE7FB12671767F8096DF3162167350D3DF8ADBA453390D6867` |
+| `src/simulation/hills/lillehammerNormal.ts` | Retained H01 provisional profile keyframes and marker input; raw FACT fields and blocked geometry interpretation are recorded in `docs/hills/H01.md`. Not an image asset or accepted playable profile. | `934D5E0239DA72758C6C2F7E02F53B97695518AC7F01AC597B6D10D15D4B3CA6` |
+| `src/simulation/technicalHill.ts` | Shared project-authored hill geometry/runtime curve builder, including the accepted technical K120 spec. Not an image asset. | `4F40E2BF15F49DF74D4C1578AC2B6409961EC7C2E65FD2E9FF65BBF9FC65EBD7` |
+
+**References, not imported art:** FIS hill certificate 304/NOR 44 (22.11.2022) for H01 dimensions, archived at `docs/evidence/PKG-009/fis/lillehammer-hs98-certificate-2022.pdf`; [venue description](https://www.hafjellresort.no/en/lysgardsbakkene-ski-jumping-facility) for stairs and chairlift; source and provenance notes in `docs/hills/H01.md`. SJ3 informed the shared side-view camera/silhouette and DSJ2 the restrained contrast/shadow/HUD. Neither game's pixels were copied. Mjøsa panorama and simplified scene details are visual **ADAPT**, not a surveyed architectural reconstruction.
+
+**Licensing:** This manifest records project-authored source code and no externally licensed H01 image assets. No standalone redistribution license for this game's source/art has been declared here; the FIS PDF, venue website and reference games remain third-party reference material under their respective terms, not licensed or embedded runtime art.
+
+**Assessment boundary:** This is a historical art-prototype manifest, not proof of playable H01 content or user acceptance. Hashes above are retained unchanged. Existing screenshots/video in `browser-artifacts/` document that prototype only; they are not current playable-runtime proof. **H01 VISUAL user NOT RUN** and external qualitative playtest NOT RUN. The baseline V acceptance on 22.09.2026 applies only to shared/base-game art, not H01.

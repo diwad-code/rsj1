@@ -1,0 +1,11 @@
+{
+  "name": "game-design",
+  "source": "local",
+  "description": "遊戲設計理論、機制設計與玩家體驗",
+  "whenToUse": "> 創造有趣且令人沉浸的遊戲體驗",
+  "categories": [],
+  "installedAt": "2026-05-26T16:05:46.861Z",
+  "relativePath": "game-design",
+  "metadataVersion": 2,
+  "installedVia": "legacy"
+}

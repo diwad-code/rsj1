@@ -1,0 +1,67 @@
+{
+  "mode": "image_to_image",
+  "entrypoint": "skills/imagine/scripts/edit.js",
+  "output_dir": "./images/portraits",
+  "path_sandbox": {
+    "confine_to": "./images/portraits",
+    "reject_outside": true,
+    "validator": "scripts/lib/output-allocator.js"
+  },
+  "aspect": "preserve_original",
+  "default_format": "png",
+  "allowed_formats": ["png", "jpeg", "webp"],
+  "preserve_filename_stem": true,
+  "filename_pattern": "<original_stem>_<mode>_<ts>.<ext>",
+  "log_filename": "_<original_stem>.log.json",
+  "sub_modes": {
+    "bg-swap": {
+      "prompt_template": "replace background only with <target-bg>, preserve subject identity, preserve face, preserve clothing, preserve pose exactly, natural lighting on subject",
+      "required_flags": ["--bg"],
+      "default_strength": "high"
+    },
+    "stylize": {
+      "prompt_template": "<style-description>, preserve facial features and proportions, preserve identity",
+      "style_presets": {
+        "watercolor": "watercolor painting style, soft pastels, visible brush texture",
+        "oil":        "oil painting style, thick impasto strokes, rich pigments",
+        "acrylic":    "acrylic painting style, clean color blocks, matte finish",
+        "comic":      "comic illustration style, bold ink outlines, flat cell shading"
+      },
+      "default_strength": "medium"
+    },
+    "restore": {
+      "prompt_template": "restore colors and clarity of this photograph, reduce grain and noise, recover faded tones, preserve original faces and composition exactly",
+      "default_strength": "high"
+    },
+    "group-tone": {
+      "prompt_template": "match the white balance and tonal profile of the reference image, preserve every subject's identity and clothing, do not re-pose or re-crop",
+      "required_flags": ["--target-tone"],
+      "default_strength": "high",
+      "batch": true
+    }
+  },
+  "face_preservation": {
+    "strength_levels": ["high", "medium", "low"],
+    "default": "high",
+    "implementation_note": "Current image-to-image endpoint has no pixel-accurate identity lock. Strength is expressed via prompt wording only — cannot guarantee identical faces."
+  },
+  "negative_prompt_common": "different face, different person, distorted eyes, extra fingers, plastic skin, airbrushed, deformed hands, altered clothing",
+  "privacy": {
+    "manifest_input_hash": "sha256_of_file_path_only",
+    "manifest_store_image_bytes": false,
+    "manifest_store_thumbnails": false,
+    "manifest_store_raw_prompt": false,
+    "manifest_store_exif": false,
+    "forbid_upload_to_external": true,
+    "face_thumbnails": false,
+    "local_only": true
+  },
+  "group_tone": {
+    "whitebalance_only_fast_path": true,
+    "require_reference": true
+  },
+  "retries": {
+    "face_mismatch_max": 1,
+    "on_repeat_fail": "surface_to_user"
+  }
+}

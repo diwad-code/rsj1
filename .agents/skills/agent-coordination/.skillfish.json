@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-coordination",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-coordination",
+  "branch": "main",
+  "sha": "91f8d8ddcab6fcf0781e5712f87abdeff095c122",
+  "source": "manual"
+}

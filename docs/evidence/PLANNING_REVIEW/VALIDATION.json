@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-09-16",
+  "command": "pwsh -File docs/tools/validate-documentation.ps1 -CheckActiveHandoff",
+  "exitCode": 0,
+  "result": "PASS",
+  "markdownFiles": 22,
+  "localLinksChecked": 70,
+  "tasks": 40,
+  "acyclicTaskGraph": true,
+  "packages": 33,
+  "assignedScopeUnits": 58,
+  "hills": 20,
+  "activeHandoff": "PKG-001",
+  "activePromptSha256": "7C9377C6E6BB9D39DD5D4F3EE5227299F47BC30B1220E0EF972E895361E0BD9C",
+  "archivedPromptSha256": "7C9377C6E6BB9D39DD5D4F3EE5227299F47BC30B1220E0EF972E895361E0BD9C",
+  "knownCatalogGaps": [
+    "Original AGENTS catalog .github/skills/README.md is absent; documented .agents/skills fallback applies."
+  ],
+  "errors": [],
+  "scope": "Documentation structure, expanded task dependencies, within-package ordering, package coverage, active handoff equality, and reference file hashes. This is not a test of game implementation or playability."
+}

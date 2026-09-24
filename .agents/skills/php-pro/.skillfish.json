@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "php-pro",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/php-pro",
+  "branch": "main",
+  "sha": "626f3b92704624d067ec8cfd95657ad668003a22",
+  "source": "manual"
+}

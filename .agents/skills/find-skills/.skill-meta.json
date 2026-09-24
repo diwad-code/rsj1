@@ -1,0 +1,11 @@
+{
+  "name": "find-skills",
+  "source": "local",
+  "description": "Helps users discover, search, and install skills from the skills.sh registry using the npx skills CLI.",
+  "whenToUse": "Use this skill when the user:; Asks to find, search, or browse available skills; Wants to install a skill by name or GitHub path; Asks \"what skills are available?\" or \"is there a skill for X?\"",
+  "categories": [],
+  "installedAt": "2026-05-26T16:05:47.242Z",
+  "relativePath": "find-skills",
+  "metadataVersion": 2,
+  "installedVia": "legacy"
+}

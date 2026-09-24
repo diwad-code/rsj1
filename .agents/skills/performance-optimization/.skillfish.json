@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "performance-optimization",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/performance-optimization",
+  "branch": "main",
+  "sha": "603567d795613730c833a3498db172d30d2e4039",
+  "source": "manual"
+}

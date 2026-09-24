@@ -1,0 +1,11 @@
+{
+  "name": "game-asset-generation",
+  "source": "local",
+  "description": "Generate game art assets using each::sense AI. Create 2D sprites, character sprite sheets, seamless textures, UI elements, icons, tilesets, loading screens, logos, and concept art for games.",
+  "whenToUse": "Generate professional game art assets using each::sense. This skill creates 2D sprites, textures, UI elements, icons, environments, and more optimized for game development workflows.",
+  "categories": [],
+  "installedAt": "2026-05-26T16:05:47.329Z",
+  "relativePath": "game-asset-generation",
+  "metadataVersion": 2,
+  "installedVia": "legacy"
+}

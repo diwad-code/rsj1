@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "scroll-animations",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/scroll-animations",
+  "branch": "main",
+  "sha": "6f55498f8c3e25585c4479e1858b85efa10d3e32",
+  "source": "manual"
+}

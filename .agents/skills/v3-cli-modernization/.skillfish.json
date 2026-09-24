@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "v3-cli-modernization",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/v3-cli-modernization",
+  "branch": "main",
+  "sha": "09feb1ff77156d227825d7d5bdf9f5e7798914d8",
+  "source": "manual"
+}

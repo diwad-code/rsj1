@@ -1,0 +1,464 @@
+research:
+  title: "Poprawianie polszczyzny generowanej przez AI"
+  researcher: "Codex"
+  workspace: "wersje/codex"
+  research_date: "2026-08-17"
+  state_of_knowledge_date: "2026-08-17"
+  protocol: "PROTOKOL.md"
+  protocol_version: "1.2"
+  scope_boundary: "Nie czytano, nie listowano i nie przeszukiwano innych katalogów pod wersje/, pliku wersje/SYNTEZA.md ani skill-files/."
+
+access:
+  planned_databases:
+    - "paper-search MCP"
+    - "OpenAlex MCP"
+    - "Crossref"
+    - "PubMed/Europe PMC"
+    - "ACL Anthology"
+    - "arXiv"
+  mcp_configured_in_repo: true
+  mcp_tools_available_in_session: false
+  actual_search_method: "web__run, scholarly-domain-restricted fallback, followed by DOI/landing-page checks"
+  independent_scouts_available: false
+  scout_fallback: "Sequential search plus a separate skeptical pass over claims, source types and transfer between languages."
+  limitations:
+    - "Search interface did not expose database-wide hit totals; counts below are observed records and screened candidates, not prevalence estimates."
+    - "Some publisher pages were inaccessible or abstract-only; such sources were not used for claims beyond their verified metadata and abstract."
+    - "No new Polish corpus or human annotation study was conducted in this research."
+
+counts:
+  query_batches_logged: 28
+  query_strings_logged: "See Q01-Q28; exact total is not normalized across repeated metadata checks."
+  database_hit_totals: "not reported by interface"
+  candidate_records_after_dedup: 42
+  records_in_SOURCES_bib: 42
+  scholarly_or_peer_reviewed_records: 31
+  preprints_or_emerging_records: 4
+  standards_and_authoritative_technical_records: 7
+  marketing_listicle_or_social_results_used_as_evidence: 0
+  records_excluded_or_object_of_study: "logged in EXCLUDED.md"
+
+searches:
+  - id: Q01
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "large language model generated text style human machine writing linguistic features naturalness fluency study"
+      - "ChatGPT generated text linguistic features corpus study human evaluation writing quality"
+      - "AI-generated text human evaluation naturalness fluency coherence writing quality empirical study"
+      - "LLM generated text stylometry human machine generated text study"
+    domains: [aclanthology.org, arxiv.org, acm.org, ieee.org, sciencedirect.com, springer.com, nature.com]
+    purpose: "Map corpus, stylometric and human-evaluation literature."
+    observed: "Corpus comparisons, essay studies, stylometry and review articles; no single universal quality marker."
+    disposition: "screened"
+
+  - id: Q02
+    date: "2026-08-17"
+    language: [pl, en]
+    query:
+      - "Polish language ChatGPT generated text linguistic analysis human AI text study"
+      - "Polish NLP large language model text generation evaluation fluency human evaluation Polish"
+      - "polski tekst generowany przez ChatGPT analiza językowa badanie"
+      - "morphologically rich languages LLM text generation evaluation Polish language model"
+    domains: [aclanthology.org, arxiv.org, journals.akademicka.pl, ruj.uj.edu.pl, springer.com]
+    purpose: "Locate direct evidence for Polish and distinguish generation quality from detection."
+    observed: "Mazur, Dadas et al., Polish benchmarks, PolEval and Polish-model reports."
+    disposition: "screened"
+
+  - id: Q03
+    date: "2026-08-17"
+    language: [pl, en]
+    query:
+      - "site:aclanthology.org Polish language model generation evaluation LLM Polish text quality"
+      - "site:aclanthology.org PolEval machine generated text Polish 2025 detection generalisation"
+      - "site:arxiv.org Polish LLM text generation benchmark human evaluation linguistic quality"
+      - "Polish language ChatGPT writing quality empirical study peer reviewed DOI"
+    domains: [aclanthology.org, arxiv.org, journals.akademicka.pl]
+    purpose: "Check primary Polish NLP venues and persistent identifiers."
+    observed: "PolEval 2025 task record, Mazur DOI, Polish benchmark preprints and model papers."
+    disposition: "screened"
+
+  - id: Q04
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "naturalness fluency coherence text quality human evaluation natural language generation survey"
+      - "NLG evaluation survey human judgments fluency adequacy coherence meaning preservation"
+      - "authentic voice writing quality style reader perception empirical study linguistics"
+      - "readability plain language accessibility writing quality evidence systematic review"
+    domains: [aclanthology.org, sciencedirect.com, plos.org, frontiersin.org, wiley.com, pmc.ncbi.nlm.nih.gov]
+    purpose: "Define constructs and evaluation dimensions."
+    observed: "Definitions vary by task; voice is reader- and discipline-dependent; plain-language evidence is domain-specific."
+    disposition: "screened"
+
+  - id: Q05
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "ChatGPT linguistic features formulaic sequences discourse markers hedging nominalization overuse corpus study"
+      - "LLM generated academic writing overuse words hedges metadiscourse nominalization formulaic language corpus"
+      - "AI-generated text style symmetry lists headings em dash contrastive construction empirical linguistic study"
+      - "ChatGPT generated text cliché phrases style markers empirical study not X but Y"
+    domains: [sciencedirect.com, plos.org, pnas.org, academic.oup.com, aclanthology.org, arxiv.org]
+    purpose: "Test candidate patterns without converting them into banned tokens."
+    observed: "Evidence supports feature configurations in particular models and genres; direct evidence for Polish contrastive templates is absent."
+    disposition: "screened"
+
+  - id: Q06
+    date: "2026-08-17"
+    language: [en, pl]
+    query:
+      - "AI-generated text detectors false positives non-native English writers bias peer reviewed study DOI"
+      - "testing AI text detection tools false positives paraphrasing robustness peer reviewed study"
+      - "Can AI-generated text be reliably detected survey detector generalization watermarking peer reviewed"
+      - "human authorship detection text quality not same as writing quality empirical study AI human"
+    domains: [springer.com, cell.com, pmc.ncbi.nlm.nih.gov, arxiv.org, aclanthology.org]
+    purpose: "Separate authorship classification from quality and audit false positives."
+    observed: "Detector performance varies with model, language background, translation, editing and unseen generators; detector output is not a quality label."
+    disposition: "screened"
+
+  - id: Q07
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "long-form text generation book-length coherence consistency style drift LLM empirical study"
+      - "large language models long document generation consistency characters entities narrative planning benchmark"
+      - "long document summarization discourse structure coherence consistency empirical NLP benchmark"
+      - "LLM writing book length generation context window planning style consistency paper"
+    domains: [aclanthology.org, acm.org, arxiv.org]
+    purpose: "Design long-document and book workflow requirements."
+    observed: "Long-context generation degrades and differs by model; hierarchical context and discourse structure remain evaluation problems."
+    disposition: "screened"
+
+  - id: Q08
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "site:unicode.org/reports/tr35 LDML MessageFormat placeholders plural select localization"
+      - "site:unicode-org.github.io/icu/userguide/format_parse/messages ICU MessageFormat placeholders plural"
+      - "site:w3.org WAI WCAG 2.2 understandable predictable input assistance error suggestions language"
+      - "site:iso.org ISO 24495-1 plain language ISO 17100 post-editing translation official"
+    domains: [unicode.org, unicode-org.github.io, w3.org, iso.org]
+    purpose: "Verify normative and authoritative requirements for UI, localization and safe text handling."
+    observed: "MessageFormat protects variables/selectors and locale-sensitive variants; WCAG covers language, unusual words, reading level, errors and consistency; ISO standards distinguish plain language and post-editing."
+    disposition: "screened"
+
+  - id: Q09
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "human AI collaborative writing voice ownership authorship empirical CHI study"
+      - "CoAuthor designing a human-AI collaborative writing dataset 63 writers 1445 sessions"
+      - "Generative AI impact graduate student professional writing productivity quality findings"
+      - "human AI writing control authorship voice HCI study"
+    domains: [dl.acm.org, stanford.edu, springer.com, arxiv.org]
+    purpose: "Connect text revision to agency, ownership, interaction and revision logs."
+    observed: "CoAuthor provides fine-grained interaction data; newer writing studies show productivity gains can coexist with review and ownership risks."
+    disposition: "screened"
+
+  - id: Q10
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "software internationalization bugs placeholders translation strings empirical study localization defects"
+      - "software localization testing placeholder mismatch ICU MessageFormat empirical study"
+      - "semantic-preserving source code transformation refactoring regression testing empirical study"
+      - "AST parsing source code transformation preserves comments strings safety refactoring study"
+    domains: [ieeexplore.ieee.org, acm.org, unibz.it]
+    purpose: "Ground repository safety recommendations in software-engineering evidence."
+    observed: "Refactorings can induce faults; semantic-preserving transformations need naturalness and regression testing. File-format recommendations remain explicit engineering inferences."
+    disposition: "screened"
+
+  - id: Q11
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "ChatGPT proofreading rewriting meaning preservation factuality style transfer empirical study"
+      - "LLM text revision post-editing semantic fidelity factual errors human evaluation study"
+      - "large language model paraphrase rewriting semantic fidelity factuality empirical study"
+      - "machine translation post-editing meaning preservation quality human evaluation study"
+    domains: [aclanthology.org, sciencedirect.com, benjamins.com, arxiv.org, kci.go.kr]
+    purpose: "Test the risk that stylistic revision changes meaning or factuality."
+    observed: "Direct monolingual LLM-revision evidence is thinner than detection literature; translation post-editing provides adjacent evidence, not an identity claim."
+    disposition: "screened"
+
+  - id: Q12
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "Human evaluation of automatically generated text van der Lee DOI"
+      - "ConSiDERS-the-Human ACL DOI"
+      - "A Survey on Evaluation of Natural Language Generation human evaluation fluency DOI"
+      - "plain language summaries systematic review readability accessibility DOI"
+    domains: [research.tilburguniversity.edu, aclanthology.org, pmc.ncbi.nlm.nih.gov, plos.org]
+    purpose: "Verify central review and evaluation records."
+    observed: "Verified DOI and landing pages for van der Lee, ConSiDERS and Stoll et al.; evaluation criteria are task-dependent."
+    disposition: "screened"
+
+  - id: Q13
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "site:aclanthology.org ConSiDERS-the-Human"
+      - "ConSiDERS-the-Human paper"
+      - "ConSiDERS human fluency language model ACL 2024"
+      - "ConSiDERS ACL 2024"
+    domains: [aclanthology.org, arxiv.org]
+    purpose: "Confirm venue, pages, DOI and position-paper status."
+    observed: "ACL landing page: Elangovan et al., 2024 ACL long paper, DOI 10.18653/v1/2024.acl-long.63, pages 1137-1160."
+    disposition: "included"
+
+  - id: Q14
+    date: "2026-08-17"
+    language: [pl, en]
+    query:
+      - "Evaluating Polish Linguistic and Cultural Competency in Large Language Models"
+      - "Is ChatGPT Involved in Texts Polish Ratio authors"
+      - "site:aclanthology.org/2025.poleval-main.2 PolEval 2025 machine generated text"
+      - "O poprawności językowej tekstów generowanych przez SI na przykładzie ChatuGPT correction"
+    domains: [arxiv.org, opi.org.pl, aclanthology.org, ruj.uj.edu.pl, journals.akademicka.pl]
+    purpose: "Verify Polish sources, publication status and direct study scope."
+    observed: "Mazur is a Polish journal article; Dadas et al. has a 2025 Springer chapter; Yang et al. has a 2024 journal version; PolEval is a 2025 ACL workshop record."
+    disposition: "included"
+
+  - id: Q15
+    date: "2026-08-17"
+    language: [pl, en]
+    query:
+      - "Is ChatGPT Involved in Texts APSIPA 2024 DOI"
+      - "Evaluating Polish linguistic and cultural competency DOI Springer 2025"
+      - "site:nowpublishers.com Is ChatGPT Involved in Texts"
+    domains: [nowpublishers.com, apsipa.org, springer.com, opi.org.pl]
+    purpose: "Resolve arXiv-to-published-record relations."
+    observed: "Yang et al.: DOI 10.1561/116.00000250; Dadas et al.: DOI 10.1007/978-3-032-03705-3_6."
+    disposition: "included"
+
+  - id: Q16
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "Polish language large language model evaluation grammar morphology benchmark peer reviewed 2024 DOI"
+      - "Polish LLM benchmark linguistic evaluation grammar vocabulary 2024 paper DOI"
+      - "Polish language model development insights evaluation 2024 DOI"
+      - "morphologically rich languages large language model generation evaluation human fluency study"
+    domains: [aclanthology.org, arxiv.org, journals.agh.edu.pl, pmc.ncbi.nlm.nih.gov]
+    purpose: "Check whether Polish morphology and generation-quality evidence supports direct transfer."
+    observed: "Polish model and benchmark sources mostly assess capability, knowledge or tasks rather than naturalness of free prose; morphology evidence is mainly cross-lingual or preprint."
+    disposition: "screened"
+
+  - id: Q17
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "authorial voice writing definition reader perception empirical study DOI"
+      - "Developing an authorial voice in PhD multilingual student writing findings"
+      - "authentic voice writing style reader perception empirical linguistics study"
+    domains: [sciencedirect.com, journals.sagepub.com, pmc.ncbi.nlm.nih.gov]
+    purpose: "Operationalize authentic voice without treating it as a token list."
+    observed: "Voice is dialogical, situated and variably reconstructed by readers; five-supervisor and mixed-method evidence supports an audit of stance, audience and genre rather than forced informality."
+    disposition: "included"
+
+  - id: Q18
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "Do LLMs write like humans Variation in grammatical and rhetorical styles full text PNAS"
+      - "A corpus-driven comparative analysis of AI in academic discourse findings"
+      - "A large-scale comparison of human-written versus ChatGPT-generated essays findings"
+      - "Can linguists distinguish between ChatGPT/AI and human writing findings"
+    domains: [pmc.ncbi.nlm.nih.gov, pnas.org, sciencedirect.com, digitalcommons.memphis.edu]
+    purpose: "Extract localizers for model, genre, feature and human-rating findings."
+    observed: "Verified PNAS full text, published Scientific Reports full text, Lingua abstract/results and Casal-Kessler abstract."
+    disposition: "included"
+
+  - id: Q19
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "Dense and disconnected Analyzing the sedimented style of ChatGPT-generated text at scale DOI"
+      - "Does ChatGPT argue like students Bundles in argumentative essays DOI"
+      - "ChatGPT-generated text nominalizations discourse markers epistemic markers peer reviewed"
+    domains: [sagepub.com, academic.oup.com, sciencedirect.com, pmc.ncbi.nlm.nih.gov]
+    purpose: "Check bundle, stance, nominalization and discourse-marker evidence."
+    observed: "Jiang and Hyland record verified; the separate Dense and Disconnected record was not required for the final evidence table because its DOI metadata was not resolved in this pass."
+    disposition: "included_partial"
+
+  - id: Q20
+    date: "2026-08-17"
+    language: [en, pl]
+    query:
+      - "AI writing tells ChatGPT words list delve tapestry nuanced social media article"
+      - "internet list AI words phrases ChatGPT generated writing style popular claim"
+      - "AI words delve ChatGPT writing list"
+      - "empirical study AI writing cliches internet discourse ChatGPT words"
+    domains: [reddit.com, news sites, marketing sites, aclanthology.org, arxiv.org]
+    purpose: "Study popular myths as objects of discourse, not as evidence for the taxonomy."
+    observed: "Listicles, SEO pages, Reddit threads and news explainers recycle words and templates; several academic studies support only bounded frequency differences in specified corpora."
+    disposition: "object_of_study_or_excluded"
+
+  - id: Q21
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "When does a Refactoring Induce Bugs DOI"
+      - "An Empirical Study of Refactoring Bavota DOI"
+      - "refactoring induced bugs empirical study 15008 refactorings"
+      - "Towards Reliable Evaluation of Neural Program Repair with Natural Robustness Testing DOI"
+    domains: [ieeexplore.ieee.org, unibz.it, acm.org, arxiv.org]
+    purpose: "Verify engineering evidence for regression and semantic-preservation gates."
+    observed: "Bavota et al. DOI 10.1109/SCAM.2012.20; Le-Cong et al. DOI 10.1145/3716167."
+    disposition: "included"
+
+  - id: Q22
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "site:iso.org/standard ISO 18587:2017 post-editing machine translation"
+      - "site:iso.org/standard/ ISO 24495-3:2026 science writing"
+      - "site:unicode.org/reports/tr35/tr35-73/tr35-messageFormat.html"
+      - "site:w3.org/TR/WCAG22/ Language of Parts Reading Level Error Suggestion"
+    domains: [iso.org, unicode.org, w3.org]
+    purpose: "Refresh current standard status immediately before synthesis."
+    observed: "ISO 18587:2017 remains published but is being revised; ISO 24495-3:2026 is published; UTS #35 MessageFormat 2 is stable reference material; WCAG 2.2 is the W3C recommendation used."
+    disposition: "included"
+
+  - id: Q23
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "arXiv 2603.05890 Lost in Stories authors"
+    domains: [arxiv.org]
+    purpose: "Verify the exact metadata for the emerging long-form consistency benchmark used only as low-certainty supporting evidence."
+    observed: "ArXiv record verified the title, six authors, date 2026-03-06, ConStory-Bench size and stated error tendencies; the work remains a preprint in this evidence set."
+    disposition: "included_with_low_certainty"
+
+  - id: Q24
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "arXiv 2310.15113 Counting the Bugs in ChatGPT's Wugs ACL Anthology"
+    domains: [arxiv.org, aclanthology.org]
+    purpose: "Check whether the morphology record was only a preprint or also had a peer-reviewed conference version."
+    observed: "ACL Anthology record 2023.emnlp-main.401 verified a published EMNLP 2023 version with pages 6508--6524 and the same 13-author work."
+    disposition: "included_as_published_conference_record"
+
+  - id: Q25
+    date: "2026-08-17"
+    language: [pl, en]
+    query:
+      - "10.1007/978-3-032-03705-3_6 authors Grębowiec"
+      - "Evaluating Polish Linguistic and Cultural Competency Dadas Grębowiec authors"
+    domains: [springer.com, arxiv.org, opi.org.pl]
+    purpose: "Resolve the diacritic and final-author metadata for the Polish benchmark chapter."
+    observed: "Publisher-adjacent and author/institution records identify Sławomir Dadas, Małgorzata Grębowiec, Michał Perełkiewicz and Rafał Poświata."
+    disposition: "included_metadata_corrected"
+
+  - id: Q26
+    date: "2026-08-17"
+    language: [en, pl]
+    query:
+      - "arXiv 2410.18565 Bielik 7B authors"
+      - "arXiv 2501.02266 LLMzSzŁ authors"
+      - "arXiv 2303.11156 authors Sadasivan"
+    domains: [arxiv.org, huggingface.co, dblp.org]
+    purpose: "Verify complete author names and diacritics for the four emerging records before final bibliography locking."
+    observed: "Bielik, LLMzSzŁ and detector preprint landing/metadata records resolved the first names and author lists used in SOURCES.bib and APA 7."
+    disposition: "included_metadata_corrected"
+
+  - id: Q27
+    date: "2026-08-17"
+    language: [pl, en]
+    query:
+      - "ACL 2025.poleval-main.2 authors"
+      - "PolEval 2025 Task 1 Śmigiel Przybyła Strebeyko Wróblewska"
+    domains: [aclanthology.org, poleval.pl]
+    purpose: "Verify first names and diacritics for the Polish shared-task record."
+    observed: "ACL metadata identifies Piotr Przybyła, Jakub Strebeyko and Alina Wróblewska; the BibTeX and APA entries were corrected."
+    disposition: "included_metadata_corrected"
+
+  - id: Q28
+    date: "2026-08-17"
+    language: [en]
+    query:
+      - "open https://www.unicode.org/reports/tr35/tr35-73/tr35-messageFormat.html"
+      - "open https://unicode-org.github.io/icu/userguide/format_parse/messages/"
+    domains: [unicode.org, unicode-org.github.io]
+    purpose: "Verify current MessageFormat version/status and avoid inventing a publication year for living documentation."
+    observed: "UTS #35 Part 9 reports Version 46 and stable normative-reference status; ICU documentation is an undated online guide."
+    disposition: "included_normative_technical_reference"
+
+verification:
+  - id: V01
+    date: "2026-08-17"
+    method: "Crossref REST metadata lookup by DOI"
+    records: "PNAS, ACM CSUR, Lingua, Scientific Reports, Research Methods in Applied Linguistics, ACL/INLG records, PLOS One, Patterns, LingVaria, LongGenBench, Applied Linguistics, voice/plain-language studies, software-engineering studies."
+    checked: ["authors", "title", "issued date", "venue", "volume/issue/pages or article number", "DOI"]
+    result: "Metadata aligned with landing pages where available; missing date fields were not treated as missing records."
+
+  - id: V02
+    date: "2026-08-17"
+    method: "ACL Anthology landing pages and exported BibTeX/metadata"
+    records: ["2020.inlg-1.23", "2023.acl-srw.1", "2024.acl-long.63", "2024.findings-emnlp.48", "2025.poleval-main.2"]
+    checked: ["authors", "pages", "venue", "year", "DOI when present", "correction interface/status"]
+    result: "Records verified; PolEval 2025 has no DOI displayed on its ACL page."
+
+  - id: V03
+    date: "2026-08-17"
+    method: "Publisher or institutional landing-page checks"
+    records: ["Mazur 2024", "Weber-Wulff et al. 2023", "Liang et al. 2023", "Dadas et al. 2025", "Gainey et al. 2024 and correction 10.1136/bmjopen-2024-086464corr1", "ISO/Unicode/W3C records"]
+    checked: ["final or published status", "abstract/summary", "persistent URL", "correction/revision notice when exposed"]
+    result: "The Gainey correction was located and recorded; no retraction or other correction notice was located for the remaining checked records. This is a bounded search result, not a guarantee that no future notice can appear."
+
+  - id: V04
+    date: "2026-08-17"
+    method: "Skeptical pass"
+    checks:
+      - "Detector performance was not used as a definition of quality."
+      - "English feature findings were not relabeled as Polish findings."
+      - "Single words and punctuation were not made into forbidden tokens."
+      - "The pattern 'to nie X, to Y' was retained as a hypothesis, not a finding."
+      - "Good human, legal, medical, quoted, mixed-language and placeholder-bearing text is included in the no-change tests."
+      - "Recommendations for parsers, ASTs, generated files and rollback are labeled engineering requirements/inferences."
+    result: "Passed with gaps documented in CLAIM-AUDIT.md and RAPORT.md."
+
+  - id: V05
+    date: "2026-08-17"
+    method: "ArXiv landing-page metadata check"
+    records: ["arXiv:2603.05890"]
+    checked: ["authors", "title", "date", "abstract", "version/status"]
+    result: "Metadata verified; used only for long-form narrative consistency risk, not as settled evidence about Polish prose."
+
+  - id: V06
+    date: "2026-08-17"
+    method: "ACL Anthology landing-page and BibTeX check"
+    records: ["2023.emnlp-main.401"]
+    checked: ["authors", "title", "booktitle", "pages", "year", "publication status"]
+    result: "The morphology study is counted as a published EMNLP 2023 conference record, not as a preprint-only record."
+
+  - id: V07
+    date: "2026-08-17"
+    method: "Publisher-adjacent and institutional metadata comparison"
+    records: ["10.1007/978-3-032-03705-3_6", "arXiv:2503.00995"]
+    checked: ["authors", "diacritics", "title", "DOI", "final-chapter status"]
+    result: "The final chapter and its preprint use the same four authors; the BibTeX record uses the Polish diacritic in Grębowiec and retains the final DOI record."
+
+  - id: V08
+    date: "2026-08-17"
+    method: "ArXiv, DBLP and model-paper landing-page metadata comparison"
+    records: ["arXiv:2410.18565", "arXiv:2501.02266", "arXiv:2303.11156"]
+    checked: ["full author names", "diacritics", "title", "year", "persistent URL"]
+    result: "Emerging-record author metadata corrected; records remain preprints and are not used as settled evidence of Polish naturalness."
+
+  - id: V09
+    date: "2026-08-17"
+    method: "ACL Anthology metadata and BibTeX check"
+    records: ["2025.poleval-main.2"]
+    checked: ["first names", "diacritics", "title", "pages", "year", "persistent URL"]
+    result: "PolEval authors corrected to Piotr Przybyła, Jakub Strebeyko and Alina Wróblewska; no DOI is displayed on the ACL page."
+
+  - id: V10
+    date: "2026-08-17"
+    method: "Direct official documentation check"
+    records: ["Unicode UTS #35 Part 9", "ICU Message Formatting guide"]
+    checked: ["version", "status", "scope", "publication-date availability", "stable URL"]
+    result: "The UTS version/status and absence of a displayed publication year were recorded; ICU remains cited as n.d. documentation with retrieval date."

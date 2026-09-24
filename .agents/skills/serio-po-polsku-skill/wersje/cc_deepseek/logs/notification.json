@@ -1,0 +1,20 @@
+[
+  {
+    "session_id": "224eceb1-e859-49bc-bc1e-7257db6666bb",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill-wersje-cc-deepseek\\224eceb1-e859-49bc-bc1e-7257db6666bb.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje\\cc_deepseek",
+    "prompt_id": "9abb8c73-1f00-4b64-b3eb-6768afa35f45",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "224eceb1-e859-49bc-bc1e-7257db6666bb",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill-wersje-cc-deepseek\\224eceb1-e859-49bc-bc1e-7257db6666bb.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje\\cc_deepseek",
+    "prompt_id": "bb912e6a-0fd2-4cf1-b9c5-5f2075475606",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  }
+]

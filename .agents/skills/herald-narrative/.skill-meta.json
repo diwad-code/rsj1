@@ -1,0 +1,10 @@
+{
+  "name": "herald-narrative",
+  "source": "local",
+  "description": "Kontekst narracyjny gry HERALD — postacie, fabula, zakończenia. Aktywuj gdy piszesz dialogi, eventy, tekst UI, albo pracujesz z narracją.",
+  "categories": [],
+  "installedAt": "2026-05-26T16:05:45.416Z",
+  "relativePath": "herald-narrative",
+  "metadataVersion": 2,
+  "installedVia": "legacy"
+}

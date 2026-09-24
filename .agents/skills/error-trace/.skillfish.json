@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "error-trace",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/error-trace",
+  "branch": "main",
+  "sha": "a9459a7103a797f818a0040dec1adb6761aa5581",
+  "source": "manual"
+}

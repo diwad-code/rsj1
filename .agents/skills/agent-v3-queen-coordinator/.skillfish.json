@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-v3-queen-coordinator",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-v3-queen-coordinator",
+  "branch": "main",
+  "sha": "580bc9ec7af8da9499a602e579b08412a011969f",
+  "source": "manual"
+}

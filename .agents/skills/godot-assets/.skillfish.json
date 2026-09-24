@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "godot-assets",
+  "owner": "hubdev-ai",
+  "repo": "godot-ai-builder",
+  "path": "skills/godot-assets",
+  "branch": "main",
+  "sha": "58e69d414f5d0c8def38a66b9609dd9fe40a9304",
+  "source": "manual"
+}

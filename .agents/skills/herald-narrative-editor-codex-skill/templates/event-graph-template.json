@@ -1,0 +1,76 @@
+{
+  "id": "REPLACE_GRAPH_EVENT_ID",
+  "title": "REPLACE_TITLE",
+  "motyw": "REPLACE_MOTYW",
+  "type": "weighted",
+  "weight": 5,
+  "act": ["II"],
+  "requirements": {
+    "flags": ["REPLACE_REQUIRED_FLAG"],
+    "min_act": "II"
+  },
+  "start_node": "start",
+  "nodes": {
+    "start": {
+      "description": "Pierwszy node ustawia sytuację i napięcie. Nie kończy pointą.",
+      "choices": [
+        {
+          "id": "ask",
+          "text": "Zapytaj krótko",
+          "next_node": "ask_response",
+          "effects": []
+        },
+        {
+          "id": "stay_silent",
+          "text": "Zostań przez chwilę bez słowa",
+          "next_node": "silence_response",
+          "effects": [
+            {
+              "type": "voice",
+              "target": "CISZA",
+              "delta": 1
+            }
+          ]
+        }
+      ]
+    },
+    "ask_response": {
+      "description": "Odpowiedź postaci. Jedna informacja, jeden ruch relacyjny.",
+      "choices": [
+        {
+          "id": "end_ask",
+          "text": "Zakończ rozmowę",
+          "effects": [
+            {
+              "type": "flag",
+              "value": "REPLACE_GRAPH_EVENT_ID_done"
+            },
+            {
+              "type": "flag",
+              "value": "REPLACE_GRAPH_EVENT_ID_followup_done"
+            }
+          ]
+        }
+      ]
+    },
+    "silence_response": {
+      "description": "Cisza ma skutek. Postać reaguje na nią konkretnym gestem albo brakiem gestu.",
+      "choices": [
+        {
+          "id": "end_silence",
+          "text": "Odejdź",
+          "effects": [
+            {
+              "type": "flag",
+              "value": "REPLACE_GRAPH_EVENT_ID_done"
+            },
+            {
+              "type": "flag",
+              "value": "REPLACE_GRAPH_EVENT_ID_followup_done"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

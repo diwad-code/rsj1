@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "v3-security-overhaul",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/v3-security-overhaul",
+  "branch": "main",
+  "sha": "71fc61ece2f0ffb42d7c867c1ae56ae684e9565a",
+  "source": "manual"
+}

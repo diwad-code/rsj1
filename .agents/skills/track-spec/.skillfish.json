@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "track-spec",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/track-spec",
+  "branch": "main",
+  "sha": "3633b75aabe257dbddf4fb4bbf8eae199e13402c",
+  "source": "manual"
+}

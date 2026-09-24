@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "status",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/status",
+  "branch": "main",
+  "sha": "0c3a7f7390f1e6ea689fa21f3e2e91da7e4221aa",
+  "source": "manual"
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "session_id": "224eceb1-e859-49bc-bc1e-7257db6666bb",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill-wersje-cc-deepseek\\224eceb1-e859-49bc-bc1e-7257db6666bb.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje\\cc_deepseek",
+    "hook_event_name": "SessionStart",
+    "source": "startup",
+    "model": "deepseek-v4-pro[1m]"
+  }
+]

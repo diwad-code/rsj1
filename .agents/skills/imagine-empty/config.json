@@ -1,0 +1,45 @@
+{
+  "size": "1024x1024",
+  "aspect_default": "1:1",
+  "allowed_aspects": ["1:1", "3:2"],
+  "format": "png",
+  "transparent_bg_required": true,
+  "output_dir": "./images/empty-states",
+  "presets_catalog": "./data/empty-states.json",
+  "modes": {
+    "both_default": true,
+    "allowed": ["light", "dark", "both"],
+    "separate_generation": true,
+    "color_invert_forbidden": true
+  },
+  "style_presets": {
+    "flat-duotone":  "flat duotone illustration, two-tone fill, clean geometric shapes, transparent background",
+    "line-art":      "minimal line art, uniform stroke weight, no fill, transparent background",
+    "paper-cut":     "paper-cut style with layered silhouettes, subtle drop shadow between layers, transparent background",
+    "iso-geometric": "small isometric scene, clean geometric primitives, single accent color, transparent background"
+  },
+  "negative_prompt_common": "cute mascot, cartoon character, kawaii, chibi, white background, photo of people, text, letters, typography, numbers, logo text, watermark, photorealistic",
+  "alpha_check": {
+    "enabled_default": true,
+    "min_transparent_ratio": 0.25,
+    "fail_action": "warn_and_retry_once"
+  },
+  "preset_pack": {
+    "default_slugs": ["no-result", "error-404", "error-500", "offline", "no-permission", "success", "loading-wait", "onboarding-step"],
+    "concurrency": 1,
+    "require_brand_json": false,
+    "brand_json_keys": ["palette", "line_weight", "corner_style", "tone"]
+  },
+  "style_guardian": {
+    "manifest_keys": ["palette", "line_weight", "corner_style", "tone"],
+    "scope": "per_brand",
+    "cross_brand_leak": false
+  },
+  "svg_export": {
+    "engine": "scripts/lib/vectorize.js",
+    "default": false,
+    "color_preservation_note": "potrace preserves silhouette only; duotone is flattened to single path. Keep originals."
+  },
+  "output_filename": "<preset>_<mode>.png",
+  "tokens_log_filename": "_tokens.json"
+}

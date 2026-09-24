@@ -1,0 +1,40 @@
+[
+  {
+    "session_id": "224eceb1-e859-49bc-bc1e-7257db6666bb",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill-wersje-cc-deepseek\\224eceb1-e859-49bc-bc1e-7257db6666bb.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje\\cc_deepseek",
+    "prompt_id": "9abb8c73-1f00-4b64-b3eb-6768afa35f45",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "max"
+    },
+    "hook_event_name": "Stop",
+    "stop_hook_active": false,
+    "last_assistant_message": "Protok\u0102\u0142\u0139\u201a uzupe\u0139\u201aniony o rejestr zmian. Czekam na wynik ataku sceptycznego na szkic raportu \u00e2\u20ac\u201d po jego otrzymaniu wprowadz\u00c4\u2122 korekty do RAPORT.md (wersja 1.1) i zamkn\u00c4\u2122 bramk\u00c4\u2122 jako\u0139\u203aci.",
+    "background_tasks": [
+      {
+        "id": "a0c9a5792fa5ba318",
+        "type": "subagent",
+        "status": "running",
+        "description": "Sceptyk atakuje szkic raportu",
+        "agent_type": "skeptic"
+      }
+    ],
+    "session_crons": []
+  },
+  {
+    "session_id": "224eceb1-e859-49bc-bc1e-7257db6666bb",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill-wersje-cc-deepseek\\224eceb1-e859-49bc-bc1e-7257db6666bb.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje\\cc_deepseek",
+    "prompt_id": "bb912e6a-0fd2-4cf1-b9c5-5f2075475606",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "max"
+    },
+    "hook_event_name": "Stop",
+    "stop_hook_active": false,
+    "last_assistant_message": "**Rezultat:** zako\u0139\u201eczono niezale\u0139\u013dny research CC DeepSeek z pe\u0139\u201anym pipeline'em (`research-question \u00e2\u2020\u2019 research-protocol \u00e2\u2020\u2019 literature-search \u00e2\u2020\u2019 source-credibility \u00e2\u2020\u2019 citation-verification \u00e2\u2020\u2019 data-extraction \u00e2\u2020\u2019 critical-appraisal \u00e2\u2020\u2019 scientific-consensus \u00e2\u2020\u2019 evidence-synthesis \u00e2\u2020\u2019 research-report`), 6 scout\u0102\u0142w r\u0102\u0142wnoleg\u0139\u201aych na roz\u0139\u201a\u00c4\u2026czne obszary, atak sceptyczny na szkic (werdykt: needs qualification \u00e2\u20ac\u201d rdze\u0139\u201e wytrzyma\u0139\u201a, wprowadzono kalibracje v1.1). Izolacja zachowana \u00e2\u20ac\u201d \u0139\u013daden plik poza `wersje/cc_deepseek/` nie zosta\u0139\u201a zmieniony.\n\n**Utworzone pliki (w `wersje/cc_deepseek/`):**\n- `PROTOKOL.md` \u00e2\u20ac\u201d protok\u0102\u0142\u0139\u201a pre-rejestrowany przed wyszukiwaniem + 5 amendments\n- `SEARCHLOG.yaml` \u00e2\u20ac\u201d pe\u0139\u201any log (~40 wpis\u0102\u0142w S/SC, weryfikacje Crossref, podsumowanie PRISMA)\n- `EVIDENCE-TABLE.md` \u00e2\u20ac\u201d ~95 \u0139\u015fr\u0102\u0142de\u0139\u201a w 9 grupach z dyspozycjami i lokalizatorami\n- `CLAIM-AUDIT.md` \u00e2\u20ac\u201d 15 kart tez (teza\u00e2\u2020\u2019konfudery\u00e2\u2020\u2019warunek falsyfikacji\u00e2\u2020\u2019werdykt) + audyt cytacja\u00e2\u20ac\u201cteza (14 napraw, m.in. b\u0139\u201a\u00c4\u2122dny DOI Liang \u00e2\u20ac\u017eNature\u00e2\u20ac\u0165 \u00e2\u2020\u2019 Nature Human Behaviour; b\u0139\u201a\u00c4\u2122dne imi\u00c4\u2122 autora C5)\n- `RAPORT.md` \u00e2\u20ac\u201d raport po polsku, 15 sekcji + taksonomia wzorc\u0102\u0142w (8 rekord\u0102\u0142w \u0102\u2014 17 p\u0102\u0142l) + plan ewaluacji falsyfikowalnej (T1\u00e2\u20ac\u201cT7 z pre-rejestrowanymi kryteriami pora\u0139\u013dki)\n- `SOURCES.bib` \u00e2\u20ac\u201d ~75 zweryfikowanych rekord\u0102\u0142w BibTeX\n- `EXCLUDED.md` \u00e2\u20ac\u201d lista wyklucze\u0139\u201e z powodami\n\n**Liczby:** ~1350 rekord\u0102\u0142w zidentyfikowanych \u00e2\u2020\u2019 ~105 unikalnych kandydat\u0102\u0142w \u00e2\u2020\u2019 ~95 w bazie dowodowej (w tym 4 dodane przez rewizj\u00c4\u2122 sceptyczn\u00c4\u2026); ~15 \u0139\u015fr\u0102\u0142de\u0139\u201a bezpo\u0139\u203arednio polskich + 5 normatyw\u0102\u0142w PL.\n\n**Najwa\u0139\u013dniejsze tezy odrzucone:**\n1. Stabilna lista \u00e2\u20ac\u017ezwrot\u0102\u0142w AI\u00e2\u20ac\u0165 jako niezawodny marker autorstwa \u00e2\u20ac\u201d odrzucona; istnieje tylko sygna\u0139\u201a populacyjny, dryfuj\u00c4\u2026cy w czasie (Kobak Sci. Adv. 2025; Geng & Trotta 2025); blacklista s\u0139\u201a\u0102\u0142w zabroniona.\n2. \u00e2\u20ac\u017eBurstiness/perplexity odr\u0102\u0142\u0139\u013dnia ludzi od AI\u00e2\u20ac\u0165 \u00e2\u20ac\u201d odrzucona (dyfuzyjne LM na\u0139\u203aladuj\u00c4\u2026 obie statystyki).\n3. Tr\u0102\u0142jdzielno\u0139\u203a\u00c4\u2021, wyliczenia, nag\u0139\u201a\u0102\u0142wki, my\u0139\u203alniki jako b\u0139\u201a\u00c4\u2122dy \u00e2\u20ac\u201d odrzucona; signaling poprawia przyswajanie (d\u00e2\u2030\udc880,60); funkcja, nie forma.\n4. Detektory jako podstawa rozstrzygni\u00c4\u2122\u00c4\u2021 o autorstwie \u00e2\u20ac\u201d odrzucona (FP 61,3% na esejach L2; utrata do 25% na nowych modelach; potwierdzone po polsku w zadaniu \u0139\u0161migiel).\n5. \u00e2\u20ac\u017eTekst AI jest zawsze gorszy\u00e2\u20ac\u0165 i \u00e2\u20ac\u017eka\u0139\u013ddy rozpozna go na oko\u00e2\u20ac\u0165 \u00e2\u20ac\u201d odrzucone (\u0139\u203alepe oceny cz\u00c4\u2122sto wy\u0139\u013dsze dla AI; laicy na poziomie przypadku).\n\n**Pozostawione jako hipotezy (nie regu\u0139\u201ay):** usuwanie \u00e2\u20ac\u017emarker\u0102\u0142w\u00e2\u20ac\u0165 poprawia jako\u0139\u203a\u00c4\u2021 dla czytelnika (brak bada\u0139\u201e; cz\u00c4\u2122\u0139\u203aciowo dowody przeciwne); transfer wszystkich regu\u0139\u201a EN na polszczyzn\u00c4\u2122 (brak eksperyment\u0102\u0142w percepcji PL \u00e2\u20ac\u201d g\u0139\u201a\u0102\u0142wna luka); kara za ujawnienie AI w Polsce; twierdzenie o fa\u0139\u201aszywych pozytywach u os\u0102\u0142b neuror\u0102\u0142\u0139\u013dnorodnych (niezweryfikowane w literaturze \u00e2\u20ac\u201d zg\u0139\u201aoszone jako luka).",
+    "background_tasks": [],
+    "session_crons": []
+  }
+]

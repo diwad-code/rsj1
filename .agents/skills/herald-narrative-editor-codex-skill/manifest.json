@@ -1,0 +1,8 @@
+{
+  "name": "herald-narrative-editor",
+  "created": "2026-06-26",
+  "language": "pl",
+  "purpose": "Codex skill for HERALD narrative writing, editing, event JSON, prolog/torpor redesign and Polish prose QA.",
+  "contains_hidden_system_instructions": false,
+  "source_note": "Compiled from user-provided HERALD docs and openly generated materials in this conversation. Repo source-of-truth should override this snapshot when newer."
+}

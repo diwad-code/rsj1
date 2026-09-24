@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "system-prompts",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/system-prompts",
+  "branch": "main",
+  "sha": "4b56136b29750e1bc15e892181a3bee31b92c3e1",
+  "source": "manual"
+}

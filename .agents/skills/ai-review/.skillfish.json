@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "ai-review",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/ai-review",
+  "branch": "main",
+  "sha": "2a01cca832533a461ada8063212d6f89d22549d3",
+  "source": "manual"
+}

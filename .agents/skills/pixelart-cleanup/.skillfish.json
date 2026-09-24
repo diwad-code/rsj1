@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "pixelart-cleanup",
+  "owner": "freema",
+  "repo": "ai-skills",
+  "path": "skills/pixelart-cleanup",
+  "branch": "main",
+  "sha": "f6330e29524c02bcc29ba5a9c0c008f9bf753ee4",
+  "source": "manual"
+}

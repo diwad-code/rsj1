@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-orchestrator-task",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-orchestrator-task",
+  "branch": "main",
+  "sha": "2032f5a9ed75d506658693aff10a4982c10440cb",
+  "source": "manual"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "design-review",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/design-review",
+  "branch": "main",
+  "sha": "b6b93706af61e9ef34ce89958349f69d825c039a",
+  "source": "manual"
+}

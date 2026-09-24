@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "frontend-security-coder",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/frontend-security-coder",
+  "branch": "main",
+  "sha": "b05705bdda3f1ce795138ae1f58b825a3170801c",
+  "source": "manual"
+}

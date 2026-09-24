@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-code-review-swarm",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-code-review-swarm",
+  "branch": "main",
+  "sha": "e35c399cdcc12342f75ee94fb04afa8737cc126c",
+  "source": "manual"
+}

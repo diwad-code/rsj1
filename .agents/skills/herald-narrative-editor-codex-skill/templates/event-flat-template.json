@@ -1,0 +1,32 @@
+{
+  "id": "REPLACE_EVENT_ID",
+  "title": "REPLACE_TITLE",
+  "motyw": "REPLACE_MOTYW",
+  "type": "weighted",
+  "weight": 5,
+  "act": ["I"],
+  "requirements": {
+    "flags": [],
+    "min_act": "I"
+  },
+  "description": "Wchodzisz do pomieszczenia. Jeden konkretny szczegół ustawia ton sceny. Drugi pokazuje koszt albo relację, bez tłumaczenia graczowi emocji.",
+  "inner_voices": [
+    {
+      "skill": "PAMIĘĆ",
+      "min_value": 3,
+      "text": "Jedno zdanie głosu wewnętrznego. Bez powtarzania opisu."
+    }
+  ],
+  "choices": [
+    {
+      "id": "continue",
+      "text": "Zrób konkretną rzecz",
+      "effects": [
+        {
+          "type": "flag",
+          "value": "REPLACE_EVENT_ID_done"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-v3-integration-architect",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-v3-integration-architect",
+  "branch": "main",
+  "sha": "88c4084f23bffbbc0db9c1542dbd582c65d5eb34",
+  "source": "manual"
+}

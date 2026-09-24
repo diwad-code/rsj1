@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "multi-platform",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/multi-platform",
+  "branch": "main",
+  "sha": "e8deadde276f5c472f8436279ccb6fbaaa0b1852",
+  "source": "manual"
+}

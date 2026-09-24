@@ -1,0 +1,10 @@
+{
+  "name": "herald-events",
+  "source": "local",
+  "description": "Format eventów narracyjnych HERALD — JSON schema, typy efektów, zasady pisania. Aktywuj gdy tworzysz lub edytujesz pliki w data/events/.",
+  "categories": [],
+  "installedAt": "2026-05-26T16:05:45.358Z",
+  "relativePath": "herald-events",
+  "metadataVersion": 2,
+  "installedVia": "legacy"
+}

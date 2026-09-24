@@ -1,0 +1,70 @@
+[
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje\\minimax3",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "sed -n '1,300p' RAPORT.md",
+      "description": "Read minimax3 report part 1"
+    },
+    "tool_use_id": "toolu_01PngobtU9yRLkqic7Y6e2aL"
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje\\minimax3",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "sed -n '300,560p' RAPORT.md",
+      "description": "minimax3 report part 2"
+    },
+    "tool_use_id": "toolu_01X7P3WfZ4j7TiaCmB1Q8yx7"
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje\\minimax3",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "sed -n '560,720p' RAPORT.md",
+      "description": "minimax3 report part 3"
+    },
+    "tool_use_id": "toolu_01GAxnfdBX9NssEuSCRV9D4v"
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje\\minimax3",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd ../cc_deepseek && sed -n '1,140p' PROTOKOL.md",
+      "description": "Read cc_deepseek protocol"
+    },
+    "tool_use_id": "toolu_01A4mspf3w7qrjQGzMKdbbDw"
+  }
+]

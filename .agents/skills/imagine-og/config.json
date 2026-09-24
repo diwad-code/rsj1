@@ -1,0 +1,60 @@
+{
+  "default_platform": "og",
+  "format": "jpeg",
+  "quality": "medium",
+  "output_dir": "./images/og",
+  "safe_zone_ratio": 0.60,
+  "negative_prompt": "text, watermark, logo, typography, letters, characters, readable words, deformed, blurry",
+  "platforms": {
+    "og": {
+      "generate_size": "1536x1024",
+      "final": { "width": 1200, "height": 630 },
+      "crop": "center",
+      "safe_zone": "bottom-20-trim",
+      "file": "og.jpg"
+    },
+    "twitter": {
+      "generate_size": "1536x1024",
+      "final": { "width": 1200, "height": 628 },
+      "crop": "center",
+      "file": "twitter.jpg"
+    },
+    "instagram-post": {
+      "generate_size": "1024x1024",
+      "final": { "width": 1080, "height": 1080 },
+      "crop": "center",
+      "safe_zone": "center-90",
+      "file": "instagram-post.jpg"
+    },
+    "instagram-story": {
+      "generate_size": "1024x1024",
+      "final": { "width": 1080, "height": 1920 },
+      "crop": "extend-vertical",
+      "file": "instagram-story.jpg"
+    },
+    "linkedin": {
+      "generate_size": "1536x1024",
+      "final": { "width": 1200, "height": 627 },
+      "crop": "center",
+      "file": "linkedin.jpg"
+    }
+  },
+  "tag_palette_map": {
+    "튜토리얼": "warm orange gradient, pencil texture",
+    "회고": "muted green, paper texture",
+    "릴리즈": "electric blue, circuit motif subtle",
+    "tutorial": "warm orange gradient, pencil texture",
+    "retro": "muted green, paper texture",
+    "release": "electric blue, circuit motif subtle"
+  },
+  "bulk": {
+    "default_template": "tech-blog",
+    "concurrency": 2,
+    "from_frontmatter_keys": ["title", "tags", "hero_color"]
+  },
+  "limits": {
+    "twitter_max_bytes": 1048576,
+    "instagram_max_bytes": 2097152,
+    "title_min_pt": 28
+  }
+}

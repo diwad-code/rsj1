@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "player-ux",
+  "owner": "rbergman",
+  "repo": "dark-matter-marketplace",
+  "path": "plugins/game-dev/skills/player-ux",
+  "branch": "main",
+  "sha": "21143b4621ce5ae868c1a68d535959b76b4b9f9b",
+  "source": "manual"
+}

@@ -1,0 +1,46 @@
+{
+  "output_dir": "./images/patterns",
+  "format": "png",
+  "allowed_formats": ["png", "webp"],
+  "modes": {
+    "seamless": {
+      "default_tile_size": 1024,
+      "allowed_tile_sizes": [512, 1024, 2048],
+      "heal_module": "scripts/lib/seamless.js",
+      "preview_module": "scripts/lib/seamless.js",
+      "preview_repeat_default": 4,
+      "heal_attempts_max": 3,
+      "after_failure_suggest": "large"
+    },
+    "large": {
+      "default_size": "1920x1080",
+      "allowed_sizes": ["1920x1080", "2560x1440", "3840x2160"],
+      "tiling_required": false
+    }
+  },
+  "prompt": {
+    "seamless_common_suffix": "seamless tiling pattern, uniform distribution, no focal point, consistent density across the image, no borders, no vignette",
+    "large_common_suffix": "wide scenic composition, consistent lighting, high detail across frame"
+  },
+  "negative_prompt_common_seamless": "single subject, focal point, vignette, centered composition, edge darkening, text, watermark, logo",
+  "negative_prompt_common_large": "text, watermark, logo, low resolution artifacts",
+  "variants": {
+    "default_count": 6,
+    "max_count": 10,
+    "hue_degrees_pool": [-60, -30, -15, 15, 30, 60, 90, 120, 180],
+    "generate_via": "local_hue_shift",
+    "ai_call_budget": 1,
+    "note": "Variants are produced by sharp .modulate({ hue }) — no extra AI calls."
+  },
+  "transparent_bg": {
+    "allowed": true,
+    "default": false,
+    "post_process_module": "scripts/lib/bg-remove.js"
+  },
+  "style_guardian": {
+    "optional": true,
+    "scope": "per_series",
+    "manifest_keys": ["palette", "pattern_family", "tile_size"],
+    "cross_series_leak": false
+  }
+}

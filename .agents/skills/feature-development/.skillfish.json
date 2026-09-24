@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "feature-development",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/feature-development",
+  "branch": "main",
+  "sha": "a37183933977011b2a491ae69c9893539a2224af",
+  "source": "manual"
+}

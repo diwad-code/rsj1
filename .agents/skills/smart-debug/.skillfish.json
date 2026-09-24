@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "smart-debug",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/smart-debug",
+  "branch": "main",
+  "sha": "56cfcad1681fc6b9ef8cb621a9e7a838c286d3eb",
+  "source": "manual"
+}

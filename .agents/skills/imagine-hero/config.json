@@ -1,0 +1,37 @@
+{
+  "size": "1536x1024",
+  "aspect": "3:2",
+  "formats": ["png", "webp"],
+  "default_format": "png",
+  "quality": "medium",
+  "output_dir": "./images/landing",
+  "safe_zone_ratio": 0.40,
+  "default_safe_zone": "right",
+  "transparent_bg_default": false,
+  "negative_prompt": "text, letters, typography, UI mockup, watermark, logo text, cluttered, fills entire frame, no margin, photo of person unless requested",
+  "style_presets": {
+    "gradient-abstract": "abstract gradient composition, soft blended color planes, subtle grain texture",
+    "isometric-illust":  "clean isometric illustration, smooth shading, consistent line weight, flat-to-semi-depth style",
+    "3d-glow":           "glossy 3D abstract shapes, soft gradient, subtle volumetric light, floating geometric elements, studio render",
+    "product-shot":      "minimal product shot composition, soft studio lighting, seamless gradient backdrop, shallow depth",
+    "human-device":      "person interacting with a device, warm studio light, natural posture, slightly desaturated tones"
+  },
+  "vibe_map": {
+    "shock":   "high contrast, saturated accent color, bold silhouette",
+    "calm":    "low contrast, soft muted palette, generous negative space",
+    "cozy":    "warm afternoon tones, soft glow, approachable composition",
+    "hype":    "vivid accent pop, diagonal energy lines, strong focal point"
+  },
+  "bg_remove": {
+    "engine": "@imgly/background-removal-node",
+    "suffix": "_cutout.png"
+  },
+  "webp": {
+    "quality": 82,
+    "effort": 4
+  },
+  "quality_checks": {
+    "safe_zone_clutter_max_saturation_mean": 0.35,
+    "ocr_detect_text_warning": true
+  }
+}

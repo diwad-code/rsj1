@@ -1,0 +1,53 @@
+[
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje\\gemini",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd wersje/gemini && cat RAPORT.md && echo \"########## BIB\" && cat SOURCES.bib",
+      "description": "Read gemini report and bib"
+    },
+    "tool_use_id": "toolu_01Ck5h7CF41y9E54oWZa4GYT"
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje\\gemini",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat RAPORT.md && echo \"########## BIB\" && cat SOURCES.bib",
+      "description": "Read gemini report and bib"
+    },
+    "tool_use_id": "toolu_0154Ubch8ej8LA6RK9M5xJzY"
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje\\gemini",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd ../claude && cat PROTOKOL.md SEARCHLOG.yaml",
+      "description": "Read claude protocol and searchlog"
+    },
+    "tool_use_id": "toolu_01B1UZC85auQJnCyVcwetZBb"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "v3-core-implementation",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/v3-core-implementation",
+  "branch": "main",
+  "sha": "736584d966b57242f7c4ef2942b6e8e9b43ccc71",
+  "source": "manual"
+}

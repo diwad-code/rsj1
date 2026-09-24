@@ -1,0 +1,483 @@
+# SYNTEZA-SEARCHLOG.yaml — własny log weryfikacji uzupełniającej
+# Ten log NIE powiela logów pięciu pakietów modeli. Zawiera wyłącznie operacje
+# wykonane przez syntezę 2026-08-29 w celu niezależnego sprawdzenia tez,
+# metadanych i statusu źródeł oraz w celu wypełnienia luk.
+
+question: >
+  Które tezy z pięciu niezależnych pakietów researchowych o poprawianiu polszczyzny
+  generowanej przez AI wytrzymują niezależną weryfikację źródłową; gdzie zgodność
+  modeli jest pozorna (jedno wspólne źródło); jakie dowody przeciwne pominięto.
+date_run: 2026-08-29
+role: "synteza krytyczna; raporty modeli = wejście do audytu, nie źródło naukowe"
+
+tooling:
+  available:
+    - name: "paper-search MCP"
+      endpoints: [search_openalex, search_crossref, search_semantic, search_arxiv, get_crossref_paper_by_doi]
+      status: OK
+    - name: WebFetch
+      status: OK
+    - name: WebSearch
+      status: OK
+  unavailable:
+    - name: "openalex MCP (openalex-mcp-server)"
+      status: "CONNECT_TIMEOUT — użyto search_openalex z paper-search jako zamiennika"
+    - name: "Retraction Watch API"
+      status: "brak dostępu; kontrolę korekt oparto o metadane Crossref i strony wydawców"
+  access_note: >
+    Większość weryfikacji odbyła się na poziomie METADANE + ABSTRAKT. Pełne teksty
+    otwarte sprawdzono tylko tam, gdzie zaznaczono. Nigdzie nie twierdzę,
+    że sprawdziłem fragment, którego nie widziałem.
+
+inclusion:
+  - "recenzowane czasopisma i konferencje (ACL/EMNLP/COLING/NAACL/ICML/ICLR/PNAS/Nature/PLOS/APA)"
+  - "autorytatywne źródła normatywne dla polszczyzny (RJP PAN) i standardy (ISO, W3C, Unicode)"
+  - "preprinty — wyłącznie z jawną flagą i bez samodzielnego uzasadniania mocnej reguły"
+exclusion:
+  - "raporty pięciu modeli jako źródło naukowe (są wejściem do audytu)"
+  - "blogi, listy slów AI, vendorzy detektorów i humanizerów jako dowód"
+  - "cytacje bez rozwiązywalnego DOI lub stabilnego rekordu"
+
+# ---------------------------------------------------------------------------
+# V — weryfikacja rekordów cytowanych przez co najmniej dwa modele
+#     lub nośnych dla rdzenia działania skilla
+# ---------------------------------------------------------------------------
+verification:
+
+  - id: V01
+    target: "Reinhart et al. — Do LLMs write like humans? (PNAS)"
+    method: crossref_doi
+    query: "10.1073/pnas.2422455122"
+    result: >
+      POTWIERDZONE. PNAS 122(8), 2025-02-18. Autorzy: Reinhart, Markey, Laudenbach,
+      Pantusen, Yurko, Weinberg, Brown. Abstrakt potwierdza: różnice utrzymują się przy
+      wzroście skali i są WIĘKSZE dla modeli instruction-tuned niż bazowych.
+    finding: >
+      Lista autorów w MiniMax3 (Reinhart, Strobelt, Huber, Boxall) jest NIEPRAWDZIWA.
+      Codex podaje poprawną.
+    decision: "ACCEPT jako źródło; flaga metadanych dla MiniMax3"
+
+  - id: V02
+    target: "Liang et al. — GPT detectors are biased against non-native English writers"
+    method: crossref_doi
+    query: "10.1016/j.patter.2023.100779"
+    result: "POTWIERDZONE. Patterns 4(7), 100779, 2023-07. 512 cytowań."
+    finding: >
+      MiniMax3 podaje DOI 10.1016/j.patter.2023.100776 — BŁĘDNY.
+      Poprawny: 100779 (zgodnie z Claude, Codex, cc_deepseek).
+    decision: "ACCEPT; korekta DOI"
+
+  - id: V03
+    target: "Kontrdowód dla V02 — bias detektorów wobec osób nie-native"
+    method: crossref_doi + websearch
+    query: "10.1016/j.compedu.2024.105070 ; Jiang Hao Fauss Li 2024 GRE bias non-native"
+    result: >
+      POTWIERDZONE. Jiang, Hao, Fauss & Li (2024), Computers & Education 217, 105070.
+      Duża, dobrze próbkowana baza GRE; detektory oparte na e-rater i perplexity działają
+      bardzo dobrze; badanie wprost pyta o bias i nie replikuje prostej tezy Lianga.
+    decision: "KRYTYCZNY KONTRDOWÓD — teza o biasie wymaga zawężenia"
+
+  - id: V04
+    target: "Drugi kontrdowód — replikacja w języku słowiańskim (czeski)"
+    method: arxiv_search
+    query: "Different Time Different Language Revisiting the Bias Against Non-Native Speakers in GPT Detectors"
+    result: >
+      ZNALEZIONE. Al Ali, Helcl & Libovický (2026), arXiv:2602.05769 [PREPRINT].
+      Abstrakt: perplexity tekstów osób nie-native po CZESKU NIE jest niższa niż native;
+      trzy rodziny detektorów — brak systematycznego biasu; współczesne detektory
+      działają bez opierania się na perplexity.
+    finding: >
+      ŹRÓDŁA NIE ZNALAZŁ ŻADEN Z PIĘCIU PAKIETÓW. Jest to najbliższy dostępny analog
+      dla polskiego (język słowiański, fleksyjny) i podważa transfer tezy Lianga na PL.
+    decision: "WŁĄCZONE jako preprint z jawną flagą; podstawa werdyktu S-D04"
+
+  - id: V05
+    target: "Kobak et al. — excess vocabulary w abstraktach biomedycznych"
+    method: crossref_doi
+    query: "10.1126/sciadv.adt3813"
+    result: >
+      POTWIERDZONE. Science Advances 11(27), 2025-07-04. Ponad 15 mln abstraktów PubMed
+      2010-2024; oszacowanie dolne: co najmniej 13,5 procent abstraktów z 2024
+      przetworzonych z udziałem LLM; do 40 procent w niektórych podkorpusach.
+    decision: "ACCEPT-HIGH jako sygnał POPULACYJNY; REJECT jako marker indywidualny"
+
+  - id: V06
+    target: "Juzek & Ward — źródło nadreprezentacji leksykalnej (delve)"
+    method: webfetch
+    query: "https://aclanthology.org/2025.coling-main.426/"
+    access: "ABSTRAKT + metadane strony ACL"
+    result: >
+      POTWIERDZONE. COLING 2025, s. 6397-6411. 21 słów ogniskowych. Architektura,
+      algorytm i dane treningowe — BRAK dowodu na sprawstwo; RLHF częściowo zgodny
+      z hipotezą, ale nierozstrzygający. Eksploracyjne badanie online: uczestnicy
+      reagują na delve inaczej niż na pozostałe słowa ogniskowe.
+    decision: "ACCEPT-HIGH dla tezy przyczyna nieustalona; reszta HEURISTIC"
+
+  - id: V07
+    target: "Polish Ratio — kontrola fałszywego przyjaciela"
+    method: crossref_doi + arxiv_search
+    query: "10.1561/116.00000250 ; arXiv 2307.11380"
+    result: >
+      POTWIERDZONE I ROZSTRZYGNIĘTE. Yang, Jiang & Li (2024), APSIPA Trans. SIP 13(2).
+      Polish Ratio = miara STOPNIA WYPOLEROWANIA tekstu przez ChatGPT (ang. to polish).
+      Zbiór HPPT = pary tekst ludzki / abstrakt akademicki wypolerowany przez ChatGPT.
+      Język badania: ANGIELSKI. Bez żadnego związku z językiem polskim.
+    finding: >
+      MiniMax3 umieszcza tę pracę w sekcji Polskie benchmarki detekcji (par. 4.3) — BŁĄD.
+      Codex poprawnie opisuje ją w EVIDENCE-TABLE (E17), ale w RAPORCIE par. 4.1
+      (Bezpośrednie źródła polskie) umieszcza ją mylnie.
+    decision: "PUŁAPKA TERMINOLOGICZNA — do jawnego odnotowania w kontrakcie wiedzy"
+
+  - id: V08
+    target: "Mazur — poprawność językowa tekstów ChatGPT po polsku"
+    method: crossref_doi
+    query: "10.12797/LV.19.2024.37.08"
+    result: >
+      POTWIERDZONE. LingVaria 19(1/37), 119-138, 2024. Abstrakt: zadania wzorowane na
+      maturze 2023; najwięcej błędów w tekstach z konstrukcjami złożonymi, gdzie poprawne
+      sformułowanie wymaga całościowej kontroli gramatycznej.
+    decision: "ACCEPT-CONDITIONAL — bezpośredni dowód PL, ograniczony do modeli 2023 i gatunku zadaniowego"
+
+  - id: V09
+    target: "Machura — rzekomy dowód na kalki SVO, błędy rekcji i imiesłowy w polszczyźnie LLM"
+    method: crossref_doi + crossref_search
+    query: "10.31286/JP.104.3.3 (NIE ROZWIĄZUJE SIĘ) ; Machura ChatGPT apelatywizacja Język Polski"
+    result: >
+      Rekord istnieje pod INNYM DOI: 10.31286/jp.00953, Michał Machura,
+      "Jak ChatGPT staje się czatem GPT - o apelatywizacji nazwy popularnego bota",
+      Język Polski, rok rekordu 2023 (nie 2024).
+      Temat artykułu: ONOMASTYKA, apelatywizacja nazwy własnej bota.
+    finding: >
+      NIEZGODNOŚĆ CYTACJA-TEZA w pakiecie Claude. Praca NIE dotyczy schematyzmu
+      składniowego, kalkowania szyku SVO, imiesłowów ani rekcji czasownikowej.
+      Dodatkowo: błędny DOI i błędny rok.
+    decision: "DROP jako podstawa tezy o cechach składniowych polszczyzny LLM"
+
+  - id: V10
+    target: "Wróblewska et al. — rzekomy dowód na gubienie uzgodnień morfosyntaktycznych"
+    method: crossref_search
+    query: "Wróblewska Ogrodniczuk formy równościowe asterysk inkluzywny"
+    result: >
+      Rekord istnieje: 10.31286/jp.001040, "Koncepcja form równościowych z asteryskiem
+      inkluzywnym", Język Polski 2025, nr 2. Autorzy: Wróblewska, Lewandowska,
+      Tomaszewska, Saputa, Ogrodniczuk.
+    finding: >
+      W pakiecie Claude: błędny DOI (10.31286/JP.105.2.7), błędna lista autorów
+      (Głowińska), tytuł rozszerzony o nieistniejący człon "a modele językowe",
+      oraz przypisanie tezy o gubieniu uzgodnień w zdaniach złożonych, której
+      tytuł i zakres pracy nie wspierają.
+    decision: "DOWNGRADE do RESEARCH-ONLY; nie używać jako dowodu na cechy składniowe"
+
+  - id: V11
+    target: "PolEval 2025 Task 1 Śmigiel"
+    method: webfetch
+    query: "https://aclanthology.org/2025.poleval-main.2/"
+    access: "ABSTRAKT + metadane ACL Anthology"
+    result: >
+      POTWIERDZONE. Przybyła, Strebeyko & Wróblewska (2025), Proceedings of the
+      PolEval 2025 Workshop, s. 5-15. Pierwszy shared task detekcji MGT dla polskiego.
+      Trzy tory, siedem systemów. Najlepsze systemy constrained: ponad 90 procent accuracy
+      na głównym zbiorze; SPADEK przy nieznanych domenach i generatorach; w najtrudniejszym
+      scenariuszu metody NIENADZOROWANE przewyższają pozostałe mimo niższej accuracy.
+    decision: "ACCEPT-HIGH — najmocniejszy bezpośredni dowód PL o detekcji"
+
+  - id: V12
+    target: "Rozmiar zbioru Śmigiel — rozbieżność między pakietami"
+    method: webfetch
+    query: "https://huggingface.co/datasets/strebeyko/smigiel"
+    result: >
+      POTWIERDZONE: 64 538 tekstów (train 35 763 ludzkich, test_a 10 343, test_b 18 432);
+      7 modeli bazowych plus 8. dodany w późniejszej fazie (Llama, Mistral, Bielik, PLLuM,
+      Gemma); 6 domen (Wikipedia, literatura/abstrakty/podręczniki, media społecznościowe,
+      recenzje, wiadomości, debaty parlamentarne). Publikacja towarzysząca: LREC 2025.
+    finding: >
+      cc_deepseek podaje 64 538 / 8 LLM / 6 domen — POPRAWNIE.
+      Claude podaje 462 000+ próbek — BŁĘDNIE (ok. 7x zawyżone).
+      Gemini podaje ponad 462K tekstów oraz venue LREC-COLING 2026 — BŁĘDNIE.
+      Dwa pakiety podają tę samą błędną liczbę niezależnie od siebie —
+      przykład POZORNEJ ZGODNOŚCI, która nie jest dowodem.
+    decision: "KOREKTA LICZBOWA; wpis do macierzy zgodności"
+
+  - id: V13
+    target: "Zdolność ludzi do rozpoznawania tekstu LLM — kontrdowód dla ludzie nie potrafią"
+    method: webfetch
+    query: "https://aclanthology.org/2025.acl-long.267/"
+    access: "ABSTRAKT + metadane ACL Anthology"
+    result: >
+      POTWIERDZONE. Russell, Karpinska & Iyyer (2025), ACL 2025, s. 5342-5373.
+      Modele komercyjne (GPT-4o, Claude, o1). Większość głosów pięciu anotatorów
+      ekspertów (częstych użytkowników LLM) myli się na 1 z 300 artykułów.
+      Odporne na parafrazę i humanizację. Eksperci używają zarówno wskazówek
+      leksykalnych (AI vocabulary), jak i zjawisk złożonych: formalności,
+      oryginalności, klarowności.
+    decision: "ACCEPT-HIGH (EN); rozstrzyga rzekomą sprzeczność z Clark et al. 2021"
+
+  - id: V14
+    target: "Wielojęzyczna górna granica ludzkiej detekcji i preferencji"
+    method: arxiv_search + webfetch
+    query: "Is Human-Like Text Liked by Humans Multilingual Human Detection and Preference Against AI"
+    result: >
+      POTWIERDZONE. Wang et al., arXiv:2502.11614v3; pole comments: ACL 2026 Main
+      — praca RECENZOWANA. 16 zbiorów, 9 języków, 9 domen, 19 anotatorów;
+      średnia trafność ludzka 87,6 procent. Główne luki między tekstem ludzkim a maszynowym:
+      KONKRETNOŚĆ, NIUANSE KULTUROWE, RÓŻNORODNOŚĆ. Ludzie nie zawsze preferują
+      tekst ludzki, zwłaszcza gdy nie potrafią wskazać źródła.
+    access_limit: >
+      Lista 9 języków niedostępna na poziomie abstraktu — NIE twierdzę, że polski był w próbie.
+    decision: "ACCEPT-HIGH; najlepsza dostępna operacjonalizacja celu redakcyjnego"
+
+  - id: V15
+    target: "El Attar et al. — 284 cechy, 27 modeli, 10 domen"
+    method: arxiv_search
+    query: "A Systematic Analysis of Linguistic Features in AI-Generated Text Detection Across Domains and Models"
+    result: >
+      POTWIERDZONE. arXiv:2606.04177, 2026-06-02 [PREPRINT]. Autorzy: El Attar, Dönmez,
+      Maurer, Falenska. Abstrakt: wiele wcześniej proponowanych wskaźników okazuje się
+      SILNIE ZALEŻNYCH OD KONTEKSTU; wyjątkiem są miary bogactwa leksykalnego,
+      które pozostają odporne między rodzinami modeli i domenami.
+    decision: >
+      ACCEPT-CONDITIONAL (preprint). Kluczowe dla werdyktu: żadna pojedyncza cecha
+      poza bogactwem leksykalnym nie nadaje się na regułę niezależną od kontekstu.
+
+  - id: V16
+    target: "Rallapalli et al. — gatunek vs model vs strategia dekodowania"
+    method: arxiv_search
+    query: "Interpretable Stylistic Variation in Human and LLM Writing Across Genres Models Decoding Strategies"
+    result: >
+      POTWIERDZONE. arXiv:2604.14111, 2026-04-15 [PREPRINT]. 11 LLM, 8 gatunków,
+      4 strategie dekodowania, cechy Bibera. Wyniki: (1) kluczowe różnicujące cechy są
+      ODPORNE na warunki generacji, w tym na prompt pisz jak człowiek;
+      (2) GATUNEK wpływa na cechy stylistyczne SILNIEJ niż samo źródło;
+      (3) warianty chat modeli klastrują się razem; (4) model ma większy wpływ
+      niż strategia dekodowania.
+    decision: "ACCEPT-CONDITIONAL (preprint); podstawa reguły najpierw gatunek, potem diagnoza"
+
+  - id: V17
+    target: "Baidya et al. — benchmark detektorów, inwersja polaryzacji perplexity"
+    method: arxiv_search
+    query: "Detecting the Machine Comprehensive Benchmark AI-Generated Text Detectors Adversarial"
+    result: >
+      POTWIERDZONE. arXiv:2603.17522, 2026-03-18 [PREPRINT]. HC3 + ELI5. Transformery:
+      niemal doskonałe in-distribution, degradacja pod domain shift; XGBoost stylometryczny
+      dorównuje i jest interpretowalny; LLM-jako-detektor wypada słabo i ma bias
+      tożsamości generator-detektor; metody perplexity wykazują INWERSJĘ POLARYZACJI.
+      Konkluzja: żadna metoda nie generalizuje odpornie między domenami i źródłami.
+    finding: "Gemini przypisuje inwersję polaryzacji innej pracy (arXiv 2505.01800) — błąd atrybucji."
+    decision: "ACCEPT-CONDITIONAL (preprint)"
+
+  - id: V18
+    target: "PROSE — rzekomy dowód na rejestr staccato tłumiący głos autora"
+    method: arxiv_search
+    query: "PROSE Aligning LLMs by Predicting Preferences from User Writing Samples"
+    result: >
+      Praca ISTNIEJE: Aroca-Ouellette, Mackraz, Theobald & Metcalf (2025),
+      arXiv:2505.23815 [PREPRINT]. Treść: metoda wnioskowania OPISU PREFERENCJI
+      użytkownika z próbek jego pisania (iteracyjne dopracowanie plus weryfikacja
+      między próbkami); zadania: streszczanie i pisanie e-maili; poprawa o 33 procent wobec CIPHER.
+    finding: >
+      NIEZGODNOŚĆ CYTACJA-TEZA w pakiecie Gemini. Praca NIE mówi nic o rejestrze staccato,
+      o tłumieniu głosu autora ani o punktowym charakterze edycji ludzkiej chroniącej humor.
+      CLAIM-AUDIT Gemini oznaczył ją EXISTS/SUPPORTS/SCOPE/LIVE — audyt pieczątkowy.
+    decision: >
+      DROP dla tezy o staccato. PRZEKWALIFIKOWANE: użyteczne jako dowód, że KARTĘ GŁOSU
+      da się wyprowadzić z próbek autora i użyć do warunkowania generacji.
+
+  - id: V19
+    target: "Guo, Shang & Clavel — Benchmarking Linguistic Diversity (TACL)"
+    method: crossref_doi + crossref_search
+    query: "10.1162/tacl_a_00714 ; Benchmarking Linguistic Diversity of Large Language Models"
+    result: >
+      DOI PODANY PRZEZ CLAUDE JEST BŁĘDNY. 10.1162/tacl_a_00714 wskazuje na zupełnie
+      inną pracę (Lim, Vylomova, Kemp & Cohn, Predicting Human Translation Difficulty
+      with Neural Machine Translation, TACL 12, 1479-1496).
+      Poprawny rekord: 10.1162/tacl.a.47, Yanzhu Guo, Guokan Shang, Chloé Clavel,
+      TACL 13, 1507-1526, 2025.
+    finding: "cc_deepseek słusznie oznaczył ten DOI jako niepotwierdzony; inicjały autorów u cc_deepseek błędne."
+    decision: "KOREKTA DOI; ACCEPT-CONDITIONAL jako źródło"
+
+  - id: V20
+    target: "Herbold et al. — jakość esejów ChatGPT vs ludzkich"
+    method: crossref_doi
+    query: "10.1038/s41598-023-45644-9"
+    result: >
+      POTWIERDZONE. Scientific Reports 13, 2023. Abstrakt wprost: eseje generowane przez
+      ChatGPT oceniane WYŻEJ pod względem jakości niż eseje ludzkie; styl AI ma inne
+      cechy lingwistyczne.
+    decision: "ACCEPT-HIGH dla tezy jakość nie równa się autorstwo"
+
+  - id: V21
+    target: "Casal, Stewart & Windsor — konstrukcje czasownikowo-argumentowe"
+    method: crossref_doi
+    query: "10.1371/journal.pone.0324611"
+    result: >
+      POTWIERDZONE. PLOS ONE 20(5), e0324611, 2025. Abstrakt zawiera niuans pominięty
+      przez Codex: SZEROKA ZGODNOŚĆ częstości i rozkładu najczęstszych VAC między
+      tekstem ludzkim a AI, przy nieco większym poleganiu AI na najczęstszych
+      konstrukcjach; oraz WZROST PODOBIEŃSTWA do ludzkich wzorców verb-VAC
+      w NOWSZYCH modelach.
+    decision: "ACCEPT-CONDITIONAL; podstawa reguły każda reguła z datą modelu"
+
+  - id: V22
+    target: "Jiang & Hyland — pakiety leksykalne w esejach"
+    method: crossref_doi
+    query: "10.1093/applin/amae052"
+    result: >
+      POTWIERDZONE. Applied Linguistics 46(3), 375-391, 2024. Abstrakt: eseje ChatGPT
+      zawierają NIŻSZĄ częstość pakietów 3-wyrazowych, ale o WYŻSZYM type/token ratio —
+      pakiety bardziej sztywne i formuliczne; więcej pakietów rzeczownikowych
+      i przyimkowych (abstrakcyjny opis, sygnały przejścia i struktury);
+      eseje studentów mają więcej markerów epistemicznych i obecności autorskiej.
+    decision: "ACCEPT-CONDITIONAL (EN, gatunek argumentacyjny)"
+
+  - id: V23
+    target: "Raj, Berg & Seamans — kara za ujawnienie autorstwa AI"
+    method: crossref_doi
+    query: "10.1037/xge0001889"
+    result: "POTWIERDZONE. Journal of Experimental Psychology: General 155(4), 896-915, 2026."
+    decision: "ACCEPT-CONDITIONAL (jeden program badawczy, populacja USA, brak replikacji zewnętrznej)"
+
+  - id: V24
+    target: "Porter & Machery — poezja AI"
+    method: crossref_doi
+    query: "10.1038/s41598-024-76900-1"
+    result: "POTWIERDZONE. Scientific Reports 14, 2024-11-14, 119 cytowań."
+    decision: "ACCEPT-CONDITIONAL (poezja, oceniający nieeksperci)"
+
+  - id: V25
+    target: "Martínez, Mollica & Gibson — trudność języka prawniczego"
+    method: crossref_doi
+    query: "10.1016/j.cognition.2022.105070"
+    result: "POTWIERDZONE. Cognition 224, 105070, 2022."
+    decision: "ACCEPT-HIGH. Podstawa reguły: upraszczaj SKŁADNIĘ, chroń TERMINOLOGIĘ."
+
+  - id: V26
+    target: "Mazurkiewicz-Sokołowska — poprawność językowa produktów ChatGPT (EN/DE/PL)"
+    method: crossref_doi
+    query: "10.1007/978-3-032-06611-4_20"
+    result: >
+      POTWIERDZONE. Jolanta Mazurkiewicz-Sokołowska, "ChatGPT Text Products and Their
+      Linguistic Correctness", Lecture Notes in Networks and Systems, s. 250-265, 2025-10-12.
+      Rozstrzyga niepewność cc_deepseek co do imienia autorki.
+    access_limit: "Brak abstraktu w rekordzie Crossref; nie weryfikowałem treści ustaleń."
+    decision: "ACCEPT-CONDITIONAL jako istnienie rekordu; treść oznaczona ACCESS: METADATA-ONLY"
+
+  - id: V27
+    target: "Sadasivan et al. — status publikacyjny"
+    method: websearch
+    query: "Sadasivan Can AI-Generated Text be Reliably Detected TMLR 2025 openreview"
+    result: >
+      POTWIERDZONE. Praca opublikowana w Transactions on Machine Learning Research
+      w styczniu 2025 (tytuł wersji TMLR: ...Stress Testing AI Text Detectors Under
+      Various Attacks). Analizuje cztery klasy detektorów; wprowadza rekurencyjny
+      atak parafrazujący.
+    finding: "Codex i cc_deepseek opisują ją jako preprint 2023 — nieaktualnie."
+    decision: "UPGRADE do recenzowanej"
+
+  - id: V28
+    target: "Norma ortograficzna PL 2026 — źródło pierwotne"
+    method: "websearch (domeny ograniczone: rjp.pan.pl, pan.pl, sjp.pwn.pl, gov.pl)"
+    query: "Rada Języka Polskiego zasady pisowni i interpunkcji zmiany od 1 stycznia 2026"
+    result: >
+      POTWIERDZONE ŹRÓDŁAMI PIERWOTNYMI. RJP przy Prezydium PAN; dokument
+      "Zasady pisowni i interpunkcji polskiej" od 1 stycznia 2026 jest jedynym
+      obowiązującym źródłem zasad ortograficznych i interpunkcyjnych. Zmiany ogłoszono
+      komunikatem z 10 maja 2024; wersja jednolita jako załącznik do komunikatu 11/25
+      (listopad 2025). Zmiany obejmują m.in. wielką literę w nazwach mieszkańców miast
+      i dzielnic oraz ujednolicenie pisowni łącznej, rozdzielnej i z łącznikiem.
+    urls:
+      - "https://rjp.pan.pl/zmiany-pisowni-2026-3/"
+      - "https://rjp.pan.pl/app/uploads/2025/11/2-zalacznik-do-komunikatu-11-25-wersja-jednolita.pdf"
+      - "https://sjp.pwn.pl/zasady/komunikat-rady-jezyka-polskiego-w-sprawie-zmian-w-ortografii-od-stycznia-2026-r;3866473.html"
+    decision: "ACCEPT-HIGH (NORMATIVE, bezpośrednio polskie, wysoce operacyjne)"
+
+# ---------------------------------------------------------------------------
+# F — zapytania FALSYFIKUJĄCE (osobne od potwierdzających)
+# ---------------------------------------------------------------------------
+falsification:
+
+  - id: F01
+    hypothesis: "Myślnik lub pauza jest udokumentowanym markerem autorstwa LLM."
+    method: arxiv_search
+    query: "em dash punctuation marker AI-generated text frequency ChatGPT corpus analysis"
+    hits_relevant: 0
+    result: >
+      BRAK jakiegokolwiek recenzowanego lub preprintowego badania testującego myślnik
+      jako marker autorstwa po kontroli gatunku. Wyniki dotyczyły interpunkcji mowy
+      zależnej i sygnałów temporalnych — bez związku z tezą.
+    decision: >
+      HIPOTEZA NIEPOTWIERDZONA — werdykt REJECT jest wynikiem własnej kwerendy,
+      a nie przejęciem konkluzji od modeli.
+
+  - id: F02
+    hypothesis: "Konstrukcja to nie X, to Y jest markerem AI (w polskim lub angielskim)."
+    method: "arxiv_search + przegląd V01, V15, V16, V22"
+    result: >
+      Żadne z potwierdzonych badań stylometrycznych (Reinhart 2025; El Attar 2026;
+      Rallapalli 2026; Jiang & Hyland 2024) nie testuje tej konstrukcji jako zmiennej.
+      Brak testu to brak dowodu, a nie dowód nieistnienia.
+    decision: "REJECT jako reguła; RESEARCH-ONLY jako hipoteza do zbadania"
+
+  - id: F03
+    hypothesis: >
+      Istnieje recenzowane, wielogatunkowe korpusowe badanie cech stylistycznych
+      POLSKIEGO tekstu LLM z kontrolą ludzką.
+    method: "openalex_search x2"
+    query: >
+      Polish language ChatGPT generated text stylistic linguistic features corpus study polszczyzna ;
+      teksty generowane sztuczna inteligencja polszczyzna styl analiza językoznawcza
+    hits: "1 + 0"
+    result: >
+      NIE ZNALEZIONO takiego badania. Jedyne trafienie: Marquardt, D. (2024),
+      "Genre Indicators in ChatGPT Chatbot Dialogue Steps", Poznańskie Studia Polonistyczne.
+      Seria Językoznawcza 31(1), 149-166, DOI 10.14746/pspsj.2024.31.1.8 — typologia
+      kroków dialogowych ChatGPT-3.5 i ich cech gatunkowych.
+    access_limit: >
+      Artykuł opublikowany po angielsku w polskim czasopiśmie językoznawczym; z abstraktu
+      NIE wynika, czy analizowany materiał był polskojęzyczny. Oznaczone jako TROP,
+      nie jako dowód. Żaden z pięciu pakietów tego rekordu nie znalazł.
+    decision: "LUKA POTWIERDZONA niezależnie; nowy trop dopisany"
+
+  - id: F04
+    hypothesis: "Usunięcie markerów AI poprawia ocenę tekstu przez czytelnika."
+    method: "przegląd V06, V13, V14, V20, V24"
+    result: >
+      BRAK badania testującego tę hipotezę wprost. Dowody pośrednie działają w OBIE strony:
+      (a) Juzek & Ward 2025 — uczestnicy reagują różnie na różne słowa nadreprezentowane;
+      (b) Herbold 2023 i Porter & Machery 2024 — tekst AI bywa w ocenie ślepej lepszy;
+      (c) Wang et al. 2026 — ludzie nie zawsze preferują tekst ludzki.
+    decision: >
+      RESEARCH-ONLY. To jest niezweryfikowane ZAŁOŻENIE całego przedsięwzięcia
+      i musi być tak nazwane w kontrakcie wiedzy.
+
+  - id: F05
+    hypothesis: "Detektory zawsze zawodzą lub zawsze mają bias — teza uniwersalna."
+    method: "V03 + V04 + V11"
+    result: >
+      OBALONE jako teza uniwersalna. Jiang et al. 2024 (GRE) i Al Ali et al. 2026 (czeski)
+      pokazują brak biasu przy starannym próbkowaniu; PolEval 2025 pokazuje ponad 90 procent
+      accuracy in-domain dla polskiego. Prawdziwa teza jest węższa: skuteczność i bias są
+      funkcją zbioru, generatora, domeny i populacji, więc wynik detektora nie generalizuje.
+    decision: "ZAWĘŻENIE TEZY — patrz S-D04 i S-D07"
+
+counts:
+  verification_operations: 28
+  falsification_queries: 5
+  sources_reverified_independently: 24
+  sources_with_confirmed_metadata: 21
+  metadata_errors_found_in_packages: 6
+  citation_claim_mismatches_found: 3
+  counter_evidence_added_not_found_by_any_package: 3
+  new_polish_leads_added: 1
+
+limitations:
+  - "Poziom dostępu: metadane i abstrakty. Pełnych tekstów za paywallem nie czytałem."
+  - >
+    Brak dostępu do Retraction Watch API; kontrola korekt oparta o Crossref i strony
+    wydawców. Nie znaleziono sygnałów retrakcji dla weryfikowanych rekordów;
+    to nie jest gwarancja.
+  - >
+    Nie podaję pełnych hit-counts baz — interfejsy nie zwracały ich wiarygodnie.
+    Log podaje operacje i decyzje, nie bibliometrię.
+  - >
+    Weryfikowałem tezy nośne dla kontraktu skilla oraz źródła cytowane przez co najmniej
+    dwa modele, a nie wszystkie rekordy z pięciu pakietów.

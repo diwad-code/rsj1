@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "ui-designer",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/ui-designer",
+  "branch": "main",
+  "sha": "0020047dd4c4b0ea5b6bdbcbe1cb174d0ce18618",
+  "source": "manual"
+}

@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "paper-search": {
+      "command": "uvx",
+      "args": ["paper-search-mcp"],
+      "env": {
+        "//": "Optional: set SEMANTIC_SCHOLAR_API_KEY for higher Semantic Scholar rate limits. arXiv, PubMed, bioRxiv, medRxiv and Europe PMC work without any key."
+      }
+    },
+    "openalex": {
+      "command": "npx",
+      "args": ["-y", "@cyanheads/openalex-mcp-server"],
+      "env": {
+        "OPENALEX_MAILTO": "your-email@example.com",
+        "//": "Replace with your own email. OpenAlex needs no key; a contact email in OPENALEX_MAILTO is sent as mailto= to join the faster 'polite pool'. (An API key, if you have one, goes in OPENALEX_API_KEY instead.)"
+      }
+    }
+  }
+}

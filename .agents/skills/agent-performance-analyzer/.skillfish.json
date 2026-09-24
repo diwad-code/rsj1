@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-performance-analyzer",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-performance-analyzer",
+  "branch": "main",
+  "sha": "6cd10d507067481e3eda7589da8e01b42e9f1d99",
+  "source": "manual"
+}

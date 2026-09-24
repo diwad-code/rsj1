@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "color-systems",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/color-systems",
+  "branch": "main",
+  "sha": "fa5b527e5010061c9d49c58953fd5297f1cd9f85",
+  "source": "manual"
+}

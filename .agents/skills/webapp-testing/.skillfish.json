@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "webapp-testing",
+  "owner": "plurigrid",
+  "repo": "asi",
+  "path": "plugins/asi/skills/webapp-testing",
+  "branch": "main",
+  "sha": "070520d8e00802a6ecbb8a4a59cc8923f84d8e46",
+  "source": "manual"
+}

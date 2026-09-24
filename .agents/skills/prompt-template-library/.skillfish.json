@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "prompt-template-library",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/prompt-template-library",
+  "branch": "main",
+  "sha": "83ff8b3de14216e26e4d56bf080a16af2a59de2f",
+  "source": "manual"
+}

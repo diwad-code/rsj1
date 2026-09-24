@@ -1,0 +1,54 @@
+[
+  {
+    "session_id": "5ce9651b-d45a-4bf3-9b26-325f80524702",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\5ce9651b-d45a-4bf3-9b26-325f80524702.jsonl",
+    "cwd": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-012",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\5ce9651b-d45a-4bf3-9b26-325f80524702\\scratchpad",
+    "prompt_id": "b3dee0ad-f9ac-4d8d-958f-a4e0b3a8d326",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd /c/retro-ski-jumping/docs/evidence/PKG-012 && ls -R tmp-browser-h04-v4-r3 tmp-browser-h04-v4-r2 | head -30; find tmp-browser-h04-v4* tmp-browser-h04-v3-r10 -name \"*.md\" | head; ",
+      "description": "Inspect previous E2E output dirs"
+    },
+    "tool_response": {
+      "stdout": "tmp-browser-h04-v4-r2:\nh04-H04-competition-real-r-4f093-ld-version-replay-isolation\nh04-H04-real-keyboard-mamm-ca626-nded-results-and-full-video\nh04-five-hills-keyboard-selection-H04-map-and-training-menu\n\ntmp-browser-h04-v4-r2/h04-H04-competition-real-r-4f093-ld-version-replay-isolation:\nerror-context.md\ntrace.zip\nvideo.webm\n\ntmp-browser-h04-v4-r2/h04-H04-real-keyboard-mamm-ca626-nded-results-and-full-video:\nerror-context.md\nh04-menu-960x540.png\nh04-scene-960x540.png\nh04-technical-960x540.png\ntrace.zip\nvideo.webm\n\ntmp-browser-h04-v4-r2/h04-five-hills-keyboard-selection-H04-map-and-training-menu:\nvideo.webm\n\ntmp-browser-h04-v4-r3:\nh04-H04-real-keyboard-mamm-ca626-nded-results-and-full-video\n\ntmp-browser-h04-v4-r3/h04-H04-real-keyboard-mamm-ca626-nded-results-and-full-video:\nh04-menu-960x540.png\nh04-real-keyboard-jumps-960x540.webm\nh04-result-parallel-960x540.png\nh04-result-telemark-960x540.png\nh04-scene-960x540.png\ntmp-browser-h04-v4/h04-H04-competition-real-r-4f093-ld-version-replay-isolation/error-context.md\ntmp-browser-h04-v4-r2/h04-H04-competition-real-r-4f093-ld-version-replay-isolation/error-context.md\ntmp-browser-h04-v4-r2/h04-H04-real-keyboard-mamm-ca626-nded-results-and-full-video/error-context.md\ntmp-browser-h04-v3-r10/h04-H04-competition-real-r-4f093-ld-version-replay-isolation/error-context.md",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false,
+      "noOutputExpected": false
+    },
+    "tool_use_id": "toolu_01FS2Ai8d5hqGenvk8gKuzWH",
+    "duration_ms": 133
+  },
+  {
+    "session_id": "5ce9651b-d45a-4bf3-9b26-325f80524702",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\5ce9651b-d45a-4bf3-9b26-325f80524702.jsonl",
+    "cwd": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-012",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\5ce9651b-d45a-4bf3-9b26-325f80524702\\scratchpad",
+    "prompt_id": "b3dee0ad-f9ac-4d8d-958f-a4e0b3a8d326",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "for d in tmp-browser-h04-v4 tmp-browser-h04-v4-r2 tmp-browser-h04-v3-r10; do f=$d/h04-H04-competition-real-r-4f093-ld-version-replay-isolation/trace.zip; [ -f $f ] && echo \"== $d\" && unzip -p $f '*.trace' 2>/dev/null | grep -o 'H04 competition AUTO[^\"]*' | head -3; head -c 600 $d/h04-H04-competition-real-r-4f093-ld-version-replay-isolation/error-context.md; echo; done",
+      "description": "Extract competition logs from traces"
+    },
+    "tool_response": {
+      "stdout": "== tmp-browser-h04-v4\nH04 competition AUTO: gate 6, wind -0.74m/s, landed, raw 127.22m, stored 127m, flight 4.75s, events 0 gateOpen; 878 takeoffImpulseStart; 896 takeoffEdge; 1373 landingPrep; 1467 measured; 1467 contact; 2505 finishLine\\n\n# Instructions\n\n- Following Playwright test failed.\n- Explain why, be concise, respect Playwright best practices.\n- Provide a snippet of code with the fix, if possible.\n\n# Test info\n\n- Name: h04.spec.ts >> H04 competition, real result, bots, transactional save/reload, current and old-version replay isolation\n- Location: tests\\browser\\h04.spec.ts:243:1\n\n# Error details\n\n```\nError: expect(received).toBeGreaterThanOrEqual(expected)\n\nExpected: >= 360\nReceived:    254\n```\n\n# Page snapshot\n\n```yaml\n- main \"Retro Ski Jumping\" [ref=e2]:\n  - application \"Retro Ski Jumping \u00e2\u20ac\u201d KWALIFIKACJE. Tabela konku\n== tmp-browser-h04-v4-r2\nH04 competition AUTO: gate 6, wind -0.74m/s, landed, raw 130.34m, stored 130m, flight 4.82s, events 0 gateOpen; 877 takeoffImpulseStart; 896 takeoffEdge; 1306 landingPrep; 1475 measured; 1475 contact; 2473 finishLine\\n\n# Instructions\n\n- Following Playwright test failed.\n- Explain why, be concise, respect Playwright best practices.\n- Provide a snippet of code with the fix, if possible.\n\n# Test info\n\n- Name: h04.spec.ts >> H04 competition, real result, bots, transactional save/reload, current and old-version replay isolation\n- Location: tests\\browser\\h04.spec.ts:243:1\n\n# Error details\n\n```\nError: expect(received).toBeGreaterThanOrEqual(expected)\n\nExpected: >= 360\nReceived:    260\n```\n\n# Page snapshot\n\n```yaml\n- main \"Retro Ski Jumping\" [ref=e2]:\n  - application \"Retro Ski Jumping \u00e2\u20ac\u201d KWALIFIKACJE. Tabela konku\n== tmp-browser-h04-v3-r10\n# Instructions\n\n- Following Playwright test failed.\n- Explain why, be concise, respect Playwright best practices.\n- Provide a snippet of code with the fix, if possible.\n\n# Test info\n\n- Name: h04.spec.ts >> H04 competition, real result, bots, transactional save/reload, current and old-version replay isolation\n- Location: tests\\browser\\h04.spec.ts:242:1\n\n# Error details\n\n```\nError: No KeyR input reached the flight: {\"phase\":\"FallSettled\",\"tick\":1604,\"distance\":73.82656495680531,\"status\":\"fall\",\"heightAboveSurface\":0,\"targetPitchDeg\":5.591666666666703,\"flowDeg\":-37,\"flightSeconds\":2.8833333333333",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false,
+      "noOutputExpected": false
+    },
+    "tool_use_id": "toolu_01B7N8jxJV4TMaucaGsv7jqD",
+    "duration_ms": 307
+  }
+]

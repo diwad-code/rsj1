@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "SKILL",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/SKILL",
+  "branch": "main",
+  "sha": "9bba9ba9db158ce7a052cae8545714840426a499",
+  "source": "manual"
+}

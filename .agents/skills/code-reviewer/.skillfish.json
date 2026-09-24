@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "code-reviewer",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/code-reviewer",
+  "branch": "main",
+  "sha": "a0f485d5ca3fbfca654d4114e5c7625f71a5ff76",
+  "source": "manual"
+}

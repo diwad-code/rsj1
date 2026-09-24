@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "security-auditor",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/security-auditor",
+  "branch": "main",
+  "sha": "17fd496e9c2d5afd20de20d12e3813936d429f4d",
+  "source": "manual"
+}

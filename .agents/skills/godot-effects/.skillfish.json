@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "godot-effects",
+  "owner": "hubdev-ai",
+  "repo": "godot-ai-builder",
+  "path": "skills/godot-effects",
+  "branch": "main",
+  "sha": "e183f41bf46cc9c5148b3d655f1fdcb2947b5d23",
+  "source": "manual"
+}

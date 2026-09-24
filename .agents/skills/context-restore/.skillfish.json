@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "context-restore",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/context-restore",
+  "branch": "main",
+  "sha": "9b7e8c3d6a10b62acc7224004a95d8c302cfefcc",
+  "source": "manual"
+}

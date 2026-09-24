@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-user-tools",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-user-tools",
+  "branch": "main",
+  "sha": "ab292b39bb7c524a9464414126ae10e26bca826d",
+  "source": "manual"
+}

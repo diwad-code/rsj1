@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "pixellab-api",
+  "owner": "freema",
+  "repo": "ai-skills",
+  "path": "skills/pixellab-api",
+  "branch": "main",
+  "sha": "314f4af653baed1ac9e3be96797a8fc69490ac7d",
+  "source": "manual"
+}

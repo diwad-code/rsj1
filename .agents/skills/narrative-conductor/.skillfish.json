@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "narrative-conductor",
+  "owner": "nmarchand73",
+  "repo": "new_tempsx",
+  "path": ".claude/skills/narrative-conductor",
+  "branch": "main",
+  "sha": "ac29842fb44408da7762075aa0ca5073b9187aa8",
+  "source": "manual"
+}

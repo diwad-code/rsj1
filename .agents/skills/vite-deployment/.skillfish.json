@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "vite-deployment",
+  "owner": "ivantorresedge",
+  "repo": "molcajete.ai",
+  "path": "deprecated/tech-stacks/js/react/skills/vite-deployment",
+  "branch": "master",
+  "sha": "92fc8f666d3e77708e50644fd6534eede86a22a8",
+  "source": "manual"
+}

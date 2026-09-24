@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "content-marketer",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/content-marketer",
+  "branch": "main",
+  "sha": "28969d8bc65f9aee9d47cbd10d9a261aab7d37d6",
+  "source": "manual"
+}

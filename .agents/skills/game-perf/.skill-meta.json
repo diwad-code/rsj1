@@ -1,0 +1,11 @@
+{
+  "name": "game-perf",
+  "source": "local",
+  "description": "Per-frame performance and GC-pressure optimization for JS/TS game code.",
+  "whenToUse": "This skill provides patterns for writing allocation-free, GC-friendly code in game loops and hot paths. Apply these patterns proactively when working on any code that executes per-frame.",
+  "categories": [],
+  "installedAt": "2026-05-26T16:05:47.032Z",
+  "relativePath": "game-perf",
+  "metadataVersion": 2,
+  "installedVia": "legacy"
+}

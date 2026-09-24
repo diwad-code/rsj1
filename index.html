@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07111f" />
+    <title>Retro Ski Jumping</title>
+  </head>
+  <body>
+    <main id="game-shell" aria-label="Retro Ski Jumping">
+      <canvas
+        id="game-canvas"
+        width="480"
+        height="270"
+        tabindex="0"
+        role="application"
+        aria-describedby="screen-reader-status"
+      ></canvas>
+      <p id="screen-reader-status" class="sr-only" aria-live="polite"></p>
+    </main>
+    <script type="module" src="/src/app/main.ts"></script>
+  </body>
+</html>

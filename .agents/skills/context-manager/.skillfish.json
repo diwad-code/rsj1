@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "context-manager",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/context-manager",
+  "branch": "main",
+  "sha": "f89858c175dd8158613ac6b9374f45c5252f721e",
+  "source": "manual"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "mobile-security-coder",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/mobile-security-coder",
+  "branch": "main",
+  "sha": "fecc96a2ec7e97fa3981b38aaa5f3c45c472e61e",
+  "source": "manual"
+}

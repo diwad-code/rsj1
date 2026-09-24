@@ -1,0 +1,11 @@
+{
+  "name": "player-ux",
+  "source": "local",
+  "description": "Cognitive load management for players: perception/attention/memory framework, Gestalt principles for game UI, signal-noise discipline on the HUD, onboarding ramp design, and tooltip/affordance pattern...",
+  "whenToUse": "**Purpose:** Apply cognitive science to game interface and interaction design. The player's brain has hard constraints — limited attention, lossy perception, fragile memory. Design with those const...",
+  "categories": [],
+  "installedAt": "2026-05-26T16:05:47.090Z",
+  "relativePath": "player-ux",
+  "metadataVersion": 2,
+  "installedVia": "legacy"
+}

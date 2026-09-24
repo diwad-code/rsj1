@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "v3-mcp-optimization",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/v3-mcp-optimization",
+  "branch": "main",
+  "sha": "eba3af28160cc77026080b815c5240ebc519449e",
+  "source": "manual"
+}

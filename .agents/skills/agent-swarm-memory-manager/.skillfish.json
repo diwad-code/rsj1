@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-swarm-memory-manager",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-swarm-memory-manager",
+  "branch": "main",
+  "sha": "6e6d7d6d1dc21ed4eabcae6e6760e90b4bf7c027",
+  "source": "manual"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "track-plan",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/track-plan",
+  "branch": "main",
+  "sha": "9c9f012142584476bbcaadf6ce0ec8b46c62bfec",
+  "source": "manual"
+}

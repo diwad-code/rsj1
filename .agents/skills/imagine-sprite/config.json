@@ -1,0 +1,70 @@
+{
+  "size": "1024x1024",
+  "format": "png",
+  "allowed_formats": ["png"],
+  "forbidden_formats": ["jpeg", "jpg", "webp"],
+  "output_dir": "./sprites",
+  "frame_sizes": { "min": 16, "max": 128, "default": 32 },
+  "default_frames_per_action": {
+    "idle": 4,
+    "walk": 6,
+    "run": 6,
+    "attack": 5,
+    "hurt": 2,
+    "death": 8,
+    "jump": 4,
+    "cast": 6
+  },
+  "padding": { "min": 0, "max": 2, "default": 0 },
+  "concurrency": 1,
+  "concurrency_override_allowed": false,
+  "reference_chain": {
+    "first_frame_mode": "text_to_image",
+    "subsequent_mode": "image_to_image",
+    "reference": "first_frame",
+    "edit_endpoint": "scripts/edit.js"
+  },
+  "prompt": {
+    "character_card_required": true,
+    "per_frame_delta": "movement delta 1~2 pixels only",
+    "frame_templates": {
+      "idle": [
+        "standing still, slight sway, breathing in",
+        "standing still, slight sway, breathing out, arm lifted 1 pixel",
+        "standing still, slight sway, shoulders settle 1 pixel lower",
+        "standing still, slight sway, breathing in again, near frame 1 but hair tip offset 1 pixel"
+      ],
+      "walk": [
+        "left foot forward, right arm forward",
+        "mid stride, passing pose, both feet near-center",
+        "right foot forward, left arm forward",
+        "mid stride, passing pose, opposite arm forward",
+        "left foot forward again, slight bob down 1 pixel",
+        "mid stride, returning to frame 1 pose"
+      ],
+      "attack": [
+        "wind-up, weapon raised behind",
+        "mid swing, weapon at diagonal",
+        "contact frame, weapon horizontal",
+        "follow-through, weapon at opposite diagonal",
+        "recovery, returning to idle silhouette"
+      ]
+    }
+  },
+  "negative_prompt": "different character, different hairstyle, different outfit, different palette, blurry, smooth shading, anti-aliased, jpeg artifacts, extra limbs",
+  "positive_prompt_suffix": "crisp pixel edges, no anti-aliasing, uniform pixel grid, limited palette, transparent background",
+  "pixelize": {
+    "module": "scripts/lib/pixelize.js",
+    "require_post_snap": true,
+    "reuse_palette_ref": true
+  },
+  "sheet_composer": {
+    "module": "scripts/lib/sheet-composer.js",
+    "direction": "horizontal",
+    "auto_center_crop": true
+  },
+  "retry": {
+    "per_frame_max": 3,
+    "fail_on_budget_exhausted": true
+  }
+}

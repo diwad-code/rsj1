@@ -1,0 +1,22 @@
+execution_date: "2026-08-16"
+databases_searched:
+  - arXiv
+  - ACL Anthology
+  - Semantic Scholar
+  - Hugging Face / PolEval
+agents_used:
+  - id: "64618cb5-065e-4509-9a9a-f44554d71f5b"
+    role: "Detection and False Positives Scout"
+    queries: ["LLM text detection", "false positive rates non-native", "domain shift text detectors", "watermarking LLMs"]
+    results_found: 7
+  - id: "a291853d-8885-4fb3-afcf-3e97109594d2"
+    role: "Human Eval and Editing Scout"
+    queries: ["human vs machine detection LLM text", "LLM human editing impact voice", "genre specific LLM generation", "Rada Języka Polskiego vs NKJP norma"]
+    results_found: 6
+  - id: "9b32508a-12a5-4855-a2aa-657c31017a69"
+    role: "Stylometry and Polish Scout"
+    queries: ["LLM stylometry Polish", "stylistic markers cross-lingual LLM", "entropy machine generated text"]
+    results_found: 6
+total_sources_extracted: 19
+inclusion_criteria: "Peer-reviewed papers, arXiv preprints 2023-2026, empirical data with transparent methodologies."
+exclusion_criteria: "Marketing blogs, non-scientific detection claims, closed-API non-verifiable claims, unverified metrics."

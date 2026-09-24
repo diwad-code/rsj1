@@ -1,0 +1,10 @@
+{
+  "name": "using-superpowers",
+  "source": "local",
+  "description": "Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions",
+  "categories": [],
+  "installedAt": "2026-05-26T16:05:47.654Z",
+  "relativePath": "using-superpowers",
+  "metadataVersion": 2,
+  "installedVia": "legacy"
+}

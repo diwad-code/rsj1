@@ -1,0 +1,141 @@
+[
+  {
+    "session_id": "89452435-c2ab-441d-b3ad-d9c5bf7418ea",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\c--retro-ski-jumping\\89452435-c2ab-441d-b3ad-d9c5bf7418ea.jsonl",
+    "cwd": "c:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\c--retro-ski-jumping\\89452435-c2ab-441d-b3ad-d9c5bf7418ea\\scratchpad",
+    "prompt_id": "766eb288-2217-4ad3-9fc7-287fb707eca2",
+    "hook_event_name": "Notification",
+    "message": "Claude needs your permission to use AskUserQuestion",
+    "notification_type": "permission_prompt"
+  },
+  {
+    "session_id": "89452435-c2ab-441d-b3ad-d9c5bf7418ea",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\c--retro-ski-jumping\\89452435-c2ab-441d-b3ad-d9c5bf7418ea.jsonl",
+    "cwd": "c:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\c--retro-ski-jumping\\89452435-c2ab-441d-b3ad-d9c5bf7418ea\\scratchpad",
+    "prompt_id": "766eb288-2217-4ad3-9fc7-287fb707eca2",
+    "hook_event_name": "Notification",
+    "message": "Claude needs your permission to use AskUserQuestion",
+    "notification_type": "permission_prompt"
+  },
+  {
+    "session_id": "f836db7d-a685-4120-95df-f27e345d9ca1",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1.jsonl",
+    "cwd": "C:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1\\scratchpad",
+    "prompt_id": "f6608d26-02de-49a9-ab80-b9041d4879da",
+    "hook_event_name": "Notification",
+    "message": "Claude needs your permission",
+    "notification_type": "permission_prompt"
+  },
+  {
+    "session_id": "f836db7d-a685-4120-95df-f27e345d9ca1",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1.jsonl",
+    "cwd": "C:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1\\scratchpad",
+    "prompt_id": "f6608d26-02de-49a9-ab80-b9041d4879da",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "f836db7d-a685-4120-95df-f27e345d9ca1",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1.jsonl",
+    "cwd": "C:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1\\scratchpad",
+    "prompt_id": "9e89f094-1d65-4da2-9151-54f617b8a2ff",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "f836db7d-a685-4120-95df-f27e345d9ca1",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1.jsonl",
+    "cwd": "C:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1\\scratchpad",
+    "prompt_id": "6afaddaa-a9af-4799-a593-96a44068f385",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "f836db7d-a685-4120-95df-f27e345d9ca1",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1.jsonl",
+    "cwd": "C:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1\\scratchpad",
+    "prompt_id": "0502edf9-c046-485d-94ac-88c12873e9ba",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "f836db7d-a685-4120-95df-f27e345d9ca1",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1.jsonl",
+    "cwd": "C:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1\\scratchpad",
+    "prompt_id": "e0ba2221-afa5-40e3-b667-c9fbda6ac14b",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "f836db7d-a685-4120-95df-f27e345d9ca1",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1.jsonl",
+    "cwd": "C:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\f836db7d-a685-4120-95df-f27e345d9ca1\\scratchpad",
+    "prompt_id": "8485e366-5117-488e-9500-3bad6e294bfc",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "8daab8eb-1bff-4950-9f92-784d60c26fcc",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\8daab8eb-1bff-4950-9f92-784d60c26fcc.jsonl",
+    "cwd": "C:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\8daab8eb-1bff-4950-9f92-784d60c26fcc\\scratchpad",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "8daab8eb-1bff-4950-9f92-784d60c26fcc",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\8daab8eb-1bff-4950-9f92-784d60c26fcc.jsonl",
+    "cwd": "C:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\8daab8eb-1bff-4950-9f92-784d60c26fcc\\scratchpad",
+    "prompt_id": "6cd03025-f2d8-49e8-bcf1-2a723743f15a",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "8daab8eb-1bff-4950-9f92-784d60c26fcc",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\8daab8eb-1bff-4950-9f92-784d60c26fcc.jsonl",
+    "cwd": "C:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\8daab8eb-1bff-4950-9f92-784d60c26fcc\\scratchpad",
+    "prompt_id": "538bbe5d-02c0-43d3-83c1-f6abab78149a",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "c7271b15-6bbd-4f38-9392-0645a4133cec",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\c7271b15-6bbd-4f38-9392-0645a4133cec.jsonl",
+    "cwd": "C:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\c7271b15-6bbd-4f38-9392-0645a4133cec\\scratchpad",
+    "prompt_id": "f63aa9a6-eeb4-4a67-8c8b-008d58384f32",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "f9f53044-769c-474e-b664-f350dd885650",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\f9f53044-769c-474e-b664-f350dd885650.jsonl",
+    "cwd": "C:\\retro-ski-jumping",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\f9f53044-769c-474e-b664-f350dd885650\\scratchpad",
+    "prompt_id": "2b258856-0a18-4652-9421-17c5ffc0cae4",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  }
+]

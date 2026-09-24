@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "deep-research",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": "plugins/ruflo-goals/skills/deep-research",
+  "branch": "main",
+  "sha": "e46ceff70eb1eb79810dd4e960b0f1580e6c775c",
+  "source": "manual"
+}

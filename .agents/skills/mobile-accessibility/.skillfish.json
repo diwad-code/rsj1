@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "mobile-accessibility",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/mobile-accessibility",
+  "branch": "main",
+  "sha": "f2c339277a8068fe56444bd07b046af46d6e9d9c",
+  "source": "manual"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "deterministic-color-generation",
+  "owner": "plurigrid",
+  "repo": "asi",
+  "path": ".claude/skills/deterministic-color-generation",
+  "branch": "main",
+  "sha": "28d979ea71e6846dcedee15c8e1b8963b29e4bc1",
+  "source": "manual"
+}

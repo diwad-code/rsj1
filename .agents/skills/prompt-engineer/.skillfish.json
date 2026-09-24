@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "prompt-engineer",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/prompt-engineer",
+  "branch": "main",
+  "sha": "43cc608dc931d93127e32c77f486f719f0a35ea1",
+  "source": "manual"
+}

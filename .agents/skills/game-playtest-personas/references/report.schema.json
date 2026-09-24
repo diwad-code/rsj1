@@ -1,0 +1,206 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "game-playtest-personas/report.schema.json",
+  "title": "Per-persona synthetic playtest report",
+  "description": "Strict structural contract consumed by scripts/aggregate_feedback.py. The x-runtime-validations list records semantic invariants that JSON Schema draft-07 cannot fully express.",
+  "$comment": "Run scripts/aggregate_feedback.py for complete validation, including unique gate IDs.",
+  "x-runtime-validations": [
+    "persona_id must map to the exact canonical persona_name",
+    "session_was imagined cannot contain a confirmed bug",
+    "gate_answers IDs must be unique within a report",
+    "cross-report gate IDs must use identical question text"
+  ],
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "persona_id", "persona_name", "artifact", "input_fidelity", "session_was",
+    "first_impression_score", "keep_play_score", "emotional_arc",
+    "friction_points", "delights", "quit_trigger", "monetization", "bugs",
+    "gate_answers", "feature_requests", "blind_spots", "one_line_verdict",
+    "confidence_overall"
+  ],
+  "allOf": [
+    {
+      "if": {"properties": {"persona_id": {"const": "p01"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Zoe"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p02"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Marcus"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p03"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Grace"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p04"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Diego"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p05"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Priya"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p06"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Alex"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p07"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Kenji"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p08"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Barbara"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p09"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Tom"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p10"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Lucia"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p11"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Sam"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p12"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Nadia"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p13"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Robert"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p14"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Mei"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p15"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Chris"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p16"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Ahmed"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p17"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Emma"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p18"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Viktor"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p19"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "Hana"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"persona_id": {"const": "p20"}}, "required": ["persona_id"]},
+      "then": {"properties": {"persona_name": {"const": "George"}}, "required": ["persona_name"]}
+    },
+    {
+      "if": {"properties": {"session_was": {"const": "imagined"}}, "required": ["session_was"]},
+      "then": {"properties": {"bugs": {"items": {"properties": {"confidence": {"enum": ["likely", "possible", "guess"]}}}}}}
+    }
+  ],
+  "properties": {
+    "persona_id": {
+      "type": "string",
+      "pattern": "^p(0[1-9]|1[0-9]|20)$"
+    },
+    "persona_name": { "type": "string", "enum": ["Zoe", "Marcus", "Grace", "Diego", "Priya", "Alex", "Kenji", "Barbara", "Tom", "Lucia", "Sam", "Nadia", "Robert", "Mei", "Chris", "Ahmed", "Emma", "Viktor", "Hana", "George"] },
+    "artifact": { "type": "string", "pattern": ".*\\S.*" },
+    "input_fidelity": {
+      "type": "string",
+      "enum": ["build", "video", "screenshots", "description", "gdd", "concept"]
+    },
+    "session_was": { "type": "string", "enum": ["driven", "imagined"] },
+    "first_impression_score": { "type": "number", "minimum": 0, "maximum": 10 },
+    "keep_play_score": { "type": "number", "minimum": 0, "maximum": 10 },
+    "emotional_arc": { "type": "array", "items": { "type": "string" } },
+    "friction_points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["where", "what", "severity"],
+        "properties": {
+          "where": { "type": "string", "pattern": ".*\\S.*" },
+          "what": { "type": "string", "pattern": ".*\\S.*" },
+          "severity": { "type": "string", "enum": ["blocker", "major", "minor", "nitpick"] },
+          "why_it_mattered_to_me": { "type": "string" },
+          "suggestion": { "type": "string" }
+        }
+      }
+    },
+    "delights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["where", "what"],
+        "properties": {
+          "where": { "type": "string", "pattern": ".*\\S.*" },
+          "what": { "type": "string", "pattern": ".*\\S.*" }
+        }
+      }
+    },
+    "quit_trigger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fired", "what", "at"],
+      "properties": {
+        "fired": { "type": "boolean" },
+        "what": { "type": "string" },
+        "at": { "type": "string" }
+      }
+    },
+    "monetization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relevant", "would_pay", "when", "amount", "felt_unfair"],
+      "properties": {
+        "relevant": { "type": "boolean" },
+        "would_pay": { "type": "string", "enum": ["yes", "no", "maybe"] },
+        "when": { "type": "string" },
+        "amount": { "type": "string" },
+        "felt_unfair": { "type": "string" }
+      }
+    },
+    "bugs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["what", "confidence"],
+        "properties": {
+          "what": { "type": "string", "pattern": ".*\\S.*" },
+          "where": { "type": "string" },
+          "confidence": { "type": "string", "enum": ["confirmed", "likely", "possible", "guess"] }
+        }
+      }
+    },
+    "gate_answers": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "question", "verdict"],
+        "properties": {
+          "id": { "oneOf": [{ "type": "integer", "minimum": 1 }, { "type": "string", "pattern": "^(Q)?[1-9][0-9]*$" }] },
+          "question": { "type": "string", "pattern": ".*\\S.*" },
+          "verdict": { "type": "string", "enum": ["pass", "fail", "partial"] },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "details": { "type": "string" }
+        }
+      }
+    },
+    "feature_requests": { "type": "array", "items": { "type": "string" } },
+    "blind_spots": { "type": "array", "items": { "type": "string" } },
+    "one_line_verdict": { "type": "string", "pattern": ".*\\S.*" },
+    "confidence_overall": { "type": "string", "enum": ["high", "medium", "low"] }
+  }
+}

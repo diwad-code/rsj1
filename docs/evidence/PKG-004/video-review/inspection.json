@@ -1,0 +1,14 @@
+{
+  "durationSeconds": 16.96,
+  "sampledSeconds": [
+    0.25,
+    2.615714285714286,
+    4.981428571428572,
+    7.347142857142858,
+    9.712857142857144,
+    12.078571428571431,
+    14.444285714285716,
+    16.810000000000002
+  ],
+  "observation": "8 równych próbek obejrzanych: belka, rozbieg, próg, lot, lądowanie/odjazd i ekran wyniku; kamera zachowuje skoczka i linie."
+}

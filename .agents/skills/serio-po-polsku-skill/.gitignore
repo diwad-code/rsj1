@@ -1,0 +1,16 @@
+# Local editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local, non-shared Claude settings
+.claude/settings.local.json
+
+# Downloaded papers / scratch (keep the folder, ignore bulky contents)
+research/downloads/
+*.pdf
+
+# Python / node tooling for MCP servers
+.venv/
+node_modules/
+__pycache__/

@@ -1,0 +1,11 @@
+{
+  "name": "psych-motivation",
+  "source": "local",
+  "description": "Motivation and engagement validation for game development.",
+  "whenToUse": "Validates that game design sustains intrinsic motivation and maintains player engagement through evidence-based frameworks.",
+  "categories": [],
+  "installedAt": "2026-05-26T16:05:47.123Z",
+  "relativePath": "psych-motivation",
+  "metadataVersion": 2,
+  "installedVia": "legacy"
+}

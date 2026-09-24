@@ -1,0 +1,50 @@
+{
+  "measuredAt": "2026-09-16T12:17:34.021Z",
+  "method": "Playwright Chromium headed, requestAnimationFrame intervals, 60 s, Canvas2D 960x540, snow ON, live seeded wind",
+  "browserVersion": "153.0.8010.12",
+  "host": {
+    "platform": "win32",
+    "release": "10.0.26200",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-1235U",
+    "logicalCpuCount": 12,
+    "speedMHz": 2496,
+    "totalMemoryBytes": 8245334016,
+    "freeMemoryBytesAtReport": 875012096
+  },
+  "browser": {
+    "durationMs": 60022.10000002384,
+    "frameCount": 3602,
+    "p50Ms": 16.69999999999709,
+    "p95Ms": 16.900000000001455,
+    "p99Ms": 17,
+    "maximumMs": 20.399999999999864,
+    "longFramesOver50Ms": 0,
+    "longTaskCount": 0,
+    "longestTaskMs": 0,
+    "startHeapBytes": 3363736,
+    "endHeapBytes": 14738512,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 12,
+    "deviceMemoryGiB": 8,
+    "devicePixelRatio": 1.0000000149011612,
+    "viewport": {
+      "width": 960,
+      "height": 540
+    },
+    "gpuVendor": "Google Inc. (Intel)",
+    "gpuRenderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x000046A8) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "scene": {
+    "canvas": "Canvas2D 960x540",
+    "snowEnabled": true,
+    "windStartMetersPerSecond": 0.197533942746969,
+    "windEndMetersPerSecond": 0.4417613315490825,
+    "simulationTicks": 7207
+  },
+  "longFrameDefinition": "> 50 ms requestAnimationFrame interval",
+  "releaseFrameBudget": {
+    "p95Ms": 20,
+    "p99Ms": 25,
+    "maximumLongFrameRate": 0.005
+  }
+}

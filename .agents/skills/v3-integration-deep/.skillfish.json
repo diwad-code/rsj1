@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "v3-integration-deep",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/v3-integration-deep",
+  "branch": "main",
+  "sha": "da1cbaae3b88ca19e05c57187d8bb3618b92626f",
+  "source": "manual"
+}

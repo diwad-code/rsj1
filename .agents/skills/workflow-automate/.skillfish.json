@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "workflow-automate",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/workflow-automate",
+  "branch": "main",
+  "sha": "df30618fd03f632d0df4406d86461ad882fd6e0b",
+  "source": "manual"
+}

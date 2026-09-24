@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "chain-of-thought",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/chain-of-thought",
+  "branch": "main",
+  "sha": "d8b94a2f4a92782550e90b17df8f310ba62b6045",
+  "source": "manual"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-coder",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-coder",
+  "branch": "main",
+  "sha": "db21cdd3bba640f2d0ebebf86a326b7d76d473d8",
+  "source": "manual"
+}

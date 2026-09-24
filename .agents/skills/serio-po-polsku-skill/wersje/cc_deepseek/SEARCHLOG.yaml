@@ -1,0 +1,547 @@
+# SEARCHLOG.yaml — pełny log wyszukiwania
+# Przegląd: „Język AI" a polszczyzna — CC DeepSeek, izolacja wersje/cc_deepseek/
+# Data rejestracji protokołu: 2026-08-17
+# Format wpisu: id, agent, database, query, type [confirm|falsify], date, hits, kept, notes
+
+metadata:
+  review: "jezyk-ai-a-polszczyzna-cc-deepseek"
+  protocol_file: "PROTOKOL.md"
+  searchers: ["orchestrator", "scout-detection", "scout-perception", "scout-stylometry",
+              "scout-polish", "scout-genre", "scout-falsification"]
+  date_range: "2018-01-01 – 2026-08-17"
+  languages: ["en", "pl"]
+
+searches:
+  - id: S01
+    agent: orchestrator
+    database: "OpenAlex MCP (openalex_search_entities, works)"
+    query: "AI-generated text detection survey"
+    type: confirm
+    date: 2026-08-17
+    hits: 181681
+    kept: 0
+    notes: "Trafność słaba; zapytanie bez filtrów za szerokie. Przejście na title.search."
+
+  - id: S02
+    agent: orchestrator
+    database: "OpenAlex MCP (works)"
+    query: "human perception of AI-generated text naturalness"
+    type: confirm
+    date: 2026-08-17
+    hits: 5784
+    kept: 4
+    notes: "Zachowane: van der Lee et al. 2020 (10.1016/j.csl.2020.101151) — wytyczne
+      oceny ludzkiej tekstu generowanego; Pataranutaporn et al. 2023
+      (10.1038/s42256-023-00720-7) — priming przekonań o AI zmienia percepcję;
+      Magni et al. 2023 (10.1007/s10869-023-09910-x) — uprzedzenie wobec
+      kreatywności AI; Voice in Human-Agent Interaction (10.1145/3386867, survey)."
+
+  - id: S03
+    agent: orchestrator
+    database: "OpenAlex MCP (works)"
+    query: "ChatGPT academic writing vocabulary overuse"
+    type: confirm
+    date: 2026-08-17
+    hits: 819
+    kept: 1
+    notes: "Liang et al. 2023 Patterns (10.1016/j.patter.2023.100779) — detektory
+      GPT uprzedzone wobec piszących po angielsku jako nierodzimym. Kluczowy
+      dowód falsyfikujący dla tezy o niezawodnych markerach."
+
+  - id: S04
+    agent: orchestrator
+    database: "OpenAlex MCP (works)"
+    query: "machine translation Polish quality evaluation"
+    type: confirm
+    date: 2026-08-17
+    hits: 49491
+    kept: 0
+    notes: "Zbyt szerokie. Polskie wyszukiwania przekazane scoutowi polskiemu;
+      własne doprecyzowanie w S08+."
+
+  - id: S05
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "AI-generated text detection"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 332
+    kept: 5
+    notes: "Weber-Wulff et al. 2023 (10.1007/s40979-023-00146-z) — testy narzędzi
+      detekcji wypadają słabo (dowód falsyfikujący); Elkhatat et al. 2023
+      (10.1007/s40979-023-00140-5) — skuteczność narzędzi detekcji;
+      Sadasivan et al. 2023 arXiv:2304.04736 (preprint) — teoretyczne granice
+      detekcji; Lu et al. 2023 arXiv:2305.10847 (preprint) — unikanie detekcji
+      przez prompting; SeqXGPT 2023 (10.18653/v1/2023.emnlp-main.73)."
+
+  - id: S06
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "detecting machine-generated text"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 64
+    kept: 2
+    notes: "Dugan et al. 2023 AAAI (10.1609/aaai.v37i11.26501) — ludzie słabo
+      rozpoznają granice tekstu ludzkiego i maszynowego; Threads of Subtlety
+      2024 ACL (10.18653/v1/2024.acl-long.298) — motywy dyskursu jako cecha."
+
+  - id: S07
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "Polish word order"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 36
+    kept: 3
+    notes: "Siewierska 1993 (10.1017/s0022226700000323) — waga syntaktyczna vs
+      struktura informacyjna w szyku polskim (landmark); Combined regressive
+      cross-linguistic influence 2025 (10.1080/14790718.2025.2570201);
+      Word Order in Complex Verb Phrases in Heritage Polish 2021
+      (10.3390/languages6020070)."
+
+  - id: S08
+    agent: orchestrator
+    database: "Semantic Scholar (paper-search MCP, search_semantic)"
+    query: "human perception of AI-generated text naturalness experiment"
+    type: confirm
+    date: 2026-08-17
+    hits: 0
+    kept: 0
+    notes: "Pusta odpowiedź API. Retry w S11; zapasowo OpenAlex title.search."
+
+  - id: S09
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "human heuristics AI-generated language"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 2
+    kept: 1
+    notes: "Jakesch et al. 2023 PNAS — DOI wg OpenAlex 10.1073/pnas.2208839120
+      (rozbieżność z wersją preprint; weryfikacja przez Crossref w S20)."
+
+  - id: S10
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "AI-generated poetry"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 49
+    kept: 2
+    notes: "Porter & Machery 2024 Sci Rep (10.1038/s41598-024-76900-1) — wiersze AI
+      nieodróżnialne i oceniane wyżej; Ueda et al. 2022 CHB
+      (10.1016/j.chb.2022.107502) — haiku, współpraca człowiek-AI."
+
+  - id: S11
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "excess vocabulary"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 8
+    kept: 2
+    notes: "Kobak et al. 2025 Science Advances (10.1126/sciadv.adt3813) — wersja
+      recenzowana pracy o nadmiarowym słownictwie; preprint arXiv:2406.07016.
+      Dodatkowo: krytyka metody (marker-lexicon choice drives severalfold
+      variation, Zenodo 10.5281/zenodo.21310387, 2026, preprint) — wrażliwość
+      estymatora na wybór listy słów."
+
+  - id: S12
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "TuringBench"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 2
+    kept: 1
+    notes: "Uchendu et al. 2021 Findings EMNLP (10.18653/v1/2021.findings-emnlp.172)."
+
+  - id: S13
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "All That''s Human Is Not Gold"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 1
+    kept: 1
+    notes: "Clark et al. 2021 — tylko arXiv:2107.00061 w OpenAlex; wersja ACL 2021
+      long do potwierdzenia (10.18653/v1/2021.acl-long.565) w S20."
+
+  - id: S14
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "cannot differentiate AI-generated from human-written poetry"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 4
+    kept: 1
+    notes: "Köbis & Mossink 2021 Computers in Human Behavior
+      (10.1016/j.chb.2020.106553) — ludzie nie odróżniają wierszy AI."
+
+  - id: S15
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "Paraphrasing evades detectors"}'
+    type: falsify
+    date: 2026-08-17
+    hits: 2
+    kept: 1
+    notes: "Krishna et al. NeurIPS 2023 (arXiv:2303.13408; DOI 10.52202/075280-1195)
+      — parafraza DIPPER obniża detekcję DetectGPT z 70,3% do 4,6% przy FPR 1%."
+
+  - id: S16
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "neural text degeneration"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 8
+    kept: 1
+    notes: "Holtzman et al. 2020 ICLR (arXiv:1904.09751) — degeneracja powtórzeniowa
+      próbkowania max-likelihood; kontekst dla tezy o powtarzalności LLM."
+
+  - id: S17
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "polszczyzna"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 149
+    kept: 0
+    notes: "Głównie dialektologia historyczna — poza zakresem. Materiał normatywny
+      PL do uzupełnienia przez scout-polish."
+
+  - id: S18
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "GLTR statistical detection"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 1
+    kept: 1
+    notes: "Gehrmann et al. 2019 ACL demo (10.18653/v1/p19-3019) — wizualizacja
+      statystyk słów do oceny 'generowalności' tekstu."
+
+  - id: S19
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "translationese"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 216
+    kept: 3
+    notes: "KONFUNDER TŁUMACZENIOWY: Volansky et al. 2013 DSH (10.1093/llc/fqt031)
+      — cechy translationese wykrywalne ML; Baroni & Bernardini 2005 LLC
+      (10.1093/llc/fqi039) — ML odróżnia tekst tłumaczony od oryginalnego;
+      Koppel & Ordan 2011 ACL — dialekty translationese. Translationese jest
+      zjawiskiem realnym i mierzalnym — wspiera tezę o konfunderze."
+
+  - id: S20
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "Monitoring AI-Modified Content"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 1
+    kept: 1
+    notes: "Liang et al. 2024 ICML (arXiv:2403.07183) — przesunięcia częstości słów
+      (np. 'delve') w recenzjach peer-review po premierze ChatGPT; wersja ICML
+      2024 do potwierdzenia (PMLR)."
+
+  - id: S21
+    agent: orchestrator
+    database: "OpenAlex MCP (works, filters)"
+    query: '{"title.search": "ChatGPT", "language": "pl"}'
+    type: confirm
+    date: 2026-08-17
+    hits: 34
+    kept: 0
+    notes: "Polskojęzyczne prace o ChatGPT: egzaminy medyczne, edukacja — żadna
+      nie bada stylu polszczyzny LLM. Dowód na szczupłość materiału PL
+      bezpośredniego (raport musi to ujawnić)."
+
+# --- Scout: falsyfikacja (zakończony 2026-08-17) ---
+  - id: SC6-01
+    agent: scout-falsification
+    database: "WebSearch (domeny naukowe) x11 zapytań"
+    query: "AI detector false positive non-native; Weber-Wulff 2023; Sadasivan
+      impossibility; Krishna paraphrasing; OpenAI classifier shutdown; humans
+      cannot detect AI text; neurodivergent FP; ChatGPT overused words;
+      burstiness/perplexity; Liang 2023 DOI; accuracy declines newer models;
+      weryfikacje DOI"
+    type: falsify
+    date: 2026-08-17
+    hits: ~110
+    kept: 15
+    notes: "Kluczowe: Liang 2023 Patterns (61,3% FP na esejach TOEFL);
+      Weber-Wulff 2023 (14 narzędzi 'neither accurate nor reliable');
+      Sadasivan TMLR 2025 (granica teoretyczna AUROC); Krishna NeurIPS 2023
+      (parafraza → 4,6%); Porter & Machery 2024; Sears & Weisberg 2026 JDM
+      (N=2587, trafność ~40–52%); Tarım & Onan 2025 arXiv:2507.10475 (preprint
+      — dyfuzyjne LM naśladują perplexity/burstiness ludzi); EvoBench Findings
+      ACL 2025 (10.18653/v1/2025.findings-acl.754) — detektory tracą do 25%;
+      PLOS ONE 2025 stylometria japońska (10.1371/journal.pone.0335369);
+      Bordalejo 2025 Int J Educ Technol High Educ (10.1186/s41239-025-00505-5)
+      — FP od narzędzi poprawiających pisanie; WebSci 2026
+      (10.1145/3795513.3807431) — ludzie na poziomie szansy dla 6 modeli;
+      Kobak 2024 arXiv:2406.07016 — nadmiarowe słownictwo jako sygnał
+      populacyjny; folklor 'zwrotów AI' (Verge/Graham/listy słów) — wyłącznie
+      OBJECT-OF-STUDY. Wycofanie klasyfikatora OpenAI (2023-07) jako fakt
+      pierwotny. Szczegóły kandydatów w raporcie scouta — włączone do
+      EVIDENCE-TABLE."
+
+# --- Scout: detekcja i cechy (zakończony 2026-08-17) ---
+  - id: SC1-01
+    agent: scout-detection
+    database: "WebSearch x20 zapytań + WebFetch ACL Anthology"
+    query: "surveys detekcji; GLTR; DetectGPT; TURINGBENCH; RAID; SemEval-2024
+      Task 8; Sadasivan; Weber-Wulff; Liang Patterns; Krishna; Tang CACM;
+      Binoculars; cechy lingwistyczne; nadreprezentacja słów; PolEval/ŚMIGIEL"
+    type: confirm
+    date: 2026-08-17
+    hits: ~200
+    kept: 15
+    notes: "Kotwice: Yang et al. 2024 Findings EMNLP (10.18653/v1/2024.findings-emnlp.572);
+      Wu et al. 2025 Comput. Linguistics (10.1162/coli_a_00549); Fraser et al.
+      2025 JAIR (10.1613/jair.1.16665) — ludzie ~53% na sparafrazowanym GPT-3;
+      Tang et al. 2024 CACM (10.1145/3624725) — cechy lingwistyczne jako słabe
+      sygnały; GLTR ACL 2019 (10.18653/v1/P19-3019) — ludzie 54,2%→72,3% z
+      narzędziem; DetectGPT ICML 2023 (arXiv:2301.11305); RAID ACL 2024
+      (10.18653/v1/2024.acl-long.674) — 12 detektorów łatwo oszukiwanych;
+      SemEval-2024 Task 8 (10.18653/v1/2024.semeval-1.279) — spadek poza
+      widzianymi domenami; Juzek & Ward 2025 COLING
+      (10.18653/v1/2025.coling-main.426) — mechanizm nadreprezentacji
+      leksykalnej (rola RLHF); Geng & Trotta 2025 Findings ACL — koewolucja:
+      spadek 'delve' po upublicznieniu (dryf sygnałów); Binoculars ICML 2024
+      (arXiv:2401.12070). POLSKI: Stachura 2025 PolEval
+      (2025.poleval-main.4) — zadanie ŚMIGIEL: 64,5 tys. tekstów PL, 8 LLM,
+      6 domen; unsupervised adaptacja Binoculars. Rezerwa: Gritsai 2024
+      arXiv:2410.14677 (preprint — jakość zbiorów zawyża wyniki detektorów)."
+
+# --- Scout: percepcja (zakończony 2026-08-17) ---
+  - id: SC2-01
+    agent: scout-perception
+    database: "WebSearch x20 + WebFetch x4"
+    query: "percepcja tekstu AI; Jakesch; Köbis; Dugan; Porter; co-writing CHI;
+      Clark ACL; Zhang & Gosline; disclosure; replikacje; Berg; Sears;
+      Goldstein; Zhu; Appel; Wang multilingual; Russell; Zaitsu"
+    type: confirm
+    date: 2026-08-17
+    hits: ~220
+    kept: 15
+    notes: "Kluczowe: Jakesch et al. 2023 PNAS 120(11)
+      (10.1073/pnas.2208839120) — 6 eksp., N~4600, heurystyki mylne
+      (zaimki 1. os., kontrakcje, tematy rodzinne → 'ludzkie'), tekst AI może
+      być 'bardziej ludzki niż ludzki'; Köbis & Mossink 2021 CHB
+      (10.1016/j.chb.2020.106553); Porter & Machery 2024
+      (10.1038/s41598-024-76900-1) — detekcja 46,6%, etykieta AI obniża oceny
+      także tekstów ludzkich; Dugan 2023 AAAI (10.1609/aaai.v37i11.26501) —
+      RoFT, błędy maszyn to commonsense/relewancja, nie gramatyka;
+      Clark 2021 ACL (10.18653/v1/2021.acl-long.565) — niewytrenowani na
+      poziomie przypadku, α≤0,11 między sędziami; Jakesch CHI 2023
+      (10.1145/3544548.3581196); Zhang & Gosline 2023 JDM (10.1017/jdm.2023.37)
+      — 'human favoritism, not AI aversion'; Berg et al. 2026 JEP:General
+      (10.1037/xge0001889) — 16 prerejestrowanych eksp., N=27491, kara za
+      ujawnienie −6,2% oporna na interwencje; Sears & Weisberg 2026 JDM
+      (10.1017/jdm.2026.10042) — N=2587, detekcja 39,4–52%, preferencja AI przy
+      przekonaniu o wyższości tekstu ludzkiego; Goldstein et al. 2024 PNAS
+      Nexus (10.1093/pnasnexus/pgae034) — propaganda AI niemal tak perswazyjna
+      jak ludzka (43,5% vs 47,4%); Zhu et al. 2025 Findings ACL
+      (10.18653/v1/2025.findings-acl.1329) — bias czysto etykietowy;
+      Appel et al. 2025 HSSC (10.1057/s41599-025-06341-2) — niższa narrative
+      transportation dla AI, mediowana zaimkami osobowymi; KONTRA:
+      Wang et al. 2025 arXiv:2502.11614 (preprint, detekcja 87,6%,
+      multijęzykowa) i Russell et al. 2025 ACL
+      (10.18653/v1/2025.acl-long.267) — eksperci-części użytkownicy LLM
+      wykrywają lepiej niż detektory; Zaitsu et al. 2025 PLOS ONE
+      (10.1371/journal.pone.0335369) — stylometria wykrywa, laicy nie.
+      Populacje: niemal wyłącznie WEIRD (USA; Appel — Niemcy)."
+
+# --- Scout: gatunki/UI/prosty język (zakończony 2026-08-17) ---
+  - id: SC5-01
+    agent: scout-genre
+    database: "WebSearch x15 + OpenAlex API WebFetch x9"
+    query: "komunikaty błędów; UX writing; plain language; ISO 24495;
+      dokumentacja techniczna; onboarding; signaling; reklama; grzeczność;
+      minimalist instruction"
+    type: confirm
+    date: 2026-08-17
+    hits: ~160
+    kept: 15
+    notes: "Ayre et al. 2024 JAMA Netw Open (10.1001/jamanetworkopen.2024.37955)
+      — RCT plain language poprawia czytelność i styl bez utraty treści;
+      Krieger et al. 2016 JNCI (10.1093/jnci/djw233) — plain language nie
+      zawsze optymalny (moderacja przez health literacy); Martínez et al. 2022
+      Cognition (10.1016/j.cognition.2022.105070) — trudność tekstów prawnych
+      z pisania, nie z pojęć; Masson & Waldron 1994 (10.1002/acp.2350080107);
+      Mautone & Mayer 2001 (10.1037/0022-0663.93.2.377) — signaling/nagłówki
+      d≈0,60 bez dodawania treści; Khandwala & Dong 2019 CHI EA
+      (10.1145/3290607.3312978) — kosmetyczne zmiany komunikatów błędów
+      +29,5 pkt% zrozumienia; Tzeng 2006 IJHCS (10.1016/j.ijhcs.2006.08.011) —
+      przeprosinowe komunikaty preferowane przez grzecznych użytkowników;
+      Passalacqua 2020 (10.3390/mti4030041) — tutorial onboardingu pomaga
+      nie-ekspertom; Lee 2025 Displays (10.1016/j.displa.2025.102975);
+      Bowman et al. 2023 IJHCS (10.1016/j.ijhcs.2023.103181) — grzeczność
+      chatbotów ambiwalentna; Lazebnik et al. 2025 PACM HCI
+      (10.1145/3757631) — erozja grzeczności wobec AI; Geng et al. 2025 Front
+      Nutr (10.3389/fnut.2025.1576478) — styl reklamy i processing fluency;
+      Portmann 2022 (10.1016/j.dcm.2022.100622) — UX writing jako praktyka
+      dyskursywna; Carroll 1990 MIT Press — minimalist instruction;
+      ISO 24495-1:2023 — NORMATYW (relevant, findable, usable,
+      understandable). LUKA: brak recenzowanych eksperymentów nad samym
+      onboarding copy."
+
+# --- Scout: stylometria/warunki generacji (zakończony 2026-08-17) ---
+  - id: SC3-01
+    agent: scout-stylometry
+    database: "WebSearch x22 + WebFetch"
+    query: "różnorodność leksykalna; degeneracja; MAUVE; temperatura; RLHF;
+      excess vocabulary; korpusy LLM vs tradycyjne; burstiness; rejestr/MDA"
+    type: confirm
+    date: 2026-08-17
+    hits: ~230
+    kept: 15
+    notes: "Holtzman et al. 2020 ICLR (arXiv:1904.09751) — degeneracja przy
+      greedy/beam, niska temperatura → tekst 'bland'; Pillutla et al. 2021
+      NeurIPS (arXiv:2102.01454) — MAUVE: dystans dystrybucyjny człowiek–model,
+      zależny od dekodowania; Li et al. 2016 NAACL — metryki distinct-n;
+      Kirk et al. 2024 ICLR (arXiv:2310.06452) — RLHF redukuje różnorodność
+      wyjść; Gude et al. 2026 ACL (10.18653/v1/2026.acl-long.1803) — dwie
+      generacje LLM: instruction-tuned mają NIŻSZĄ różnorodność syntaktyczną
+      i leksykalną niż starsze modele; ludzie — wyższą różnorodność
+      syntaktyczną niż wszystkie LLM (gatunek kontrolowany: news leads);
+      Guo et al. 2025 TACL (10.1162/tacl_a_00447; preprint arXiv:2412.10271) —
+      efekty preference tuning zależą od domeny (odbiega od Kirk);
+      Juzek & Ward 2025 arXiv:2508.01930 (preprint) — Instruct nadużywa
+      'nuanced' +8342%, 'firstly' +4794%, 'reliance' +3193%; LUDZIE PREFERUJĄ
+      teksty z tymi słowami (52,4% vs 47,6%, p<0,01); Kobak et al. 2025 Sci
+      Adv (10.1126/sciadv.adt3813) — nadwyżkowe słowa to 66% czasowniki,
+      14% przymiotniki; ≥13,5% abstraktów 2024 przez LLM; Liang et al. 2025
+      Nature Human Behaviour (10.1038/s41562-025-02273-8) — 1,12 mln prac,
+      CS do 22% abstraktów; Milička et al. 2025 arXiv:2509.22996 (preprint) —
+      AI-Brown/AI-Koditex (EN+CZ), davinci-002 T=0 mode collapse; Berber
+      Sardinha 2024 Applied Corpus Linguistics (10.1016/j.acorp.2023.100083) —
+      'register deficit' ChatGPT 3.5, łatwa klasyfikowalność (4 rejestry);
+      Bagdasarov & Alves 2025 LM4DH (2025.lm4dh-1.4) — ludzie: wyższa
+      zmienność syntaktyczna, LLM: wyższa zmienność leksykalna, klasyfikacja
+      >90% (abstrakty ACL); Mak & Walasek 2025 CAEAI (10.1016/j.caeai.2025.100507)
+      — pisma studentów 2016–2025: markery GPT eksplodowały w 2024, SPADŁY w
+      2025; rewrite'y GPT przypominają teksty studentów post-2022 (konwergencja);
+      Carlo & Takeuchi 2026 IJAL (10.1111/ijal.70284) — 'forma bez funkcji'
+      (CEFR-conditioned LLM vs L2); Demir & Egbert 2026 (DOI niezweryfikowany —
+      warunkowo). Odrzucono: praca licencjacka 'Identifying GPT' jako źródło
+      twardych reguł (folklor burstiness)."
+
+# --- Scout: polszczyzna (zakończony 2026-08-17) ---
+  - id: SC4-01
+    agent: scout-polish
+    database: "WebSearch EN+PL x18 + WebFetch x8"
+    query: "szyk; aspekt; NKJP; MoncoPL; MT PL; benchmarki PL; detekcja MGT PL;
+      poprawność językowa ChatGPT PL; normatywy RJP/PWN"
+    type: confirm
+    date: 2026-08-17
+    hits: ~200
+    kept: 15
+    notes: "KORPUSY/UZUS: NKJP (Przepiórkowski et al. 2012, PWN) — korpus
+      referencyjny >1,5 mld słów; Pęzik 2020 Forum Lingwistyczne 7 — MoncoPL,
+      korpus monitorujący >5,6 mld tokenów; Miechowicz-Mathiasen & Scheffler
+      2008 (Peter Lang) — szyk podobać się w korpusie IPI PAN; Grochowski 2007
+      Prace Filologiczne 53 — szyk neutralny vs nacechowany; Zuchewicz 2024
+      LingBaW 10 (10.31743/lingbaw.18023) — aspekt i pragmatyka na NKJP.
+      NLP PL: KLEJ (Rybak et al. 2020, 10.18653/v1/2020.acl-main.111);
+      HerBERT (Mroczkowski et al. 2021, 10.18653/v1/2021.bsnlp-1.1); Kocmi et
+      al. 2020 WMT (arXiv:2010.06018) — rodzaj gramatyczny w MT PL.
+      DETEKCJA PL: Przybyła, Strebeyko, Wróblewska 2025 PolEval Task 1
+      'Śmigiel' (2025.poleval-main.2) — zbiór 64 538 tekstów PL, 8 LLM (m.in.
+      Bielik, PLLuM), spadek dokładności na niewidzianych domenach/modelach;
+      Strebeyko, Wróblewska, Przybyła LREC-COLING 2025 'Śmigiel Dataset'
+      (huggingface.co/datasets/strebeyko/smigiel); Stachura 2025
+      (2025.poleval-main.4) — Binoculars z polskimi modelami, 1. miejsce
+      zero-shot. POPRAWNOŚĆ PL AI: Mazur 2024 LingVaria 19(1):119–138
+      (10.12797/LV.19.2024.37.08) — błędy ChatGPT w tekstach z matury 2023,
+      najwięcej w konstrukcjach złożonych; Prościak et al. 2023 Polonistyka.
+      Innowacje 18:173–188 — błędy rzeczowe/ortograficzne/stylistyczne
+      ChatGPT PL. NORMATYWY: Sprawozdanie RJP o stanie ochrony języka
+      polskiego za 2023–2024 (2026, rjp.pan.pl); Markowski 2017 (sprawozdanie
+      RJP 2014–2015); WSO PWN (sjp.pwn.pl). LUKA: brak recenzowanych badań
+      eksperymentalnych percepcji 'AI-polszczyzny' przez polskich czytelników."
+
+# --- Rewizja sceptyczna (zakończona 2026-08-17) ---
+  - id: SC7-01
+    agent: skeptic
+    database: "WebSearch scholastyczny + WebFetch (ACL/arXiv/Ovid/JAMA/ScienceDirect/Springer/Semantic Scholar)"
+    query: "weryfikacja B8/B13/E1/A22/C5/B9/C7; poszukiwanie dyskonfirmacji R1;
+      polski materiał poza zestawem; replikacje B8; status publikacyjny C5"
+    type: falsify
+    date: 2026-08-17
+    hits: ~15 zapytań
+    kept: 4 nowe źródła + 2 korekty
+    notes: "Werdykt: needs qualification (rdzeń wytrzymuje). Nowe źródła
+      włączone: Fiedler & Döpke 2025 IREE 49:100321 (10.1016/j.iree.2025.100321)
+      — wykładowcy ≈ przypadek, bez przewagi nad detektorami; Ramos 2026
+      arXiv:2604.03437 (PRISMA, 30 badań — ludzie zawodni; preprint);
+      Terčon & Dobrovoljc 2025 arXiv:2510.05136 (survey cech; preprint);
+      Mazurkiewicz-Sokołowska 2025 LNNS 1643:250–265
+      (10.1007/978-3-032-06611-4_20) — bezpośredni materiał PL (weryfikacja
+      przez OpenAlex S26). Korekty: imię pierwszego autora C5 → Adrián Gude;
+      B8 bez replikacji niezależnej; B13 = panel 5 osób (pojedynczy ekspert
+      FP 3,3%); C7 — preferencja nierównomierna wg słowa, status preprintu
+      warsztatowego; deklaracja braku oceny COI dodana do ograniczeń raportu."
+
+# --- Weryfikacje orkiestratora (Crossref) ---
+  - id: S22
+    agent: orchestrator
+    database: "Crossref (paper-search get_crossref_paper_by_doi)"
+    query: "10.1073/pnas.2208839120 (Jakesch PNAS)"
+    type: verify
+    date: 2026-08-17
+    hits: 1
+    kept: 1
+    notes: "POTWIERDZONE: PNAS 120(11), 2023-03-07, Jakesch/Hancock/Naaman.
+      Uwaga: wcześniejsza rozbieżność numeru DOI rozstrzygnięta — poprawny
+      DOI to 10.1073/pnas.2208839120."
+
+  - id: S23
+    agent: orchestrator
+    database: "Crossref"
+    query: "10.18653/v1/2021.acl-long.565 (Clark ACL 2021)"
+    type: verify
+    date: 2026-08-17
+    hits: 1
+    kept: 1
+    notes: "POTWIERDZONE: ACL-IJCNLP 2021, s. 7282–7296."
+
+  - id: S24
+    agent: orchestrator
+    database: "Crossref"
+    query: "10.1126/science.adh2586 (Noy & Zhang)"
+    type: verify
+    date: 2026-08-17
+    hits: 1
+    kept: 1
+    notes: "POTWIERDZONE: Science 381(6654):187–192, 2023-07-14. ChatGPT w
+      zadaniach pisarskich: czas −40%, jakość +18% (eksperyment prerej.)."
+
+  - id: S25
+    agent: orchestrator
+    database: "Crossref"
+    query: "10.18653/v1/2025.coling-main.426 (Juzek & Ward)"
+    type: verify
+    date: 2026-08-17
+    hits: 0
+    kept: 1
+    notes: "Crossref API zwróciło pusty wynik (brak rekordu ACL w Crossref).
+      Istnienie potwierdzone przez scout-detection via ACL Anthology
+      (aclanthology.org/2025.coling-main.426). Cytować przez URL ACL
+      Anthology, nie DOI."
+
+# --- PRISMA (podsumowanie liczebności) ---
+prisma:
+  identified_orchestrator: "~230 (po S01–S25; przed dedup.)"
+  identified_scouts: "~1120 (6 scoutów)"
+  deduplicated_after_screen: "~105 kandydatów unikalnych"
+  included_evidence_base: "~70 (docelowo w EVIDENCE-TABLE.md)"
+  excluded: "blogi SEO, marketing vendorów, NN/g (object-of-study), praca
+    licencjacka 'Identifying GPT', źródła bez weryfikowalnego DOI/URL —
+    szczegóły w EXCLUDED.md"

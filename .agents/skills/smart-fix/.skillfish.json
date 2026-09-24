@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "smart-fix",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/smart-fix",
+  "branch": "main",
+  "sha": "615fdaadf744d84d6b0675296434d9b12ea8ca44",
+  "source": "manual"
+}

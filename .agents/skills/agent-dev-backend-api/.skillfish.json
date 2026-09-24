@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-dev-backend-api",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-dev-backend-api",
+  "branch": "main",
+  "sha": "05cc5ea89bd7198cffab9efc8e393a362deb40d6",
+  "source": "manual"
+}

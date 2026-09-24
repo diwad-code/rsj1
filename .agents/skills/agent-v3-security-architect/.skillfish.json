@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-v3-security-architect",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-v3-security-architect",
+  "branch": "main",
+  "sha": "1d104fe8eb52bfc1d5244421f7ec9868b51df266",
+  "source": "manual"
+}

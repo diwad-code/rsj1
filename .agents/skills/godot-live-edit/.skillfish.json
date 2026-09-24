@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "godot-live-edit",
+  "owner": "alexmeckes",
+  "repo": "godot-claude-skills",
+  "path": "skills/godot-live-edit",
+  "branch": "main",
+  "sha": "0c0809eb7b0ff71c7153097a3b86ca4a3043275c",
+  "source": "manual"
+}

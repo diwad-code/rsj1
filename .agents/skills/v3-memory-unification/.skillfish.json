@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "v3-memory-unification",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/v3-memory-unification",
+  "branch": "main",
+  "sha": "31d71f1f966306d8d95bc35a9393461731c9f1ad",
+  "source": "manual"
+}

@@ -1,0 +1,41 @@
+{
+  "output_dir": "./images/mockups",
+  "format": "png",
+  "default_device": "iphone-16-pro",
+  "devices_catalog": "./data/devices.json",
+  "composer": {
+    "module": "scripts/lib/device-composer.js",
+    "screenshot_fit_default": "cover",
+    "pad_color_default": "#000000"
+  },
+  "bg": {
+    "default_kind": "gradient",
+    "allowed_kinds": ["ai", "solid", "gradient", "image", "transparent"],
+    "ai_generate_size": "1536x1024",
+    "skip_ai_when": ["solid", "gradient", "image", "transparent"],
+    "templates": {
+      "appstore-hero": "soft abstract gradient with depth, studio lighting, no objects, no text, space for centered device",
+      "lifestyle":     "cozy cafe desk, warm wooden texture, soft bokeh, negative space for laptop mockup, no hands, no faces",
+      "studio":        "clean studio backdrop, subtle vignette, even lighting, no objects, no text",
+      "outdoor":       "soft outdoor lighting, bokeh foliage, negative space center, no people, no hands"
+    }
+  },
+  "negative_prompt": "device, phone, screen, laptop, computer, tablet, monitor, keyboard, mouse, hand holding phone, text, watermark, logo text",
+  "aspect_check": {
+    "warn_when_mismatch": true,
+    "auto_pad_color": "#000000",
+    "warn_message": "스크린샷 비율이 기기와 다릅니다. 자동 패드 적용됨."
+  },
+  "contrast_check": {
+    "enabled_default": true,
+    "auto_vignette_on_fail": true,
+    "auto_blur_on_fail_radius": 6
+  },
+  "batch": {
+    "bulk_template_default": "appstore-hero",
+    "concurrency": 2
+  },
+  "output_filename": "<slug>_<device-key>.png",
+  "bulk_output_filename": "appstore_<index>.png",
+  "template_log_filename": "_template.json"
+}

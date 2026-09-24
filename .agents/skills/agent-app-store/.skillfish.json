@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-app-store",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-app-store",
+  "branch": "main",
+  "sha": "5354709611001061f61a6a5e212196d9fcdb09b7",
+  "source": "manual"
+}

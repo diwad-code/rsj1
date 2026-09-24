@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "error-analysis",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/error-analysis",
+  "branch": "main",
+  "sha": "fcc6e46c3ee01d93e74d7383148ff56b28ecbb31",
+  "source": "manual"
+}

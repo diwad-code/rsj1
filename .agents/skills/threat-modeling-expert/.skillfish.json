@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "threat-modeling-expert",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/threat-modeling-expert",
+  "branch": "main",
+  "sha": "e351712d383655ba0d241fdf25978d3bd58a8f00",
+  "source": "manual"
+}

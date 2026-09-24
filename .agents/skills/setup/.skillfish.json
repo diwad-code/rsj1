@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "setup",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/setup",
+  "branch": "main",
+  "sha": "3842ef28289efa242c6dcf10d93c1144596cc01b",
+  "source": "manual"
+}

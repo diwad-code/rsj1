@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "index",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/index",
+  "branch": "main",
+  "sha": "a0afd7506c01089bf006ce29d79ff6be9f7acc00",
+  "source": "manual"
+}

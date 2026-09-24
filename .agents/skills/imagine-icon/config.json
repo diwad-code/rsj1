@@ -1,0 +1,26 @@
+{
+  "master": { "width": 1024, "height": 1024, "format": "png" },
+  "generate_size": "1024x1024",
+  "format": "png",
+  "output_dir": "./images/icons",
+  "targets_default": ["ios", "android", "web"],
+  "prompt_template": "app icon, single focal motif, centered composition, 15% padding safe zone, bold silhouette recognizable at small size, solid background or simple gradient, no text",
+  "negative_prompt": "text, letters, typography, multiple objects, cluttered detail, photorealistic, watermark, logo text",
+  "safe_zone_center_ratio": 0.60,
+  "variation_directions": ["minimal", "3d-glossy", "flat-illustration", "abstract-geometric"],
+  "android": {
+    "adaptive_canvas": 512,
+    "adaptive_foreground_size": 432,
+    "adaptive_safe_zone_px": 108,
+    "background_mode": "auto"
+  },
+  "web": {
+    "sizes": [16, 32, 48, 180, 192, 512],
+    "write_manifest": true
+  },
+  "quality_checks": {
+    "small_size_entropy_warn_below": 3.0,
+    "safe_zone_overflow_max_ratio": 0.05,
+    "alpha_required_for": ["android.ic_launcher_foreground.png"]
+  }
+}

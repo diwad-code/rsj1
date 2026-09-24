@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "onboard",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/onboard",
+  "branch": "main",
+  "sha": "df7345d917d861a5d390cac981edc0bea19aa24b",
+  "source": "manual"
+}

@@ -1,0 +1,53 @@
+{
+  "size": "1024x1536",
+  "aspect": "2:3",
+  "format": "png",
+  "quality": "medium",
+  "output_dir": "./characters",
+  "card_filename": "card.json",
+  "card_schema": {
+    "required": ["name", "species", "age_look", "hair", "eyes", "outfit", "art_style"],
+    "optional": ["distinguishing", "palette", "negative", "notes"],
+    "field_order_for_prompt": [
+      "name", "species", "age_look", "hair", "eyes", "outfit",
+      "distinguishing", "art_style", "palette"
+    ]
+  },
+  "sub_commands": {
+    "create":     { "description": "카드 초안 + 대표 일러스트(portrait_hero) 1장",     "output": "portrait_hero.png" },
+    "turnaround": { "description": "정면/¾/측면/후면 4컷",                              "outputs": ["turnaround_front.png","turnaround_three_quarter.png","turnaround_side.png","turnaround_back.png"] },
+    "expression": { "description": "표정 세트 (neutral/happy/angry/sad/surprised 등). 한 장에 몰아 그리지 말고 개별 생성 후 합침", "output_pattern": "expression_<label>.png" },
+    "pose":       { "description": "동작 포즈 단일 장면",                                "output_pattern": "pose_<slug>.png" }
+  },
+  "prompt": {
+    "join": "token_comma",
+    "suffix_common": "consistent character, full body shot preferred, clean background or simple gradient",
+    "reference_image_strategy": "image_to_image_when_portrait_hero_exists"
+  },
+  "negative_prompt": "different character, model sheet grid lines, multiple characters, extra limbs, deformed anatomy, text, watermark",
+  "consistency": {
+    "portrait_hero_as_reference": true,
+    "refresh_reference_when_better": true,
+    "character_card_always_injected": true
+  },
+  "visual_critic": {
+    "enabled_default": false,
+    "opt_in_flag": "--verify-consistency",
+    "checks": ["hair_color_match", "eye_color_match", "outfit_match", "distinguishing_match"],
+    "retry_on_fail_max": 1
+  },
+  "copyright": {
+    "warn_on_ip_resemblance": true,
+    "blocked_keywords_examples": [
+      "Pokemon", "Pikachu", "Mickey Mouse", "Sonic the Hedgehog",
+      "Mario", "Master Chief", "Elsa", "Link",
+      "포켓몬", "피카츄", "미키마우스", "마리오"
+    ],
+    "policy": "block_and_warn"
+  },
+  "style_guardian": {
+    "scope": "per_character",
+    "manifest_keys": ["card", "portrait_hero_path", "palette"],
+    "cross_character_leak": false
+  }
+}

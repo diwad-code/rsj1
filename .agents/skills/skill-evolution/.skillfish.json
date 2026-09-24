@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "skill-evolution",
+  "owner": "plurigrid",
+  "repo": "asi",
+  "path": "plugins/asi/skills/skill-evolution",
+  "branch": "main",
+  "sha": "b50a14e677b040e44d13b60a9347e140e9cbeec8",
+  "source": "manual"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "improve-agent",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/improve-agent",
+  "branch": "main",
+  "sha": "5dea9725d0f67131c27c30ac23c8672a8331954b",
+  "source": "manual"
+}

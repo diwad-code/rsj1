@@ -1,0 +1,39 @@
+{
+  "themes_catalog": "./data/poster-themes.json",
+  "default_theme": "cyber-gradient",
+  "output_dir": "./images/posters",
+  "formats": {
+    "poster": { "width": 2480, "height": 3508, "aspect": "3:4.24", "dpi": 300, "file": "poster.png", "pdf": "poster.pdf" },
+    "banner": { "width": 1920, "height": 1080, "aspect": "16:9",   "dpi": 150, "file": "banner.png" },
+    "card":   { "width": 1080, "height": 1080, "aspect": "1:1",    "dpi": 150, "file": "card.png"   }
+  },
+  "default_formats": ["poster", "banner", "card"],
+  "ai_generate_size": "1024x1536",
+  "format_png": true,
+  "format_pdf_optional": true,
+  "negative_prompt": "text, letters, typography, faces, people, watermark, logo text, readable words, cluttered copy area",
+  "fonts": {
+    "primary": "Pretendard",
+    "fallback_stack": "'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Inter',sans-serif"
+  },
+  "speaker_avatars": {
+    "shape": "circle",
+    "crop": "center",
+    "face_detection": false,
+    "preview_variants": 3
+  },
+  "privacy": {
+    "manifest_photo_strategy": "path_hash_only",
+    "store_photos_locally": true,
+    "forbid_fields": ["photo_base64", "photo_bytes", "exif"]
+  },
+  "quality_checks": {
+    "title_wrap_chars": { "poster": 26, "banner": 40, "card": 22 },
+    "font_min_pt": 24,
+    "ocr_detect_bg_text_warning": true
+  },
+  "pdf": {
+    "engine_preference": ["pdfkit", "puppeteer"],
+    "fallback_on_missing": "png_only_with_warning"
+  }
+}

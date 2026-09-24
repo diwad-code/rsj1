@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-analyze-code-quality",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-analyze-code-quality",
+  "branch": "main",
+  "sha": "4784bb2fae9e7d078cf3b84fbfc1aba6304e579d",
+  "source": "manual"
+}

@@ -1,0 +1,32 @@
+{
+  "size": "1024x1024",
+  "format": "png",
+  "allowed_formats": ["png"],
+  "forbidden_formats": ["jpeg", "jpg", "webp"],
+  "transparent_bg_default": true,
+  "output_dir": "./sprites",
+  "target_sizes": [16, 32, 48, 64],
+  "default_target_size": 32,
+  "palette_sizes": [8, 16, 32],
+  "default_palette_size": 16,
+  "preview_scale": 8,
+  "style_presets": {
+    "gba": "Game Boy Advance style pixel art, limited palette, clean outline, side-facing idle pose",
+    "nes": "NES 8-bit style pixel art, 4-color per block palette, bold outlines, chunky pixels",
+    "snes": "Super Nintendo 16-bit style pixel art, richer palette, soft dithering allowed only at paletteSize >= 32",
+    "modern-lowres": "modern lowres pixel art, clean outline, subtle highlights, limited palette",
+    "outline-heavy": "pixel art with bold single-pixel black outline, flat interior color blocks"
+  },
+  "positive_prompt_suffix": "crisp pixel edges, no anti-aliasing, uniform pixel grid, limited palette, transparent background",
+  "negative_prompt": "blurry, smooth shading, anti-aliased, soft gradient, photorealistic, jpeg artifacts, 3D render",
+  "pixelize": {
+    "engine": "scripts/lib/pixelize.js",
+    "require_post_snap": true,
+    "preserve_alpha": true
+  },
+  "style_guardian": {
+    "manifest_keys": ["palette_png_path", "target_size", "palette_size", "style"],
+    "cross_character_leak": false,
+    "note": "Register palette.png under Style Guardian so every sprite in the same game shares a unified palette."
+  }
+}

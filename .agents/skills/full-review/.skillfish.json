@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "full-review",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/full-review",
+  "branch": "main",
+  "sha": "97e4bd2fa04bd20f79713cbb69a178bcb4d0ddff",
+  "source": "manual"
+}

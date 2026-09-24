@@ -1,0 +1,30 @@
+[
+  {
+    "session_id": "eafde336-a844-4587-a19d-a5d9e6b8841e",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\eafde336-a844-4587-a19d-a5d9e6b8841e.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill",
+    "hook_event_name": "SessionStart",
+    "source": "startup"
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill",
+    "hook_event_name": "SessionStart",
+    "source": "startup"
+  },
+  {
+    "session_id": "12e7eb6c-0a3e-4210-a357-fb6ab83a436f",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\12e7eb6c-0a3e-4210-a357-fb6ab83a436f.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill",
+    "hook_event_name": "SessionStart",
+    "source": "startup"
+  },
+  {
+    "session_id": "28224c15-337d-4bfb-aeb5-8cddf1b361ad",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\28224c15-337d-4bfb-aeb5-8cddf1b361ad.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill",
+    "hook_event_name": "SessionStart",
+    "source": "startup"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-benchmark-suite",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-benchmark-suite",
+  "branch": "main",
+  "sha": "d970b898cae87268a001ecb82ffc457cdb3e7f31",
+  "source": "manual"
+}

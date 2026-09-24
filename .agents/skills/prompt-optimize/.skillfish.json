@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "prompt-optimize",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/prompt-optimize",
+  "branch": "main",
+  "sha": "6b28b6e711736c0aebce403cf4076168e11facfb",
+  "source": "manual"
+}

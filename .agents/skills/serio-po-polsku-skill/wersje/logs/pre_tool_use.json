@@ -1,0 +1,36 @@
+[
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "ls SYNTEZA-BRAKI.md 2>&1; echo \"=== HEADERS ===\"; for d in cc_deepseek claude codex gemini minimax3; do for f in PROTOKOL.md SEARCHLOG.yaml EVIDENCE-TABLE.md RAPORT.md CLAIM-AUDIT.md SOURCES.bib; do printf \"%-14s %-18s \" \"$d\" \"$f\"; if [ -s \"$d/$f\" ]; then head -c 100 \"$d/$f\" | tr '\\n' '|'; echo; else echo \"MISSING/EMPTY\"; fi; done; echo; done",
+      "description": "Verify each required file is readable and has real content"
+    },
+    "tool_use_id": "toolu_01AKJcss4qAMxHQYS6fU8YNG"
+  },
+  {
+    "session_id": "4852957d-414e-40ee-8355-40833cbcd379",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--Users-admin-serio-po-polsku-skill\\4852957d-414e-40ee-8355-40833cbcd379.jsonl",
+    "cwd": "C:\\Users\\admin\\serio-po-polsku-skill\\wersje",
+    "prompt_id": "6cdd208c-92ad-4614-988c-676002be7e35",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd /c/Users/admin/serio-po-polsku-skill && ls references/ && echo \"--- domains ---\" && ls references/domains/ 2>/dev/null && echo \"--- skills ---\" && ls .claude/skills/ && echo \"--- agents ---\" && ls .claude/agents/ 2>/dev/null && echo \"--- skill-files ---\" && ls -R skill-files/ | head -50",
+      "description": "Survey repo references and skills"
+    },
+    "tool_use_id": "toolu_019YngyTguJyCqM5PzNprkWX"
+  }
+]

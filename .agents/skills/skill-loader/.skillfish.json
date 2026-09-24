@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "skill-loader",
+  "owner": "plurigrid",
+  "repo": "asi",
+  "path": "plugins/asi/skills/skill-loader",
+  "branch": "main",
+  "sha": "05215d0d98b503baf2dfa644242b205b1d9a98ac",
+  "source": "manual"
+}

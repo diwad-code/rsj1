@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "skill-improver",
+  "owner": "plurigrid",
+  "repo": "asi",
+  "path": "plugins/asi/skills/skill-improver",
+  "branch": "main",
+  "sha": "52b41283cde6d72ffa436900646f4abab03c740e",
+  "source": "manual"
+}

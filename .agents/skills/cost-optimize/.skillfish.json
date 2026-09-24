@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "cost-optimize",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/cost-optimize",
+  "branch": "main",
+  "sha": "e42e2f6ce9b4f8bc889254c64ec3a98a2c47c293",
+  "source": "manual"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "skill-maker-ai-skill-factory-for-tools",
+  "owner": "plurigrid",
+  "repo": "asi",
+  "path": "plugins/asi/skills/skill-maker-ai-skill-factory-for-tools",
+  "branch": "main",
+  "sha": "da2cd2493ac8b688c99e3d11bba132bb88711103",
+  "source": "manual"
+}

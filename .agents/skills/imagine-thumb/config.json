@@ -1,0 +1,13 @@
+{
+  "size": "1536x1024",
+  "format": "jpeg",
+  "quality": "medium",
+  "n": 2,
+  "output_dir": "./images/thumbs",
+  "final_resolution": { "width": 1280, "height": 720 },
+  "mobile_preview": { "width": 640, "height": 360 },
+  "safe_zone_ratio": 0.45,
+  "negative_prompt": "text, watermark, logo, blurry, deformed hands, asymmetric eyes",
+  "style_presets": ["vlog", "tech", "reaction", "meme", "cinematic"],
+  "vibe_presets": ["shock", "calm", "cozy", "hype"]
+}

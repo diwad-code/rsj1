@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "ai-engineer",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/ai-engineer",
+  "branch": "main",
+  "sha": "76d2276eeccd93a57910c0f215f56375cb12c796",
+  "source": "manual"
+}

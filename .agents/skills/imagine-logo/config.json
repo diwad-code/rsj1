@@ -1,0 +1,39 @@
+{
+  "size": "1024x1024",
+  "aspect": "1:1",
+  "format": "png",
+  "background": "transparent",
+  "output_dir": "./images/logos",
+  "default_direction_count": 4,
+  "min_direction_count": 3,
+  "max_direction_count": 6,
+  "color_modes": ["monochrome", "duotone", "tritone"],
+  "default_color_mode": "monochrome",
+  "negative_prompt": "text, letters, typography, readable words, watermark, photorealistic, gradient, soft edges, anti-aliasing artifacts",
+  "mark_style_common": "flat, bold edges, no gradient, centered composition, 20% padding safe zone, transparent background, vector-friendly silhouette",
+  "direction_catalog": {
+    "geometric":  "minimalist geometric mark, simple primitives, perfect symmetry, flat monochrome",
+    "organic":    "abstract organic shapes inspired by nature, rounded bold silhouette, flat color",
+    "animal":     "stylized animal silhouette reduced to essential curves, flat monochrome, no facial details",
+    "abstract":   "abstract conceptual mark, bold silhouette, no recognizable object, flat shapes",
+    "monogram":   "abstract single-letter monogram shape (NOT an actual glyph), bold sans aesthetic, flat silhouette",
+    "typography-centric": "abstract typographic form built from bold strokes, NOT real letters, flat silhouette"
+  },
+  "direction_defaults": ["geometric", "abstract", "monogram", "organic"],
+  "ocr_check": {
+    "enabled_default": true,
+    "retry_on_detect_max": 1
+  },
+  "wordmark": {
+    "compose_with": "scripts/lib/compose-text.js",
+    "default_font": "Pretendard Bold",
+    "fallback_stack": "'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Inter',sans-serif"
+  },
+  "vectorize": {
+    "engine": "scripts/lib/vectorize.js",
+    "threshold": 170,
+    "turdSize": 2,
+    "optTolerance": 0.2
+  },
+  "manifest_keys": ["company_name", "palette", "mark_direction", "color_mode"]
+}

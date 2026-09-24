@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "workflow",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/workflow",
+  "branch": "main",
+  "sha": "00f4604a215d008682ea53d9cf36fe3537b2cda5",
+  "source": "manual"
+}

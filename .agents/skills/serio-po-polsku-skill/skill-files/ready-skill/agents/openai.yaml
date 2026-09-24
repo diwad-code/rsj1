@@ -1,0 +1,4 @@
+interface:
+  display_name: "Serio po polsku"
+  short_description: "Naturalna redakcja polszczyzny z ochroną sensu"
+  default_prompt: "Użyj $serio-po-polsku, aby poprawić ten polski tekst, zachowując jego sens, głos i elementy techniczne."

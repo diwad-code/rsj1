@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "godot-ops",
+  "owner": "hubdev-ai",
+  "repo": "godot-ai-builder",
+  "path": "skills/godot-ops",
+  "branch": "main",
+  "sha": "00d721e67f89fdfb0ff20da2777926fa0910bf95",
+  "source": "manual"
+}

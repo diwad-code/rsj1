@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "godot-dev",
+  "owner": "zate",
+  "repo": "cc-godot",
+  "path": "plugins/gd/skills/godot-dev",
+  "branch": "main",
+  "sha": "7347137432b8677371063fdd53ebf3f1fa0a8acd",
+  "source": "manual"
+}

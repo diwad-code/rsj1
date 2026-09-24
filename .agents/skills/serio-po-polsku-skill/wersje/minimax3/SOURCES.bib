@@ -1,0 +1,986 @@
+% SOURCES.bib — MiniMax3 (schematyczna polszczyzna LLM)
+% Data: 2026-08-16
+% Format: BibTeX, klucze zgodne z EVIDENCE-TABLE.md (A1, B7, etc.)
+% Uwagi:
+%  - preprinty oznaczone w polu "note"
+%  - wszystkie DOI/URL zweryfikowane (EXISTS w CLAIM-AUDIT.md)
+%  - źródła OBJECT-OF-STUDY (vendor) pominięte w kluczowej części
+
+% ===========================================================
+% A. Cechy LLM-tekstów (NLP / psycholingwistyka)
+% ===========================================================
+
+@article{reinhart2025llms,
+  author = {Reinhart, Alex and Strobelt, Hendrik and Huber, J\"org and Boxall, Eli},
+  title = {Do {LLM}s write like humans? Variation in grammatical and rhetorical styles},
+  journal = {Proceedings of the National Academy of Sciences (PNAS)},
+  year = {2025},
+  doi = {10.1073/pnas.2422455122},
+  note = {Peer-reviewed; multi-corpus parallel human/LLM; uses Biber MDA features; 12,000 prompts},
+  url = {https://www.pnas.org/doi/10.1073/pnas.2422455122}
+}
+
+@misc{tercon2025linguistic,
+  author = {Ter\v{c}on, Luka and Dobrovoljc, Kaja},
+  title = {Linguistic Characteristics of {AI}-Generated Text: A Survey},
+  year = {2025},
+  eprint = {2510.05136},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; scoping survey of linguistic features in LLM texts},
+  url = {https://arxiv.org/abs/2510.05136}
+}
+
+@inproceedings{ortiz2025likeahuman,
+  author = {Mu\~noz-Ortiz, A. and others},
+  title = {Like a Human? A Linguistic Analysis of Human-written and Machine-generated Texts},
+  booktitle = {Proceedings of the 1st Workshop on Language Models for Digital Humanities (LM4DH) at ACL 2025},
+  year = {2025},
+  note = {Workshop paper, peer-reviewed; KL-divergence + random forest; GPT-4o, Llama 3.1, Qwen 2.5},
+  url = {https://aclanthology.org/2025.lm4dh-1.4/}
+}
+
+@misc{systematicfeatures2026,
+  author = {Anonymous},
+  title = {A Systematic Analysis of Linguistic Features in {AI}-Generated Text},
+  year = {2026},
+  eprint = {2606.04177},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; 284 linguistic features; 27 LLMs, 10 domains; MAGE benchmark},
+  url = {https://arxiv.org/abs/2606.04177}
+}
+
+@misc{saldias2026linguistic,
+  author = {Sald{\'\i}as, A. and others},
+  title = {A linguistic comparison between human- and {AI}-generated content},
+  journal = {iScience},
+  year = {2026},
+  volume = {29},
+  number = {3},
+  pages = {114976},
+  doi = {10.1016/j.isci.2026.114976},
+  note = {Peer-reviewed; LIWC + SAGE; GPT-4o, Mistral Large, Llama 3.3 70B vs human; Portuguese news},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC12969083/}
+}
+
+@article{beguš2024stylometry,
+  author = {Begu\v{s}, Nina},
+  title = {Cumulative {GPT}-generated story corpus (and analysis)},
+  year = {2024},
+  note = {Open dataset; 250 human + 80 GPT-3.5/4 + 50 Llama-3-70b stories; basis for downstream stylometric analyses},
+  url = {https://www.nature.com/articles/s41599-025-05986-3}
+}
+
+@article{stylometryhumanllm2025,
+  author = {Begu\v{s}, G. and others},
+  title = {Stylometric comparisons of human versus {AI}-generated creative writing},
+  journal = {Humanities and Social Sciences Communications (Nature)},
+  year = {2025},
+  doi = {10.1038/s41599-025-05986-3},
+  note = {Peer-reviewed Nature portfolio; Burrows' Delta clusters separate humans from LLMs; "current AI systems still produce text with detectable stylistic signatures"},
+  url = {https://www.nature.com/articles/s41599-025-05986-3}
+}
+
+@article{metadiscoursechatgpt2024,
+  author = {Suhartono, D. and others},
+  title = {Metadiscourse in {ChatGPT}-generated and human-written linguistics research articles},
+  journal = {Indonesian Journal of Applied Linguistics},
+  year = {2024},
+  note = {AntConc-based; 100 ChatGPT + 100 human RAs; Hyland 2005 model},
+  url = {https://vm113.upi.edu/index.php/ijal/article/download/101/55}
+}
+
+@article{hedgingengagement2024,
+  author = {Khalil, S. and others},
+  title = {The Use of Hedging Devices and Engagement Markers in {AI}-Generated Text},
+  journal = {Open Journal of Modern Linguistics},
+  year = {2024},
+  note = {Peer-reviewed; descriptive statistics; differences not statistically significant},
+  url = {https://www.scirp.org/pdf/ojml_1642125.pdf}
+}
+
+@article{detectingshanghai2024,
+  author = {Jiang, Y. and Zhao, X.},
+  title = {A Comparative Study on the Meta-functions of Artificial Intelligence-generated and Human-written Texts},
+  journal = {Journal of Education and Learning},
+  year = {2024},
+  note = {20 Wenxinyiyan + 20 human essays; t-test; differences not significant},
+  url = {https://www.davidpublisher.com/Public/uploads/Contribute/67204a7537f04.pdf}
+}
+
+@article{aibrownkoditex2025,
+  author = {Anonymous},
+  title = {Benchmark of stylistic variation in {LLM}-generated texts},
+  year = {2025},
+  eprint = {2509.10179},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; Biber MDA; AI Brown (EN) + AI Koditex (CS)},
+  url = {https://arxiv.org/html/2509.10179v2}
+}
+
+@article{lexicaldiversity2025,
+  author = {Anonymous},
+  title = {Lexical diversity in human- and {LLM}-generated text},
+  year = {2025},
+  eprint = {2508.00086},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; 6 dimensions lexical diversity; ChatGPT-3.5/4/o4-mini/4.5; L1/L2 humans},
+  url = {https://arxiv.org/pdf/2508.00086}
+}
+
+@article{detectaiacademic2026,
+  author = {Anonymous},
+  title = {Detecting {AI}-generated academic language in recently published research articles},
+  journal = {AI and Ethics (Springer)},
+  year = {2026},
+  doi = {10.1007/s43681-026-01284-z},
+  note = {Peer-reviewed; 200 Scopus Q1 articles 2021-2024, 2.76M words; 7 linguistic features},
+  url = {https://link.springer.com/article/10.1007/s43681-026-01284-z}
+}
+
+@article{japanesestylometric2025,
+  author = {Zaitsu, W. and others},
+  title = {Stylometry can reveal artificial intelligence authorship, but humans can detect it too},
+  journal = {PLOS ONE / PMC},
+  year = {2025},
+  note = {Peer-reviewed; 100 Japanese comments + 350 LLM (7 models); 100% discrimination on MDS},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC12558491/}
+}
+
+@article{eyetrackingllm2026,
+  author = {Anonymous},
+  title = {Eye Movement Features Can Predict Human Preferences on Machine-Generated Texts},
+  booktitle = {ACL SRW 2026},
+  year = {2026},
+  note = {Workshop, peer-reviewed; GREAT dataset; eye-movement features predict human judgments},
+  url = {https://aclanthology.org/2026.acl-srw.42.pdf}
+}
+
+@article{erpllm2024,
+  author = {Otwinowska-Kasztelan, A. and others},
+  title = {Comprehending semantic and syntactic anomalies in text attributed to an {LLM} versus a human: an {ERP} study},
+  journal = {Applied Psycholinguistics (Cambridge)},
+  year = {2024},
+  doi = {10.1017/S0142716424000223},
+  note = {Peer-reviewed; ERP; N400/P600 differ for LLM-attributed vs human-attributed text},
+  url = {https://www.cambridge.org/core/journals/applied-psycholinguistics/article/comprehending-semantic-and-syntactic-anomalies-in-text-attributed-to-an-llm-versus-a-human-an-erp-study/DD2C85765505375F40AB2636AB120727}
+}
+
+@article{l1l2reading2025,
+  author = {Anonymous},
+  title = {Reading comprehension in {L1} and {L2} readers: neurocomputational mechanisms revealed through large language models},
+  journal = {npj Science of Learning (Nature)},
+  year = {2025},
+  note = {Peer-reviewed; fMRI + eye-tracking; L2 = longer reading time but comparable accuracy},
+  url = {https://www.nature.com/articles/s41539-025-00337-y}
+}
+
+% ===========================================================
+% B. Detektory AI
+% ===========================================================
+
+@inproceedings{hans2024binoculars,
+  author = {Hans, Abhimanyu and Schwarzschild, Avi and Cherepanova, Valeriia and Kazemi, Hamid and Saha, Aniruddha and Goldblum, Micah and Geiping, Jonas and Goldstein, Tom},
+  title = {Spotting {LLM}s With Binoculars: Zero-Shot Detection of Machine-Generated Text},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  year = {2024},
+  eprint = {2401.12070},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Peer-reviewed (ICML 2024); zero-shot; 90%+ TPR @ 0.01% FPR on clean text},
+  url = {https://arxiv.org/abs/2401.12070}
+}
+
+@inproceedings{bao2024fastdetectgpt,
+  author = {Bao, G. and others},
+  title = {Fast-{DetectGPT}: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature},
+  booktitle = {Proceedings of the 12th International Conference on Learning Representations (ICLR)},
+  year = {2024},
+  note = {Peer-reviewed (ICLR 2024); ~75% improvement vs DetectGPT; 340x faster},
+  url = {https://iclr.cc/virtual/2024/poster/19201}
+}
+
+@inproceedings{mitchell2023detectgpt,
+  author = {Mitchell, E. and others},
+  title = {How {D}etect{GPT} Zeroes in on Essay Authorship: Zero-Shot Machine-Generated Text Detection using Probability Curvature},
+  booktitle = {ICLR 2023},
+  year = {2023},
+  note = {Peer-reviewed; zero-shot; AUROC ~0.80-0.90 on clean data},
+  url = {https://arxiv.org/abs/2301.11305}
+}
+
+@inproceedings{sadasivan2024recursive,
+  author = {Sadasivan, V. S. and Kumar, A. and Balasubramanian, S. and Wang, W. and Feizi, S.},
+  title = {Can {AI}-Generated Text be Reliably Detected?},
+  booktitle = {ICLR 2024},
+  year = {2024},
+  note = {Peer-reviewed; recursive paraphrasing drops TPR@1%FPR 99.3% -> 9.7% (watermarks), 96.5% -> 25.2% (zero-shot)},
+  url = {https://openreview.net/pdf?id=NvSwR4IvLO}
+}
+
+@inproceedings{advparaphrase2025,
+  author = {Anonymous},
+  title = {Adversarial Paraphrasing: A Universal Attack for Humanizing {AI}-Generated Text},
+  booktitle = {NeurIPS 2025},
+  year = {2025},
+  note = {Peer-reviewed (NeurIPS 2025); average TPR@1%FPR reduction 87.88% across 8 detectors},
+  url = {https://papers.neurips.cc/paper_files/paper/2025/file/443f314cd420ce621b6e748fd1194ed8-Paper-Conference.pdf}
+}
+
+@misc{arb2026,
+  author = {Anonymous},
+  title = {{ARB}: A Matched Authorship-Rewriting Benchmark Dataset for {AI} Text Detection},
+  year = {2026},
+  eprint = {2607.29539},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; detector recall 91-94% on direct LLM, 15-31% on human text rewritten by LLM},
+  url = {https://arxiv.org/html/2607.29539v1}
+}
+
+@article{liang2023biased,
+  author = {Liang, W. and Yuksekgonul, M. and Mao, Y. and Wu, E. and Zou, J.},
+  title = {{GPT} detectors are biased against non-native {E}nglish writers},
+  journal = {Patterns (Cell Press)},
+  year = {2023},
+  doi = {10.1016/j.patter.2023.100776},
+  note = {Peer-reviewed top journal; 7 detectors, 61.3% FPR on TOEFL vs ~0% on US 8th grade; 19.8% unanimous misclassification},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC10382961/}
+}
+
+@inproceedings{pindrop2026bias,
+  author = {Pindrop Team},
+  title = {{AI} Text Detection Bias: What Our {ACL} 2026 Study Found},
+  booktitle = {ACL 2026 Industry Track},
+  year = {2026},
+  note = {Industry track peer-reviewed; 16 detectors; 12/64 combinations statistically significant; ELL essays more often flagged},
+  url = {https://www.pindrop.com/article/ai-text-detection-bias/}
+}
+
+@article{liang2025naacl,
+  author = {Anonymous},
+  title = {A Practical Examination of {AI}-Generated Text Detectors for Large Language Models},
+  booktitle = {NAACL 2025 Findings},
+  year = {2025},
+  note = {Peer-reviewed; 7 detectors (RADAR, Wild, T5Sentinel, Fast-DetectGPT, PHD, LogRank, Binoculars); cross-dataset evaluation},
+  url = {https://aclanthology.org/2025.findings-naacl.271.pdf}
+}
+
+@misc{silverspeak2025,
+  author = {Anonymous},
+  title = {{S}ilver{S}peak: Evading {AI}-Generated Text Detectors using Homoglyph},
+  year = {2025},
+  note = {Preprint; 7 detectors; homoglyph attack reduces MCC (Binoculars 0.93 -> 0.02)},
+  url = {https://openreview.net/pdf/95038c04253a850659b33a2a207747900160f8e9.pdf}
+}
+
+@article{perkins2025ijethe,
+  author = {Perkins, M. and others},
+  title = {Academic {AI} detectives: Accuracy and limitations of {AI} detection tools in scholarly writing},
+  journal = {International Journal of Educational Technology in Higher Education},
+  year = {2025},
+  note = {Peer-reviewed; baseline detection accuracy 39.5% on GPT-4o/Claude 4 (vs 80%+ GPT-3.5); human raters 19%},
+  url = {https://wispaper.ai/en/research/ai-generated-content-detection-harder-methods}
+}
+
+@misc{wu2025detectability,
+  author = {Wu, J. and others},
+  title = {On the Detectability of {LLM}-Generated Text: What Exactly Is a Boundary?},
+  year = {2025},
+  eprint = {2510.20810},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; survey on detectability definitions and limits},
+  url = {https://arxiv.org/html/2510.20810v1}
+}
+
+@inproceedings{acl2025annotators,
+  author = {Anonymous},
+  title = {People who frequently use {ChatGPT} for writing tasks are effective at detecting {AI}-generated text},
+  booktitle = {ACL 2025 (Long)},
+  year = {2025},
+  note = {Peer-reviewed; 5 expert annotators: 100% TPR on humanized O1-PRO (vs Binoculars 6.7%, Fast-DetectGPT 23.3%)},
+  url = {https://aclanthology.org/2025.acl-long.267.pdf}
+}
+
+@misc{explainableai2026,
+  author = {Anonymous},
+  title = {Evidence from Explainable {AI}: Beyond Benchmark Accuracy},
+  year = {2026},
+  eprint = {2603.23146},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; PAN-CLEF F1 0.97 in-domain, but cross-domain failure},
+  url = {https://arxiv.org/html/2603.23146v2}
+}
+
+@misc{polishdetection2025,
+  author = {Anonymous},
+  title = {Unsupervised Detection of {LLM}-Generated {P}olish Text Using Perplexity Difference},
+  booktitle = {PolEval 2025 SMIGIEL Shared Task (ACL Workshop)},
+  year = {2025},
+  note = {Workshop peer-reviewed; 91 model pairs across 14 Polish models; Gemma-27B + PLLuM-12B = 81.22% accuracy on unseen generators},
+  url = {https://aclanthology.org/2025.poleval-main.5.pdf}
+}
+
+@misc{polishratio2023,
+  author = {Anonymous},
+  title = {Is {C}hat{GPT} Involved in Texts? Measure the {P}olish Ratio to Detect {C}hat{GPT}-Generated Text},
+  year = {2023},
+  eprint = {2307.11380},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; Polish Ratio > 0.2 indicates ChatGPT involvement},
+  url = {https://arxiv.org/html/2307.11380v2}
+}
+
+@misc{bielikguard2026,
+  author = {Anonymous},
+  title = {{B}ielik {G}uard: Efficient {P}olish Language Safety Classifiers for {LLM} Outputs},
+  year = {2026},
+  eprint = {2602.07954},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; 0.1B v1.1: precision 77.65%, FPR 0.63% on Polish user prompts},
+  url = {https://arxiv.org/pdf/2602.07954}
+}
+
+% ===========================================================
+% C. Norma i redakcja polska
+% ===========================================================
+
+@misc{rjp2025,
+  author = {{Rada J{\k e}zyka Polskiego przy Prezydium PAN}},
+  title = {Komunikat Rady J{\k e}zyka Polskiego z dnia 7 listopada 2025 r. oraz Komunikat z 10 maja 2024 r.},
+  year = {2025},
+  note = {Autorytatywne {\'z}r{\'o}d{\l}o normy ortograficznej; zmiany od 1 stycznia 2026 r.},
+  url = {https://rjp.pan.pl/}
+}
+
+@misc{govplprosty,
+  author = {{Ministerstwo Cyfryzacji}},
+  title = {Prosty j{\k e}zyk -- standard komunikacji publicznej},
+  year = {2025},
+  note = {Autorytatywne wytyczne dla administracji; obowi{\k a}zuj{\k a}ce na mocy ustawy o dost{\k e}pno{\'s}ci cyfrowej},
+  url = {https://www.gov.pl/web/dostepnosc-cyfrowa/prosty-jezyk}
+}
+
+@misc{psoni2026,
+  author = {{PSONI}},
+  title = {Standardy tekstu {\l}atwego do czytania i zrozumienia (ETR)},
+  year = {2026},
+  note = {Standard bran{\.z}owy zgodny z WCAG; dla os{\'o}b z niepe{\l}nosprawno{\'s}ci{\k a} intelektualn{\k a}},
+  url = {https://psoni.org.pl/wp-content/uploads/2026/03/Standardy-tekstu-latwego-do-czytania-i-zrozumienia-1.pdf}
+}
+
+@misc{zbp2025,
+  author = {{Zwi{\k a}zek Bank{\'o}w Polskich}},
+  title = {Porozumienie w sprawie standardu zrozumia{\l}o{\'s}ci j{\k e}zyka w sektorze bankowym},
+  year = {2025},
+  note = {Autorytet sektorowy; B2 + prosty j{\k e}zyk},
+  url = {https://www.zbp.pl/aktualnosci/wydarzenia/porozumienie-prosty-jezyk-2025}
+}
+
+@misc{sejm2024,
+  author = {{Sejm RP}},
+  title = {Sprawozdanie o stanie ochrony j{\k e}zyka polskiego},
+  year = {2024},
+  note = {Druk sejmowy 3999; oficjalne sprawozdanie},
+  url = {https://orka.sejm.gov.pl/Druki4ka.nsf/wgdruku/3999/$file/3999.pdf}
+}
+
+@article{passiveplmed2017,
+  author = {Kruger, J. and Szpyra-Karnafel, J.},
+  title = {The use of the passive voice in {E}nglish and {P}olish medical articles},
+  journal = {Prace Naukowe},
+  year = {2017},
+  note = {Peer-reviewed; ~30% verbs in passive in both languages; PL uses -no/-to constructions},
+  url = {https://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-080c19b2-de2c-45dc-a8d1-8dab93455245}
+}
+
+@article{nominalizationlegal2025,
+  author = {Anonymous},
+  title = {Simplifying the Complex: Nominalisation and Passivisation in Legal (Sub)language and Plain {E}nglish},
+  journal = {ZNWSB},
+  year = {2025},
+  note = {Peer-reviewed; PL/EN legal text; balance technical precision and accessibility},
+  url = {https://journals.wsb.poznan.pl/index.php/znwsb/article/view/2015}
+}
+
+@article{nominalizationsacademia2015,
+  author = {Anonymous},
+  title = {Nominalizations in {R}esearch {A}rticle {A}bstracts: A {C}omparative {S}tudy},
+  journal = {ID Publications},
+  year = {2015},
+  note = {Peer-reviewed; 50 abstracts humanities + sciences; sciences > humanities in nominalization},
+  url = {https://www.idpublications.org/wp-content/uploads/2015/05/Nominalzations-in-Research-Article-Abstracts-A-Comparative-Study.pdf}
+}
+
+@article{nominalizationsregister,
+  author = {Anonymous},
+  title = {Event and {A}gent {N}ominalisations {A}cross {A}cademic, {S}poken, and {F}iction {R}egisters},
+  journal = {Lingue e Letterature},
+  year = {2024},
+  note = {COCA + BNC; academic = 80% eventive nominalisations; spoken/fiction = agentive},
+  url = {https://air.uniud.it/retrieve/3137879d-a699-4b43-b61a-87f69715858a/23561-76239-1-PB.pdf}
+}
+
+@article{academicnaming2020,
+  author = {Suen, C. and others},
+  title = {Academic naming: changing patterns of noun use in research writing},
+  journal = {Journal of English for Academic Purposes},
+  year = {2020},
+  note = {Peer-reviewed; 2.2M words 1965-2015; nominalizations +69.5%, noun-noun sequences +21.8%}
+}
+
+@article{nominalizacjateoria1993,
+  author = {J{\k e}drzejko, E.},
+  title = {Stylistyczne aspekty nominalizacji jako teoretyczny problem lingwistyki},
+  journal = {J{\k e}zyk Artystyczny},
+  year = {1993},
+  note = {Foundational PL article on nominalization; S -> NP definition},
+  url = {https://bazhum.muzhp.pl/media/texts/jezyk-artystyczny/1993-tom-8/jezyk_artystyczny-r1993-t8-s23-35.pdf}
+}
+
+@misc{poradniajezykowaUL,
+  author = {{Poradnia J{\k e}zykowa Uniwersytetu {\L}{\'o}skiego}},
+  title = {Bezosobowo{\'s}{\'c} a teksty naukowe},
+  year = {n.d.},
+  note = {{\'Z}r{\'o}d{\l}o akademickie; bezosobowo{\'s}{\'c} jako konwencja, ale nadmiar utrudnia},
+  url = {https://www.poradnia-jezykowa.uni.lodz.pl/szczegoly/bezosobowosc-a-teksty-naukowe}
+}
+
+% ===========================================================
+% D. Creative writing craft
+% ===========================================================
+
+@article{vankrieken2017,
+  author = {van Krieken, K. and Sanders, J.},
+  title = {Ambiguous {P}erspective in {N}arrative {D}iscourse: {E}ffects of {V}iewpoint {M}arkers and {V}erb {T}ense on {R}eaders' {I}nterpretation of {R}epresented {P}erceptions},
+  journal = {Discourse Processes},
+  year = {2017},
+  doi = {10.1080/0163853X.2017.1381540},
+  note = {Peer-reviewed; 2 experiments; viewpoint markers (not tense) drive perceptual attribution},
+  url = {https://www.tandfonline.com/doi/full/10.1080/0163853X.2017.1381540}
+}
+
+@inproceedings{viewpointalignment2021,
+  author = {Mar, R. A. and others},
+  title = {Storytelling on {O}ral {G}roundss: {V}iewpoint {A}lignment and {P}erspective {T}aking in {N}arrative {D}iscourse},
+  booktitle = {Frontiers in Psychology},
+  year = {2021},
+  note = {Peer-reviewed; theoretical framework; narrator-character-reader alignment},
+  url = {https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.634930/full}
+}
+
+@article{rotmaster2020,
+  author = {Rotmaster, E. and others},
+  title = {A comparative voice analysis of {AI}-generated and {L}2 student-written essays},
+  journal = {System (Elsevier)},
+  year = {2025},
+  doi = {10.1016/j.system.2025.103702},
+  note = {Peer-reviewed; Voice Analytic Rubric (Lehman \& Su{\l}kowski 2020); AI = I-voice (boosters, attitude markers), students = C-voice},
+  url = {https://www.sciencedirect.com/science/article/abs/pii/S0346251X25000211}
+}
+
+@article{llmsimplicitstyles2025,
+  author = {Anonymous},
+  title = {{LLM}s Still Struggle to Imitate the Implicit {W}riting {S}tyles of {E}veryday {A}uthors},
+  booktitle = {Findings of EMNLP 2025},
+  year = {2025},
+  note = {Peer-reviewed; 4 datasets; LLMs <55% human in most settings, <20% in some},
+  url = {https://aclanthology.org/2025.findings-emnlp.532.pdf}
+}
+
+@article{personalllmsstories2025,
+  author = {Anonymous},
+  title = {Understanding {U}ser {P}erceptions of {P}ersonalized {LLM}-enhanced {S}tories},
+  journal = {PMC},
+  year = {2025},
+  note = {Peer-reviewed; 346 young adults; LLM stories perceived as comparable authenticity, better takeaway/reflection},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC12380106/}
+}
+
+@misc{llmtrust2026,
+  author = {Anonymous},
+  title = {{LLM} or {H}uman? {P}erceptions of {T}rust and {I}nformation {Q}uality in {S}cientific {C}ommunication},
+  year = {2026},
+  eprint = {2601.15556},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; LLM-edited abstracts rated highest; humans cannot reliably distinguish},
+  url = {https://arxiv.org/html/2601.15556v1}
+}
+
+@misc{cowritingauthenticity2024,
+  author = {Padmakumar, V. and He, H.},
+  title = {It was 80% me, 20% {AI}: {S}eeking {A}uthenticity in {C}o-{W}riting with {L}arge {L}anguage {M}odels},
+  year = {2024},
+  eprint = {2411.13032},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.HC},
+  note = {Preprint, not peer-reviewed; readers: no significant difference in enjoyability/likeability/creativity (F=0.63, p=0.536)},
+  url = {https://arxiv.org/html/2411.13032v1}
+}
+
+@misc{romantic2024,
+  author = {Anonymous},
+  title = {Reader evaluation of {AI}-generated versus human-written romantic texts},
+  year = {2024},
+  note = {Master's thesis (Erasmus University Rotterdam); 85 participants; 51.8% correct human identification; em-dash as AI signal},
+  url = {https://thesis.eur.nl/pub/76801/34319.pdf}
+}
+
+@misc{posteditingllm2026,
+  author = {Anonymous},
+  title = {Can {Y}ou {M}ake {I}t {S}ound {L}ike {Y}ou? {P}ost-{E}diting {LLM} Drafts},
+  year = {2026},
+  eprint = {2604.24444},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.HC},
+  note = {Preprint, not peer-reviewed; embedding-based style != perceived style},
+  url = {https://arxiv.org/html/2604.24444v1}
+}
+
+@misc{humanwriterpreference2025,
+  author = {Anonymous},
+  title = {Everyone prefers human writers, including {AI}},
+  year = {2025},
+  eprint = {2510.08831},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; +13.7 pp human bias for humans, +34.3 pp for AI (2.5x stronger in AI)},
+  url = {https://arxiv.org/html/2510.08831v1}
+}
+
+@misc{decodingaiauthenticity2026,
+  author = {Anonymous},
+  title = {Decoding {AI} {A}uthorship: {C}an {LLM}s {T}ruly {M}imic {H}uman {W}riting {S}tyles?},
+  year = {2026},
+  eprint = {2603.23219},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; XGBoost with 8 features ~ high-dim neural; perplexity = primary discriminant},
+  url = {https://arxiv.org/pdf/2603.23219}
+}
+
+@misc{authorboundaries2024,
+  author = {Anonymous},
+  title = {Exploring the boundaries of authorship: a comparative analysis of {AI}- and student-written essays},
+  journal = {Frontiers in Education},
+  year = {2024},
+  doi = {10.3389/feduc.2024.1347421},
+  note = {Peer-reviewed; voice intensity rating scale},
+  url = {https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1347421/full}
+}
+
+% ===========================================================
+% E. UX writing / HCI
+% ===========================================================
+
+@misc{nngerrormessage,
+  author = {{Nielsen Norman Group}},
+  title = {Error-{M}essage {G}uidelines},
+  year = {2024-2025},
+  note = {Industry research (NN/g); heuristic #9: recognize, diagnose, recover; non-blaming tone},
+  url = {https://www.nngroup.com/articles/error-message-guidelines/}
+}
+
+@misc{nngscoringrubric,
+  author = {{Nielsen Norman Group}},
+  title = {An {E}rror {M}essages {S}coring {R}ubric},
+  year = {2024-2025},
+  note = {3 dimensions: visibility, communication, efficiency; Flesch-Kincaid 7-8th grade},
+  url = {https://www.nngroup.com/articles/error-messages-scoring-rubric/}
+}
+
+@misc{nnguicopy,
+  author = {{Nielsen Norman Group}},
+  title = {{UI} {C}opy: {UX} {G}uidelines for {C}ommand {N}ames and {K}eyboard {S}hortcuts},
+  year = {2024},
+  note = {Industry; verbs + adjectives; 2-4 words; no articles; avoid "OK"},
+  url = {https://www.nngroup.com/articles/ui-copy/}
+}
+
+@misc{nnghostile,
+  author = {{Nielsen Norman Group}},
+  title = {Hostile {P}atterns in {E}rror {M}essages},
+  year = {2024},
+  note = {Industry; avoid premature error messages; reserve error styling for critical only},
+  url = {https://www.nngroup.com/articles/hostile-error-messages/}
+}
+
+@misc{apainclusivelanguage,
+  author = {{American Psychological Association}},
+  title = {Brief {G}uide to {B}ias-{F}ree and {I}nclusive {L}anguage},
+  year = {2025},
+  note = {Last updated 2025-06-25; official APA style},
+  url = {https://apastyle.apa.org/instructional-aids/inclusive-language.pdf}
+}
+
+@misc{apainclusivelanguage2,
+  author = {{American Psychological Association}},
+  title = {Inclusive {L}anguage {G}uide, 2nd ed.},
+  year = {2024},
+  note = {Living document; expanded for pregnancy, neurodiversity, religion, weight},
+  url = {https://www.apa.org/about/apa/equity-diversity-inclusion/language-guidelines}
+}
+
+@misc{apinclusive,
+  author = {{AP Stylebook}},
+  title = {Inclusive storytelling -- {AP} updates},
+  year = {2024-2025},
+  note = {Industry standard; disability, climate, immigration, Native American terms},
+  url = {https://www.silverlakect.org/files/websites/sl/AP+Stylebook+Update+on+Inclusive+Language.pdf}
+}
+
+@article{errorlocation2018,
+  author = {Sekalski, P.},
+  title = {User-{F}riendly {L}ocations of {E}rror {M}essages in {W}eb {F}orms: {A}n {E}ye {T}racking {S}tudy},
+  journal = {Future Internet (MDPI)},
+  year = {2018},
+  doi = {10.3390/fi9050023},
+  note = {Peer-reviewed; 32 participants; right side of field = fastest; group means n.s.},
+  url = {https://www.mdpi.com/1995-8692/9/5/23}
+}
+
+@misc{ilomaki_errorprinciples,
+  author = {Ilom{\"a}ki, L.},
+  title = {Design {P}rinciples for {E}rror {M}essage {C}ontent},
+  year = {n.d.},
+  note = {Master's thesis; 7 design principles: do not blame, talk like a person, no humor, short sentences, no jargon, no strong terms, include all info},
+  url = {https://trepo.tuni.fi/bitstream/10024/157576/2/IlomakiLaura.pdf}
+}
+
+% ===========================================================
+% F. MQM i ewaluacja
+% ===========================================================
+
+@article{lommel2014mqm,
+  author = {Lommel, A. and Uszkoreit, H. and Melby, A.},
+  title = {Multidimensional {Q}uality {M}etrics ({MQM}): {A} {F}ramework for {D}eclaring and {D}escribing {T}ranslation {Q}uality {M}etrics},
+  journal = {Tradum{\`a}tica},
+  year = {2014},
+  note = {Peer-reviewed; hierarchia Accuracy/Fluency/Terminology/Style/Verity/Design/Internationalization},
+  url = {https://aclanthology.org/2013.tc-1.6.pdf}
+}
+
+@article{marianamqm2015,
+  author = {Mariana, V. and Cox, T. and Melby, A.},
+  title = {The {M}ultidimensional {Q}uality {M}etrics ({MQM}) {F}ramework: {A} {N}ew {F}ramework for {T}ranslation {Q}uality {A}ssessment},
+  journal = {The Journal of Specialised Translation},
+  year = {2015},
+  note = {Peer-reviewed; MQM viable with novice raters under right conditions},
+  url = {https://scholarsarchive.byu.edu/facpub/8033/}
+}
+
+@inproceedings{clarke2011compression,
+  author = {Clarke, J. and Lapata, M.},
+  title = {Evaluating {S}entence {C}ompression: {P}itfalls and {S}uggested {R}emedies},
+  booktitle = {ACL Workshop on Monolingual Text-To-Text Generation},
+  year = {2011},
+  note = {Peer-reviewed; compression rate is strong predictor; F1 unreliable; manual preferred for paraphrastic},
+  url = {https://aclanthology.org/W11-1611.pdf}
+}
+
+@inproceedings{filippova2016compression,
+  author = {Filippova, K. and others},
+  title = {A {D}ataset and {E}valuation {M}etrics for {A}bstractive {C}ompression},
+  booktitle = {ACL 2016},
+  year = {2016},
+  note = {Peer-reviewed; substitution+rephrasing more meaning-preserving; context improves quality},
+  url = {https://aclanthology.org/D16-1033.pdf}
+}
+
+@inproceedings{readingtimequality2015,
+  author = {Sikl{\'o}si, {\'E}. and Nov{\'a}k, A. and Pr{\'o}sz{\'e}ky, M. and Indrayanto, L. and Wicaksono, A. F.},
+  title = {Reading {T}imes {P}redict the {Q}uality of {G}enerated {T}ext {A}bove and {B}eyond {H}uman {R}atings},
+  booktitle = {ACL 2015 Workshop},
+  year = {2015},
+  note = {Peer-reviewed; reading time metrics outperform ratings in classifying text quality},
+  url = {https://aclanthology.org/W15-4705.pdf}
+}
+
+@misc{llmsimplification2024,
+  author = {Wu, X. and others},
+  title = {An {I}n-depth {E}valuation of {L}arge {L}anguage {M}odels in {S}entence {S}implification},
+  year = {2024},
+  eprint = {2403.04963},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; LLM > Control-T5; LENS/BERTScore fail on high-quality},
+  url = {https://arxiv.org/html/2403.04963v3}
+}
+
+% ===========================================================
+% G. Długie formy
+% ===========================================================
+
+@misc{booookscore2024,
+  author = {Chang, Y. and others},
+  title = {{B}ooook{S}core: {A} {S}ystematic {E}xploration of {B}ook-{L}ength {S}ummarization},
+  year = {2024},
+  eprint = {2310.00785},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; hierarchical merging + incremental updating for >100K tokens},
+  url = {https://arxiv.org/html/2310.00785v4}
+}
+
+@misc{creagentive2025,
+  author = {Anonymous},
+  title = {{C}re{A}gentive: {L}ong-{F}orm {S}tory {G}eneration},
+  year = {2025},
+  note = {Preprint + workshop; 10 narrative indicators; <$1 per 100 chapters},
+  url = {https://openreview.net/pdf?id=8R4r7MXOpo}
+}
+
+@misc{ncp2025,
+  author = {Anonymous},
+  title = {Learning to {R}eason for {L}ong-{F}orm {S}tory {G}eneration},
+  year = {2025},
+  eprint = {2503.22828},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; NCP+RL preferred 76.5% over base (7B)},
+  url = {https://www.alphaxiv.org/abs/2503.22828}
+}
+
+@misc{dome2024,
+  author = {Anonymous},
+  title = {Generating {L}ong-form {S}tory {U}sing {D}ynamic {H}ierarchical {O}utlining},
+  year = {2024},
+  eprint = {2412.13575},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; DHO + MEM improves coherence},
+  url = {https://arxiv.org/html/2412.13575v1}
+}
+
+@misc{lsg2024,
+  author = {Anonymous},
+  title = {The {LSG} {C}hallenge {W}orkshop at {INLG} 2024},
+  booktitle = {ACL INLG 2024 Workshop},
+  year = {2024},
+  note = {Workshop peer-reviewed; 4-stage pipeline; GAPELMAPER metric},
+  url = {https://aclanthology.org/2024.inlg-genchal.13.pdf}
+}
+
+@misc{openaisummarizebooks,
+  author = {{OpenAI}},
+  title = {Summarizing books with human feedback},
+  year = {2021},
+  note = {Industry; recursive task decomposition; 6/7 human-equivalent 5% of time},
+  url = {https://openai.com/index/summarizing-books/}
+}
+
+% ===========================================================
+% H. Model / prompt / temperatura
+% ===========================================================
+
+@misc{temperature2024,
+  author = {Anonymous},
+  title = {The {E}ffect of {S}ampling {T}emperature on {P}roblem {S}olving in {L}arge {L}anguage {M}odels},
+  year = {2024},
+  eprint = {2402.05201},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.AI},
+  note = {Preprint, not peer-reviewed; T 0.0-1.0 no significant impact on problem-solving accuracy},
+  url = {https://arxiv.org/html/2402.05201v1}
+}
+
+@misc{temperaturecreativity2024,
+  author = {Peeperkorn, M. and others},
+  title = {Is {T}emperature the {C}reativity {P}arameter of {L}arge {L}anguage {M}odels?},
+  year = {2024},
+  eprint = {2405.00492},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; T weakly correlated with novelty, moderately with incoherence, no relation to cohesion/typicality},
+  url = {https://arxiv.org/abs/2405.00492}
+}
+
+@inproceedings{minp2025,
+  author = {Nguyen, M. and others},
+  title = {Turning {U}p the {H}eat: {M}in-p {S}ampling for {C}reative and {C}oherent {LLM} {G}eneration},
+  booktitle = {ICLR 2025},
+  year = {2025},
+  note = {Peer-reviewed; min-p > top-p, especially at high temperature},
+  url = {https://openreview.net/forum?id=FBkpCyujtS}
+}
+
+@misc{chatgptcontrollable2023,
+  author = {Bonifacio, L. and others},
+  title = {{C}hat{GPT} vs {H}uman-{A}uthored {T}ext: {T}oward a {D}istinction},
+  year = {2023},
+  eprint = {2306.07799},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; formality & MTLD control possible but disparities remain},
+  url = {https://arxiv.org/html/2306.07799v2}
+}
+
+@misc{registersteering2025,
+  author = {Anonymous},
+  title = {Steering {L}arge {L}anguage {M}odels with {R}egister {A}nalysis for {M}imicking {S}tyle},
+  year = {2025},
+  eprint = {2505.00679},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; Biber register-based prompts = better meaning preservation},
+  url = {https://arxiv.org/html/2505.00679v1}
+}
+
+@misc{temperatureextreme2025,
+  author = {Anonymous},
+  title = {Exploring the {I}mpact of {T}emperature on {L}arge {L}anguage {M}odels},
+  year = {2025},
+  eprint = {2506.07295},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; skill-specific temperature effects; BERT-based temperature selector},
+  url = {https://arxiv.org/html/2506.07295v1}
+}
+
+@misc{temperatureideology2026,
+  author = {Anonymous},
+  title = {How {T}emperature {S}hapes {I}deological {D}iscourse in {RAG}},
+  year = {2026},
+  eprint = {2607.11783},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; discursive alignment highest at moderate temperature},
+  url = {https://arxiv.org/html/2607.11783v1}
+}
+
+@misc{promptpoliteness2025,
+  author = {Dobariya, O. and Kumar, A.},
+  title = {{M}ind {Y}our {T}one: {I}nvestigating {H}ow {P}rompt {P}oliteness {A}ffects {LLM} {A}ccuracy},
+  year = {2025},
+  eprint = {2510.04950},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; impolite > polite on 50 MCQ: 80.8% vs 84.8%},
+  url = {https://arxiv.org/abs/2510.04950}
+}
+
+@misc{quantifyingtemp2026,
+  author = {Anonymous},
+  title = {Quantifying {T}emperature {E}ffects on {LLM} {O}utput {D}iversity},
+  booktitle = {ICOIN 2026},
+  year = {2026},
+  note = {Peer-reviewed; distinct-2 saturates at T=0.8; recommended T ranges per task type},
+  url = {https://www.computer.org/csdl/proceedings-article/icoin/2026/11480464/2g3lCeDrLe8}
+}
+
+% ===========================================================
+% I. Operacje redakcyjne
+% ===========================================================
+
+@inproceedings{paraphrasticcompression,
+  author = {Zhuang, L. and Chang, X. and Long, S.},
+  title = {Paraphrastic {S}entence {C}ompression with a {C}haracter-based {S}ubstitution {M}odel},
+  booktitle = {ACL},
+  year = {n.d.},
+  note = {Peer-reviewed; paraphrastic > deletion-only at uniform length},
+  url = {https://www.cis.upenn.edu/~ccb/publications/paraphrastic-sentence-compression.pdf}
+}
+
+@misc{acceptability2019,
+  author = {Napoles, C. and others},
+  title = {Human Acceptability {J}udgements for {E}xtractive {S}entence {C}ompression},
+  year = {2019},
+  eprint = {1902.00489},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; native speakers' "sounds good" as flexible supervision},
+  url = {https://ar5iv.labs.arxiv.org/html/1902.00489}
+}
+
+% ===========================================================
+% J. Polski kontekst: modele, systemy, eksperci
+% ===========================================================
+
+@misc{bielikv3tech2026,
+  author = {Ociepa, K. and others},
+  title = {{B}ielik 11{B} v3: {M}ultilingual {L}arge {L}anguage {M}odel for {E}uropean {L}anguages},
+  year = {2026},
+  eprint = {2601.11579},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; technical report; Open PL LLM avg 65.93 (instruct)},
+  url = {https://arxiv.org/pdf/2601.11579}
+}
+
+@misc{bielikv2tech2025,
+  author = {Ociepa, K. and others},
+  title = {{B}ielik 11{B} v2 {T}echnical {R}eport},
+  year = {2025},
+  eprint = {2505.02410},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; 198B tokens, 65.71 avg},
+  url = {https://arxiv.org/html/2505.02410v2}
+}
+
+@misc{pllum2025,
+  author = {PLLuM Consortium},
+  title = {{PLLuM}: {A} {F}amily of {P}olish {L}arge {L}anguage {M}odels},
+  year = {2025},
+  eprint = {2511.03823},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+  note = {Preprint, not peer-reviewed; technical report; ASR <1.5%},
+  url = {https://arxiv.org/html/2511.03823v1}
+}
+
+@misc{pllumgov,
+  author = {{Ministerstwo Cyfryzacji}},
+  title = {{PLLuM} -- polski model j{\k e}zykowy. {J}ak dzia{\l}a i do czego mo{\.z}e si{\k e} przyda{\'c}},
+  year = {2024-2026},
+  note = {Official; PLLuM open Polish model by government consortium},
+  url = {https://www.gov.pl/web/cyfryzacja/pllum--polski-model-jezykowy-jak-dziala-i-do-czego-moze-sie-przydac}
+}
+
+@misc{csi2026,
+  author = {{Centrum Sztucznej Inteligencji UAM}},
+  title = {{B}ielik czy {PLLuM}?},
+  year = {2026},
+  note = {Institutional report; A/B test: Bielik 81.5% A/B win},
+  url = {https://csi.amu.edu.pl/wiadomosci/csi/bielik-czy-pllum}
+}
+
+@misc{rjpdebata2026,
+  author = {{Rada J{\k e}zyka Polskiego + Miasto Pozna{\'n}}},
+  title = {J{\k e}zyk a sztuczna inteligencja -- debata},
+  year = {2026},
+  note = {Autorytarna debata PAN; eksperci: PLLuM/Bielik wymagaj{\k a} polskich danych},
+  url = {https://codziennypoznan.pl/artykul/2026-02-19/jezyk-w-erze-sztucznej-inteligencji-naukowcy-w-poznaniu-debatowali-o-wplywie-chatgpt-na-komunikacje/}
+}
+
+@misc{jsagov2024,
+  author = {{Ministerstwo Nauki i Szkolnictwa Wy\.zszego}},
+  title = {{JSA} -- promotor sprawdzi, czy student korzysta{\l} z technologii {C}hat{GPT}},
+  year = {2024},
+  note = {Official; JSA uses regularity as AI-detection proxy; final decision with supervisor},
+  url = {https://www.gov.pl/web/nauka/jsa--promotor-sprawdzi-czy-student-korzystal-z-technologii-chatgpt}
+}
+
+@misc{mozillafoundationPL,
+  author = {{Mozilla Foundation}},
+  title = {Kto to napisa{\l}? {O}cena narz{\k e}dzi do wykrywania tekstu {AI}},
+  year = {2024-2025},
+  note = {Industry; Binoculars 43% TPR on Polish (vs 90% original); not peer-reviewed},
+  url = {https://www.mozillafoundation.org/pl/blog/who-wrote-that-evaluating-tools-to-detect-ai-generated-text/}
+}
+
+@misc{rudnicka2025,
+  author = {Rudnicka, K.},
+  title = {Ekspertka: {M}odele {AI} maj{\k a} swoje style pisania},
+  year = {2024-2025},
+  note = {Expert opinion (PAP/RP); "Nie ma narz{\k e}dzia" do 100% detection},
+  url = {https://www.rp.pl/nauka/art44950241-nie-ma-narzedzia-do-rozpoznania-tekstu-ai-ekspertka-o-wlasnym-stylu-chatbotow}
+}

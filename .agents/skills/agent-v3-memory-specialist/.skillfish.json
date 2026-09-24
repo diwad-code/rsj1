@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-v3-memory-specialist",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-v3-memory-specialist",
+  "branch": "main",
+  "sha": "9fa3049eee9237f388009a366b2562789fa077b2",
+  "source": "manual"
+}

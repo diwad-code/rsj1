@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "backend-architect",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/backend-architect",
+  "branch": "main",
+  "sha": "ab81bb925e22e0baa50940068c2466544be1d92d",
+  "source": "manual"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-payments",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-payments",
+  "branch": "main",
+  "sha": "a3a3af333be2009816b172e4bbf7f2574e3cc5c4",
+  "source": "manual"
+}

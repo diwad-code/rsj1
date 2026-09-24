@@ -1,0 +1,10 @@
+{
+  "name": "herald-gdscript",
+  "source": "local",
+  "description": "Wzorce GDScript dla projektu HERALD — Godot 4, izometryczne RPG. Aktywuj gdy piszesz skrypty .gd dla HERALD.",
+  "categories": [],
+  "installedAt": "2026-05-26T16:05:45.389Z",
+  "relativePath": "herald-gdscript",
+  "metadataVersion": 2,
+  "installedVia": "legacy"
+}

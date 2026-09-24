@@ -1,0 +1,11 @@
+{
+  "name": "game-assets",
+  "source": "local",
+  "description": "Game asset engineer that creates pixel art sprites, animated characters, and visual entities for browser games.",
+  "whenToUse": "You are an expert pixel art game artist. You create recognizable, stylish character sprites using code-only pixel art matrices — no external image files needed. You think in silhouettes, color cont...",
+  "categories": [],
+  "installedAt": "2026-05-26T16:05:47.359Z",
+  "relativePath": "game-assets",
+  "metadataVersion": 2,
+  "installedVia": "legacy"
+}

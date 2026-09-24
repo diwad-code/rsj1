@@ -1,0 +1,39 @@
+[
+  {
+    "session_id": "5ce9651b-d45a-4bf3-9b26-325f80524702",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\5ce9651b-d45a-4bf3-9b26-325f80524702.jsonl",
+    "cwd": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-012",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\5ce9651b-d45a-4bf3-9b26-325f80524702\\scratchpad",
+    "prompt_id": "b3dee0ad-f9ac-4d8d-958f-a4e0b3a8d326",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "for d in tmp-browser-h04-v4 tmp-browser-h04-v4-r2 tmp-browser-h04-v3-r10; do f=$d/h04-H04-competition-real-r-4f093-ld-version-replay-isolation/trace.zip; [ -f $f ] && echo \"== $d\" && unzip -p $f '*.trace' 2>/dev/null | grep -o 'H04 competition AUTO[^\"]*' | head -3; head -c 600 $d/h04-H04-competition-real-r-4f093-ld-version-replay-isolation/error-context.md; echo; done",
+      "description": "Extract competition logs from traces"
+    },
+    "tool_use_id": "toolu_01B7N8jxJV4TMaucaGsv7jqD"
+  },
+  {
+    "session_id": "5ce9651b-d45a-4bf3-9b26-325f80524702",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\C--retro-ski-jumping\\5ce9651b-d45a-4bf3-9b26-325f80524702.jsonl",
+    "cwd": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-012",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\5ce9651b-d45a-4bf3-9b26-325f80524702\\scratchpad",
+    "prompt_id": "b3dee0ad-f9ac-4d8d-958f-a4e0b3a8d326",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd /c/retro-ski-jumping && P=/c/Users/admin/AppData/Local/Temp/claude/C--retro-ski-jumping/5ce9651b-d45a-4bf3-9b26-325f80524702/scratchpad/probe; python - <<EOF\np=r'C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\C--retro-ski-jumping\\5ce9651b-d45a-4bf3-9b26-325f80524702\\scratchpad\\probe\\h04.probe.ts'\ns=open(p,encoding='utf-8').read()\ns=s.replace(\"\"\"  for (const lag of [2, 3]) for (const period of [2, 3]) for (const offset of [-4, -2, 0, 2, 4]) {\n    const s = browserPilot(hill, cGate, field, offset, lag, period)\"\"\",\"\"\"  const detail: string[] = []\n  for (const lag of config.lags ?? [2, 3]) for (const period of config.periods ?? [2, 3]) for (const offset of config.offsets ?? [-4, -2, 0, 2, 4]) {\n    const s = browserPilot(hill, cGate, field, offset, lag, period)\n    if (config.detail) { const ev = s.events.filter(e => ['takeoffImpulseStart','takeoffEdge','landingPrep','contact'].includes(e.type)).map(e => e.type[0]+e.tick).join(','); detail.push(\\`o\\${offset} l\\${lag} p\\${period}: \\${s.outcome?.status} \\${s.measuredDistanceMeters?.toFixed(1)} [\\${ev}]\\`) }\"\"\")\ns=s.replace(\"\"\"  console.log(JSON.stringify(out))\"\"\",\"\"\"  console.log(JSON.stringify(out)); if (detail.length) console.log(detail.join('\\\\n'))\"\"\")\ns=s.replace(\"type Config = { sweep: boolean; base: boolean; candidates: Record<string, CoefficientPoint[]> }\",\"type Config = { sweep: boolean; base: boolean; detail?: boolean; lags?: number[]; periods?: number[]; offsets?: number[]; candidates: Record<string, CoefficientPoint[]> }\")\nopen(p,'w',encoding='utf-8').write(s)\nEOF\ncat > $P/probe.json <<'EOF'\n{ \"sweep\": false, \"base\": true, \"detail\": true, \"lags\": [2, 6], \"periods\": [3, 6], \"offsets\": [4, 5, 6, 7, 8], \"candidates\": {} }\nEOF\nnpx vitest run --config $P/probe.config.mjs --silent=false 2>&1 | grep -E \"^\\{|^o-?[0-9]|rror\" | head -40",
+      "timeout": 600000,
+      "description": "Probe late takeoff offsets with detail"
+    },
+    "tool_use_id": "toolu_01XgBMb49PZVkyQ7i8yMATTM"
+  }
+]

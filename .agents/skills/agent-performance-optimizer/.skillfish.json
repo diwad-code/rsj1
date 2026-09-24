@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-performance-optimizer",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-performance-optimizer",
+  "branch": "main",
+  "sha": "8ed5a2ea59ca6ceca5d48fed018bafcbfe34d602",
+  "source": "manual"
+}

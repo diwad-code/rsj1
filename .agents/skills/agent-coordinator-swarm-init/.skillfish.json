@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-coordinator-swarm-init",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-coordinator-swarm-init",
+  "branch": "main",
+  "sha": "aea8b900877531a94b3248a4d72db9e7a5da6dcc",
+  "source": "manual"
+}

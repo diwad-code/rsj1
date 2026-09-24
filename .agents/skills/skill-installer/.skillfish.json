@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "skill-installer",
+  "owner": "plurigrid",
+  "repo": "asi",
+  "path": "ies/music-topos/.claude-marketplaces/topos-skills/plugins/topos-skills/skills/skill-installer",
+  "branch": "main",
+  "sha": "6ac7530a84f0df822babb1be6e8fcfd5982da1db",
+  "source": "manual"
+}

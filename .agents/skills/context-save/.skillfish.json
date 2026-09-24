@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "context-save",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/context-save",
+  "branch": "main",
+  "sha": "2ab2d747100cac720f0d419721c02caf0053ba38",
+  "source": "manual"
+}

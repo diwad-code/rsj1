@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "config-validate",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/config-validate",
+  "branch": "main",
+  "sha": "766077b2742d1561cbafbad88fad99937d5c55fc",
+  "source": "manual"
+}

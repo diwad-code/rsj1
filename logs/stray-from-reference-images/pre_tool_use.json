@@ -1,0 +1,107 @@
+[
+  {
+    "session_id": "f249d97d-8d51-46f8-8dc5-71217cd1c5da",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\c--retro-ski-jumping\\f249d97d-8d51-46f8-8dc5-71217cd1c5da.jsonl",
+    "cwd": "C:\\retro-ski-jumping\\docs\\research\\reference-images",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\c--retro-ski-jumping\\f249d97d-8d51-46f8-8dc5-71217cd1c5da\\scratchpad",
+    "prompt_id": "a322904c-40c2-407a-882a-7ac814d6c492",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "C:\\retro-ski-jumping\\docs\\research\\reference-images\\dsj2-screenshot1.jpg"
+    },
+    "tool_use_id": "toolu_011wXMWKwCuwKTamHhpLRm4p"
+  },
+  {
+    "session_id": "f249d97d-8d51-46f8-8dc5-71217cd1c5da",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\c--retro-ski-jumping\\f249d97d-8d51-46f8-8dc5-71217cd1c5da.jsonl",
+    "cwd": "C:\\retro-ski-jumping\\docs\\research\\reference-images",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\c--retro-ski-jumping\\f249d97d-8d51-46f8-8dc5-71217cd1c5da\\scratchpad",
+    "prompt_id": "a322904c-40c2-407a-882a-7ac814d6c492",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "C:\\retro-ski-jumping\\docs\\research\\reference-images\\dsj2-screenshot2.jpg"
+    },
+    "tool_use_id": "toolu_01SvKYT7NszoBZ8vPcaEHXAj"
+  },
+  {
+    "session_id": "f249d97d-8d51-46f8-8dc5-71217cd1c5da",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\c--retro-ski-jumping\\f249d97d-8d51-46f8-8dc5-71217cd1c5da.jsonl",
+    "cwd": "C:\\retro-ski-jumping\\docs\\research\\reference-images",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\c--retro-ski-jumping\\f249d97d-8d51-46f8-8dc5-71217cd1c5da\\scratchpad",
+    "prompt_id": "a322904c-40c2-407a-882a-7ac814d6c492",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "C:\\retro-ski-jumping\\docs\\research\\reference-images\\dsj2-screenshot3.jpg"
+    },
+    "tool_use_id": "toolu_01Lr41zvyC7uduJMsddXN67L"
+  },
+  {
+    "session_id": "f249d97d-8d51-46f8-8dc5-71217cd1c5da",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\c--retro-ski-jumping\\f249d97d-8d51-46f8-8dc5-71217cd1c5da.jsonl",
+    "cwd": "C:\\retro-ski-jumping\\docs\\research\\reference-images",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\c--retro-ski-jumping\\f249d97d-8d51-46f8-8dc5-71217cd1c5da\\scratchpad",
+    "prompt_id": "a322904c-40c2-407a-882a-7ac814d6c492",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "C:\\retro-ski-jumping\\docs\\research\\reference-images\\dsj2-screenshot4.jpg"
+    },
+    "tool_use_id": "toolu_011vpYjYMQKTiy5Er3SjRye5"
+  },
+  {
+    "session_id": "f249d97d-8d51-46f8-8dc5-71217cd1c5da",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\c--retro-ski-jumping\\f249d97d-8d51-46f8-8dc5-71217cd1c5da.jsonl",
+    "cwd": "C:\\retro-ski-jumping\\docs\\research\\reference-images",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\c--retro-ski-jumping\\f249d97d-8d51-46f8-8dc5-71217cd1c5da\\scratchpad",
+    "prompt_id": "a322904c-40c2-407a-882a-7ac814d6c492",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "python - <<'PYEOF'\nimport struct, io, os, hashlib\ndef gif_size(p):\n    with open(p,'rb') as f:\n        h=f.read(10)\n    return struct.unpack('<HH', h[6:10])\nfor f in sorted(os.listdir('.')):\n    if f.endswith('.gif'):\n        w,h=gif_size(f); print(f'{f:16} {w}x{h}')\nprint()\nfor n in range(1,5):\n    f=f'dsj2-screenshot{n}.jpg'\n    print(f'{hashlib.sha256(open(f,\"rb\").read()).hexdigest().upper()}  {f}')\nPYEOF",
+      "description": "Wymiary referencji i sumy DSJ2"
+    },
+    "tool_use_id": "toolu_01BjGMa7JY5K7ViG3kswaoz9"
+  },
+  {
+    "session_id": "f249d97d-8d51-46f8-8dc5-71217cd1c5da",
+    "transcript_path": "C:\\Users\\admin\\.claude\\projects\\c--retro-ski-jumping\\f249d97d-8d51-46f8-8dc5-71217cd1c5da.jsonl",
+    "cwd": "C:\\retro-ski-jumping\\docs\\research\\reference-images",
+    "scratchpad_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\claude\\c--retro-ski-jumping\\f249d97d-8d51-46f8-8dc5-71217cd1c5da\\scratchpad",
+    "prompt_id": "a322904c-40c2-407a-882a-7ac814d6c492",
+    "permission_mode": "bypassPermissions",
+    "effort": {
+      "level": "high"
+    },
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd /c/retro-ski-jumping && python - <<'PYEOF'\nimport io\np='docs/research/reference-images/README.md'\ns=io.open(p,encoding='utf-8').read()\n\nold_title = \"# Materia\u0139\u201ay obrazowe SJ3\\n\\nPobrano i obejrzano 2026-09-16\"\nnew_title = (\"# Materia\u0139\u201ay obrazowe gier odniesienia\\n\\n\"\n \"Obie gry s\u00c4\u2026 **r\u0102\u0142wnorz\u00c4\u2122dn\u00c4\u2026 inspiracj\u00c4\u2026** wizualn\u00c4\u2026, zgodnie z decyzj\u00c4\u2026 u\u0139\u013dytkownika z 2026-09-16:\\n\"\n \"**Ski Jump International 3** wyznacza kamer\u00c4\u2122, sterowanie i widok z boku, a **Deluxe Ski Jump 2**\\n\"\n \"dyscyplin\u00c4\u2122 palety, kontrast, cie\u0139\u201e pod skoczkiem, minimalny HUD i p\u0139\u201aynno\u0139\u203a\u00c4\u2021. Szczeg\u0102\u0142\u0139\u201ay kierunku\\n\"\n \"artystycznego s\u00c4\u2026 w [AGENTS.md](../../../AGENTS.md).\\n\\n\"\n \"## SJ3 (Ski Jump International 3)\\n\\nPobrano i obejrzano 2026-09-16\")\nassert old_title in s\ns = s.replace(old_title, new_title, 1)\n\ndsj2 = \"\"\"\n## DSJ2 (Deluxe Ski Jump 2)\n\nPobrano i obejrzano **2026-09-16** z [oficjalnej galerii Mediamond](https://www.mediamond.fi/dsj2/gallery/).\nTo zrzuty pierwowzoru, **nie mockupy nowej gry**. Autor gry: **Jussi Koskela / Mediamond**,\n`Copyright \u00c2\u00a9 Jussi Koskela`. Nie przypisujemy sobie praw do tych materia\u0139\u201a\u0102\u0142w i nie deklarujemy\nosobnej licencji na ich redystrybucj\u00c4\u2122. Pliki s\u0139\u201au\u0139\u013d\u00c4\u2026 dokumentacji i analizie; **nie umieszcza\u00c4\u2021 ich\nw `public/`, paczce asset\u0102\u0142w ani buildzie gry.** Dodane za wyra\u0139\u015fnym upowa\u0139\u013dnieniem u\u0139\u013dytkownika.\n\nGaleria podaje, \u0139\u013de s\u00c4\u2026 to autentyczne zrzuty z pe\u0139\u201anej wersji DSJ 2.10 w **oryginalnej\nrozdzielczo\u0139\u203aci 320\u0102\u2014200** \u00e2\u20ac\u201d i tak\u00c4\u2026 rozdzielczo\u0139\u203a\u00c4\u2021 maj\u00c4\u2026 pobrane pliki.\n\n| Plik | Oryginalny adres | Co obejrzano |\n| ---| ---| ---|\n| [dsj2-screenshot1.jpg](dsj2-screenshot1.jpg) | [screenshot1.jpg](https://www.mediamond.fi/dsj2/gallery/screenshot1.jpg) | Rozbieg z widoku zza zawodnika, bandy, \u0139\u203awierki, wska\u0139\u015fnik wiatru |\n| [dsj2-screenshot2.jpg](dsj2-screenshot2.jpg) | [screenshot2.jpg](https://www.mediamond.fi/dsj2/gallery/screenshot2.jpg) | Lot nad zeskokiem, wyra\u0139\u015fny cie\u0139\u201e na \u0139\u203aniegu, p\u0139\u201aaskie cieniowanie terenu |\n| [dsj2-screenshot3.jpg](dsj2-screenshot3.jpg) | [screenshot3.jpg](https://www.mediamond.fi/dsj2/gallery/screenshot3.jpg) | Lot z cieniem i lini\u00c4\u2026 pomiaru, zielone linie zeskoku |\n| [dsj2-screenshot4.jpg](dsj2-screenshot4.jpg) | [screenshot4.jpg](https://www.mediamond.fi/dsj2/gallery/screenshot4.jpg) | L\u00c4\u2026dowanie, noty s\u00c4\u2122dziowskie, odleg\u0139\u201ao\u0139\u203a\u00c4\u2021 151,0 m, minimalny HUD |\n\n**Uwaga o gatunku widoku:** DSJ2 rysuje scen\u00c4\u2122 z perspektywy zza zawodnika w p\u0139\u201aaskim cieniowaniu,\na nie z boku jak SJ3 i nasza gra. Sylwetka skoczka jest w DSJ2 ma\u0139\u201aa i ogl\u00c4\u2026dana od ty\u0139\u201au. Z DSJ2\nbierzemy wi\u00c4\u2122c palet\u00c4\u2122, kontrast, cie\u0139\u201e, minimalizm HUD i p\u0139\u201aynno\u0139\u203a\u00c4\u2021, a nie dos\u0139\u201aowny sprite zawodnika.\n\n### SHA-256\n\n```text\n423AAFA506C2608A4256A32B02866223F8EBD33E23137ACAFDF5FE2F8642A0A2  dsj2-screenshot1.jpg\n12498ABFD9DE69EACE003EFFE60490957E528EE9055E7488A3F659C61C8F9BE3  dsj2-screenshot2.jpg\nB41A19126A69A9A95E6FBFA51BC44556B271E4A68973120DDF02818EFC96B367  dsj2-screenshot3.jpg\n96A12A858A8107F946878493B767F895B25E627A615DBAC75B8F4C24B73F8C3B  dsj2-screenshot4.jpg\n```\n\n### Rozdzielczo\u0139\u203aci referencyjne\n\n| \u0139\u0105r\u0102\u0142d\u0139\u201ao | Rozdzielczo\u0139\u203a\u00c4\u2021 |\n| ---| ---|\n| SJ3 \u00e2\u20ac\u201d zrzuty pe\u0139\u201anoekranowe | 640\u0102\u2014400 |\n| DSJ2 \u00e2\u20ac\u201d zrzuty z galerii | 320\u0102\u2014200 |\n| Nasza gra dzi\u0139\u203a | 960\u0102\u2014540 (bez jawnej siatki pikseli) |\n\nTa tabela jest wej\u0139\u203aciem do decyzji o rozdzielczo\u0139\u203aci wewn\u00c4\u2122trznej w P41/P42.\n\"\"\"\ns = s.rstrip('\\n') + '\\n' + dsj2\nio.open(p,'w',encoding='utf-8').write(s)\nprint('manifest ok')\nPYEOF\npwsh -File docs/tools/validate-documentation.ps1 2>&1 | grep -E '\"result\"|errors'",
+      "timeout": 300000,
+      "description": "Manifest referencji DSJ2"
+    },
+    "tool_use_id": "toolu_015ZxebsE5ByvXv4N4wobNqu"
+  }
+]

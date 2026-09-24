@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "event-sourcing-architect",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/event-sourcing-architect",
+  "branch": "main",
+  "sha": "be6274f9ee9483d6b4515835f389228a9ef20e73",
+  "source": "manual"
+}

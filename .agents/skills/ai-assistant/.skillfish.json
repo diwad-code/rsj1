@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "ai-assistant",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/ai-assistant",
+  "branch": "main",
+  "sha": "72c9ba5dbed9f7ede603733d191c50fcb08684a4",
+  "source": "manual"
+}

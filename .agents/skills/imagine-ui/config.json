@@ -1,0 +1,44 @@
+{
+  "size": "1024x1536",
+  "aspect": "2:3 (9:19.5 근사)",
+  "format": "png",
+  "quality": "medium",
+  "output_dir": "./images/ui",
+  "default_system": "kr-minimal",
+  "default_mood": "light",
+  "default_density": "loose",
+  "negative_prompt": "real readable text, photo of phone, hand holding phone, device frame, bezel, notch, cluttered elements, real brand logo, korean letters, chinese letters, japanese letters",
+  "system_presets": {
+    "ios": "iOS 19 style UI, rounded 12px corners, SF Pro-like sans-serif aesthetic, subtle hairline dividers, light system background, decorative sans-serif glyph placeholders",
+    "android": "Material 3 style UI, 16dp rounded corners, Roboto-like sans-serif aesthetic, accent color surfaces, elevation shadows soft, decorative sans-serif glyph placeholders",
+    "web-mobile": "responsive web UI adapted to mobile viewport, 8px rounded inputs, neutral sans-serif aesthetic, clean card stack, decorative sans-serif glyph placeholders",
+    "kr-minimal": "clean rounded card layout, soft beige or neutral background, subtle shadow, Pretendard-like sans-serif aesthetic, Korean fintech app UI style, decorative sans-serif glyph placeholders"
+  },
+  "screen_presets": {
+    "login":      "single column, logo top, two input fields, CTA button, secondary link below",
+    "feed":       "vertical list of cards, thumbnail on left or top, subtle metadata row below title, sticky top bar",
+    "detail":     "hero media at top, title and metadata, action row, body content blocks, related section",
+    "settings":   "grouped list rows, icons on the left, chevrons on the right, section headers with small caps",
+    "onboarding": "full-bleed illustration or gradient, large headline placeholder, short supporting line, primary CTA, pager dots",
+    "empty":      "centered illustration, short headline placeholder, one action button, generous negative space"
+  },
+  "mood_map": {
+    "light": "light neutral palette, soft shadows, airy composition",
+    "dark":  "dark neutral palette, subtle glow, high contrast accents",
+    "warm":  "warm neutral beige/cream palette, gentle shadows",
+    "cold":  "cool neutral palette with blue-grey accents, crisp edges"
+  },
+  "density_map": {
+    "loose":   "generous spacing, large tap targets, fewer elements per screen",
+    "compact": "tighter spacing, denser information stacking, smaller tap targets"
+  },
+  "style_guardian": {
+    "manifest_keys": ["system", "palette_hex", "corner_radius_estimate", "mood", "density"],
+    "auto_carry_on": ["--keep", "같은 스타일로", "같은 톤으로", "이어서", "same style as before"]
+  },
+  "variation": {
+    "default_n": 1,
+    "max_n": 4
+  },
+  "output_filename": "<screen>_<system>_<mood>_<ts>.png"
+}

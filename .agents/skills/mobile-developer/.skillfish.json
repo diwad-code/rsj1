@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "mobile-developer",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/mobile-developer",
+  "branch": "main",
+  "sha": "e7e281ca08ceab6da62ee7e2926c4b7c0c3b3d1e",
+  "source": "manual"
+}

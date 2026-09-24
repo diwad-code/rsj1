@@ -1,0 +1,521 @@
+% SYNTEZA-SOURCES.bib — zweryfikowana bibliografia syntezy
+% Data: 2026-08-29
+% Zasada: tylko rekordy faktycznie wykorzystane w SYNTEZA-RAPORT.md, sprawdzone
+%         przez Crossref, ACL Anthology, arXiv lub stronę instytucji (patrz
+%         SYNTEZA-SEARCHLOG.yaml, pola V## i F##). DOI zdeduplikowane.
+%         Preprinty oznaczone polem `note = {Preprint, nierecenzowany}`.
+%         Rekordy sprawdzone wyłącznie na poziomie metadanych mają
+%         `note = {... ACCESS: METADATA-ONLY}`.
+% NIE ZAWIERA: raportów pięciu modeli (są wejściem do audytu, nie źródłem),
+%              blogów, list "słów AI", stron vendorów detektorów i humanizerów.
+
+% =====================================================================
+% A. DETEKCJA TEKSTU AI, AUTORSTWO I GRANICE WNIOSKOWANIA
+% =====================================================================
+
+@article{weberwulff2023testing,
+  author  = {Weber-Wulff, Debora and Anohina-Naumeca, Alla and Bjelobaba, Sonja and Foltýnek, Tomáš and Guerrero-Dib, Jean and Popoola, Olumide and Šigut, Petr and Waddington, Lorna},
+  title   = {Testing of detection tools for {AI}-generated text},
+  journal = {International Journal for Educational Integrity},
+  year    = {2023},
+  volume  = {19},
+  number  = {1},
+  pages   = {26},
+  doi     = {10.1007/s40979-023-00146-z}
+}
+
+@article{sadasivan2025reliably,
+  author  = {Sadasivan, Vinu Sankar and Kumar, Aounon and Balasubramanian, Sriram and Wang, Wenxiao and Feizi, Soheil},
+  title   = {Can {AI}-generated text be reliably detected? {S}tress testing {AI} text detectors under various attacks},
+  journal = {Transactions on Machine Learning Research},
+  year    = {2025},
+  note    = {Opublikowane w TMLR w styczniu 2025; wcześniejsza wersja jako arXiv:2303.11156}
+}
+
+@article{liang2023biased,
+  author  = {Liang, Weixin and Yuksekgonul, Mert and Mao, Yining and Wu, Eric and Zou, James},
+  title   = {{GPT} detectors are biased against non-native {E}nglish writers},
+  journal = {Patterns},
+  year    = {2023},
+  volume  = {4},
+  number  = {7},
+  pages   = {100779},
+  doi     = {10.1016/j.patter.2023.100779}
+}
+
+@article{jiang2024detecting,
+  author  = {Jiang, Yang and Hao, Jiangang and Fauss, Michael and Li, Chen},
+  title   = {Detecting {ChatGPT}-generated essays in a large-scale writing assessment: {I}s there a bias against non-native {E}nglish speakers?},
+  journal = {Computers \& Education},
+  year    = {2024},
+  volume  = {217},
+  pages   = {105070},
+  doi     = {10.1016/j.compedu.2024.105070},
+  note    = {Kontrdowód dla liang2023biased przy starannym próbkowaniu danych GRE}
+}
+
+@misc{alali2026revisiting,
+  author       = {Al Ali, Adnan and Helcl, Jindřich and Libovický, Jindřich},
+  title        = {Different time, different language: {R}evisiting the bias against non-native speakers in {GPT} detectors},
+  year         = {2026},
+  eprint       = {2602.05769},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL},
+  url          = {https://arxiv.org/abs/2602.05769},
+  note         = {Preprint, nierecenzowany. Replikacja w języku czeskim; brak systematycznego biasu}
+}
+
+@misc{baidya2026detecting,
+  author       = {Baidya, Madhav S. and Baidya, S. S. and Chawla, Chirag},
+  title        = {Detecting the machine: {A} comprehensive benchmark of {AI}-generated text detectors across architectures, domains, and adversarial conditions},
+  year         = {2026},
+  eprint       = {2603.17522},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL},
+  url          = {https://arxiv.org/abs/2603.17522},
+  note         = {Preprint, nierecenzowany}
+}
+
+@article{yang2024polishratio,
+  author  = {Yang, Lingyi and Jiang, Feng and Li, Haizhou},
+  title   = {Is {ChatGPT} involved in texts? {M}easure the {P}olish {R}atio to detect {ChatGPT}-generated text},
+  journal = {APSIPA Transactions on Signal and Information Processing},
+  year    = {2024},
+  volume  = {13},
+  number  = {2},
+  doi     = {10.1561/116.00000250},
+  note    = {UWAGA TERMINOLOGICZNA: "Polish Ratio" = stopień WYPOLEROWANIA tekstu (ang. to polish); praca dotyczy angielskich abstraktów akademickich (zbiór HPPT), nie języka polskiego. Wersja arXiv:2307.11380}
+}
+
+@inproceedings{krishna2023paraphrasing,
+  author    = {Krishna, Kalpesh and Song, Yixiao and Karpinska, Marzena and Wieting, John and Iyyer, Mohit},
+  title     = {Paraphrasing evades detectors of {AI}-generated text, but retrieval is an effective defense},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2023},
+  volume    = {36},
+  note      = {ACCESS: METADATA-ONLY}
+}
+
+% =====================================================================
+% B. PERCEPCJA LUDZKA: ROZPOZNAWALNOŚĆ, JAKOŚĆ, PREFERENCJA
+% =====================================================================
+
+@inproceedings{russell2025frequent,
+  author    = {Russell, Jenna and Karpinska, Marzena and Iyyer, Mohit},
+  title     = {People who frequently use {ChatGPT} for writing tasks are accurate and robust detectors of {AI}-generated text},
+  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics},
+  year      = {2025},
+  pages     = {5342--5373},
+  url       = {https://aclanthology.org/2025.acl-long.267/}
+}
+
+@inproceedings{wang2026humanlike,
+  author    = {Wang, Yuxia and Xing, Rui and Mansurov, Jonibek and Puccetti, Giovanni and Xie, Zhuohan and Ta, Minh Ngoc and Geng, Jiahui and Su, Jinyan and Abassy, Mervat and Ahmed, Saad El Dine and Elozeiri, Kareem and Laiyk, Nurkhan and Goloburda, Maiya and Mahmoud, Tarek and Tomar, Raj Vardhan and Aziz, Alexander and Koike, Ryuto and Kaneko, Masahiro and Shelmanov, Artem and Artemova, Ekaterina and Mikhailov, Vladislav and Tsvigun, Akim and Aji, Alham Fikri and Habash, Nizar and Gurevych, Iryna and Nakov, Preslav},
+  title     = {Is human-like text liked by humans? {M}ultilingual human detection and preference against {AI}},
+  booktitle = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics},
+  year      = {2026},
+  url       = {https://arxiv.org/abs/2502.11614},
+  note      = {ACL 2026 Main (recenzowane). 16 zbiorów, 9 języków, 9 domen; średnia trafność ludzka 87,6\%}
+}
+
+@inproceedings{clark2021human,
+  author    = {Clark, Elizabeth and August, Tal and Serrano, Sofia and Haduong, Nikita and Gururangan, Suchin and Smith, Noah A.},
+  title     = {All that's `human' is not gold: {E}valuating human evaluation of generated text},
+  booktitle = {Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing},
+  year      = {2021},
+  pages     = {7282--7296},
+  doi       = {10.18653/v1/2021.acl-long.565}
+}
+
+@article{herbold2023essays,
+  author  = {Herbold, Steffen and Hautli-Janisz, Annette and Heuer, Ute and Kikteva, Zlata and Trautsch, Alexander},
+  title   = {A large-scale comparison of human-written versus {ChatGPT}-generated essays},
+  journal = {Scientific Reports},
+  year    = {2023},
+  volume  = {13},
+  pages   = {18617},
+  doi     = {10.1038/s41598-023-45644-9}
+}
+
+@article{porter2024poetry,
+  author  = {Porter, Brian and Machery, Edouard},
+  title   = {{AI}-generated poetry is indistinguishable from human-written poetry and is rated more favorably},
+  journal = {Scientific Reports},
+  year    = {2024},
+  volume  = {14},
+  doi     = {10.1038/s41598-024-76900-1}
+}
+
+@article{raj2026disclosure,
+  author  = {Raj, Manav and Berg, Justin M. and Seamans, Rob},
+  title   = {The artificial intelligence disclosure penalty: {H}umans persistently devalue {AI}-generated creative writing},
+  journal = {Journal of Experimental Psychology: General},
+  year    = {2026},
+  volume  = {155},
+  number  = {4},
+  pages   = {896--915},
+  doi     = {10.1037/xge0001889},
+  note    = {ACCESS: METADATA-ONLY. Jeden program badawczy, populacja USA, brak replikacji zewnętrznej}
+}
+
+% =====================================================================
+% C. CECHY JĘZYKOWE TEKSTU GENEROWANEGO
+% =====================================================================
+
+@article{reinhart2025styles,
+  author  = {Reinhart, Alex and Markey, Ben and Laudenbach, Michael and Pantusen, Kachatad and Yurko, Ronald and Weinberg, Gordon and Brown, David West},
+  title   = {Do {LLM}s write like humans? {V}ariation in grammatical and rhetorical styles},
+  journal = {Proceedings of the National Academy of Sciences},
+  year    = {2025},
+  volume  = {122},
+  number  = {8},
+  doi     = {10.1073/pnas.2422455122}
+}
+
+@misc{elattar2026features,
+  author       = {El Attar, Yassir and Dönmez, Esra and Maurer, Maximilian and Falenska, Agnieszka},
+  title        = {A systematic analysis of linguistic features in {AI}-generated text detection across domains and models},
+  year         = {2026},
+  eprint       = {2606.04177},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL},
+  url          = {https://arxiv.org/abs/2606.04177},
+  note         = {Preprint, nierecenzowany. 284 cechy, 27 modeli, 10 domen; odporne pozostają tylko miary bogactwa leksykalnego}
+}
+
+@misc{rallapalli2026stylistic,
+  author       = {Rallapalli, Swati and Gallagher, Shannon and Yurko, Ronald and Brooks, Tyler and Loughin, Chuck and Sezgin, Michele and Turri, Violet},
+  title        = {Interpretable stylistic variation in human and {LLM} writing across genres, models, and decoding strategies},
+  year         = {2026},
+  eprint       = {2604.14111},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL},
+  url          = {https://arxiv.org/abs/2604.14111},
+  note         = {Preprint, nierecenzowany. Gatunek wpływa na cechy stylistyczne silniej niż źródło tekstu}
+}
+
+@article{jiang2024bundles,
+  author  = {Jiang, Feng (Kevin) and Hyland, Ken},
+  title   = {Does {ChatGPT} argue like students? {B}undles in argumentative essays},
+  journal = {Applied Linguistics},
+  year    = {2024},
+  volume  = {46},
+  number  = {3},
+  pages   = {375--391},
+  doi     = {10.1093/applin/amae052}
+}
+
+@article{casal2025verbargument,
+  author  = {Casal, J. Elliott and Stewart, Christopher M. and Windsor, Alistair J.},
+  title   = {``{I}t is important to consult'' a linguist: {V}erb-argument constructions in {ChatGPT} and human experts' medical and financial advice},
+  journal = {PLOS ONE},
+  year    = {2025},
+  volume  = {20},
+  number  = {5},
+  pages   = {e0324611},
+  doi     = {10.1371/journal.pone.0324611}
+}
+
+@article{guo2025diversity,
+  author  = {Guo, Yanzhu and Shang, Guokan and Clavel, Chloé},
+  title   = {Benchmarking linguistic diversity of large language models},
+  journal = {Transactions of the Association for Computational Linguistics},
+  year    = {2025},
+  volume  = {13},
+  pages   = {1507--1526},
+  doi     = {10.1162/tacl.a.47},
+  note    = {UWAGA: DOI 10.1162/tacl_a_00714 podawany w jednym z pakietów wskazuje inną pracę}
+}
+
+@inproceedings{guo2024decline,
+  author    = {Guo, Yanzhu and Shang, Guokan and Vazirgiannis, Michalis and Clavel, Chloé},
+  title     = {The curious decline of linguistic diversity: {T}raining language models on synthetic text},
+  booktitle = {Findings of the Association for Computational Linguistics: NAACL 2024},
+  year      = {2024},
+  pages     = {3589--3604},
+  doi       = {10.18653/v1/2024.findings-naacl.228},
+  note      = {ACCESS: METADATA-ONLY}
+}
+
+@article{kobak2025excess,
+  author  = {Kobak, Dmitry and González-Márquez, Rita and Horvát, Emőke-Ágnes and Lause, Jan},
+  title   = {Delving into {LLM}-assisted writing in biomedical publications through excess vocabulary},
+  journal = {Science Advances},
+  year    = {2025},
+  volume  = {11},
+  number  = {27},
+  doi     = {10.1126/sciadv.adt3813},
+  note    = {Sygnał POPULACYJNY (co najmniej 13,5\% abstraktów PubMed 2024); nie jest markerem pojedynczego tekstu}
+}
+
+@inproceedings{juzek2025delve,
+  author    = {Juzek, Tom S. and Ward, Zina B.},
+  title     = {Why does {ChatGPT} ``delve'' so much? {E}xploring the sources of lexical overrepresentation in large language models},
+  booktitle = {Proceedings of the 31st International Conference on Computational Linguistics},
+  year      = {2025},
+  pages     = {6397--6411},
+  url       = {https://aclanthology.org/2025.coling-main.426/}
+}
+
+% =====================================================================
+% D. POLSZCZYZNA — DOWODY BEZPOŚREDNIE I ŹRÓDŁA NORMATYWNE
+% =====================================================================
+
+@article{mazur2024poprawnosci,
+  author  = {Mazur, Rafał},
+  title   = {O poprawności językowej tekstów generowanych przez {SI} na przykładzie {C}hatu{GPT}},
+  journal = {LingVaria},
+  year    = {2024},
+  volume  = {19},
+  number  = {1(37)},
+  pages   = {119--138},
+  doi     = {10.12797/LV.19.2024.37.08},
+  note    = {Bezpośredni dowód polski. Zadania wzorowane na maturze 2023; najwięcej błędów w konstrukcjach złożonych}
+}
+
+@inproceedings{przybyla2025poleval,
+  author    = {Przybyła, Piotr and Strebeyko, Jakub and Wróblewska, Alina},
+  title     = {{P}ol{E}val 2025 {T}ask 1 Śmigiel: {S}potting machine-generated text from {LLM}s for {P}olish},
+  booktitle = {Proceedings of the PolEval 2025 Workshop},
+  year      = {2025},
+  pages     = {5--15},
+  url       = {https://aclanthology.org/2025.poleval-main.2/},
+  note      = {Zbiór ŚMIGIEL: 64 538 tekstów, 8 generatorów, 6 domen (weryfikacja karty zbioru)}
+}
+
+@incollection{mazurkiewicz2025chatgpt,
+  author    = {Mazurkiewicz-Sokołowska, Jolanta},
+  title     = {{ChatGPT} text products and their linguistic correctness},
+  booktitle = {Lecture Notes in Networks and Systems},
+  year      = {2025},
+  pages     = {250--265},
+  publisher = {Springer Nature Switzerland},
+  doi       = {10.1007/978-3-032-06611-4_20},
+  note      = {ACCESS: METADATA-ONLY. Rekord Crossref bez abstraktu; treści ustaleń nie weryfikowano}
+}
+
+@article{marquardt2024genre,
+  author  = {Marquardt, Dorota},
+  title   = {Genre indicators in {ChatGPT} chatbot dialogue steps},
+  journal = {Poznańskie Studia Polonistyczne. Seria Językoznawcza},
+  year    = {2024},
+  volume  = {31},
+  number  = {1},
+  pages   = {149--166},
+  doi     = {10.14746/pspsj.2024.31.1.8},
+  note    = {TROP, nie dowód: z abstraktu nie wynika, czy materiał był polskojęzyczny}
+}
+
+@incollection{dadas2025polish,
+  author    = {Dadas, Sławomir and Grębowiec, Małgorzata and Perełkiewicz, Michał and Poświata, Rafał},
+  title     = {Evaluating {P}olish linguistic and cultural competency in large language models},
+  booktitle = {Lecture Notes in Computer Science},
+  year      = {2025},
+  pages     = {60--71},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-032-03705-3_6},
+  note      = {ACCESS: METADATA-ONLY. Mierzy kompetencję zadaniową, nie naturalność swobodnego tekstu}
+}
+
+@misc{rjp2026zasady,
+  author       = {{Rada Języka Polskiego przy Prezydium PAN}},
+  title        = {Zasady pisowni i interpunkcji polskiej},
+  year         = {2026},
+  howpublished = {Polska Akademia Nauk},
+  url          = {https://rjp.pan.pl/zmiany-pisowni-2026-3/},
+  note         = {Od 1 stycznia 2026 jedyne obowiązujące źródło zasad ortograficznych i interpunkcyjnych. Zmiany ogłoszone komunikatem z 10 maja 2024; wersja jednolita jako załącznik do komunikatu 11/25}
+}
+
+@book{markowski2005kultura,
+  author    = {Markowski, Andrzej},
+  title     = {Kultura języka polskiego. {T}eoria. {Z}agadnienia leksykalne},
+  year      = {2005},
+  publisher = {Wydawnictwo Naukowe PWN},
+  address   = {Warszawa},
+  isbn      = {978-83-01-14526-2},
+  note      = {Źródło normatywne: rozróżnienie normy wzorcowej i użytkowej. ACCESS: METADATA-ONLY}
+}
+
+@book{przepiorkowski2012nkjp,
+  editor    = {Przepiórkowski, Adam and Bańko, Mirosław and Górski, Rafał L. and Lewandowska-Tomaszczyk, Barbara},
+  title     = {Narodowy {K}orpus {J}ęzyka {P}olskiego},
+  year      = {2012},
+  publisher = {Wydawnictwo Naukowe PWN},
+  address   = {Warszawa},
+  isbn      = {978-83-01-16700-4},
+  url       = {http://nkjp.pl},
+  note      = {Korpus referencyjny uzusu. ACCESS: STRONA-INSTYTUCJI}
+}
+
+% =====================================================================
+% E. REDAKCJA, PROSTY JĘZYK, GŁOS AUTORSKI, EWALUACJA
+% =====================================================================
+
+@article{martinez2022legal,
+  author  = {Martínez, Eric and Mollica, Francis and Gibson, Edward},
+  title   = {Poor writing, not specialized concepts, drives processing difficulty in legal language},
+  journal = {Cognition},
+  year    = {2022},
+  volume  = {224},
+  pages   = {105070},
+  doi     = {10.1016/j.cognition.2022.105070}
+}
+
+@article{mautone2001signaling,
+  author  = {Mautone, Patricia D. and Mayer, Richard E.},
+  title   = {Signaling as a cognitive guide in multimedia learning},
+  journal = {Journal of Educational Psychology},
+  year    = {2001},
+  volume  = {93},
+  number  = {2},
+  pages   = {377--389},
+  doi     = {10.1037/0022-0663.93.2.377},
+  note    = {ACCESS: METADATA-ONLY. Podstawa obalenia mitu, że nagłówki i wyliczenia są wadą}
+}
+
+@article{stoll2022plain,
+  author  = {Stoll, Marlene and Kerwer, Martin and Lieb, Klaus and Chasiotis, Anita},
+  title   = {Plain language summaries: {A} systematic review of theory, guidelines and empirical research},
+  journal = {PLOS ONE},
+  year    = {2022},
+  volume  = {17},
+  number  = {6},
+  pages   = {e0268789},
+  doi     = {10.1371/journal.pone.0268789},
+  note    = {ACCESS: METADATA-ONLY}
+}
+
+@article{gainey2024plain,
+  author  = {Gainey, Kirsten and Smith, Jenny and McCaffery, Kirsten and Clifford, Susan and Muscat, Danielle},
+  title   = {Are plain language summaries published in health journals written according to instructions and health literacy principles? {A} systematic environmental scan},
+  journal = {BMJ Open},
+  year    = {2024},
+  volume  = {14},
+  pages   = {e086464},
+  doi     = {10.1136/bmjopen-2024-086464},
+  note    = {KOREKTA ABSTRAKTU: 10.1136/bmjopen-2024-086464corr1. ACCESS: METADATA-ONLY}
+}
+
+@article{morton2019voice,
+  author  = {Morton, Janne and Storch, Neomy},
+  title   = {Developing an authorial voice in {PhD} multilingual student writing: {T}he reader's perspective},
+  journal = {Journal of Second Language Writing},
+  year    = {2019},
+  volume  = {43},
+  pages   = {15--23},
+  doi     = {10.1016/j.jslw.2018.02.004},
+  note    = {ACCESS: METADATA-ONLY}
+}
+
+@article{zhao2022voice,
+  author  = {Zhao, Cecilia Guanfang and Wu, Jian},
+  title   = {Perceptions of authorial voice: {W}hy discrepancies exist},
+  journal = {Assessing Writing},
+  year    = {2022},
+  volume  = {53},
+  pages   = {100632},
+  doi     = {10.1016/j.asw.2022.100632},
+  note    = {ACCESS: METADATA-ONLY}
+}
+
+@inproceedings{howcroft2020evaluation,
+  author    = {Howcroft, David M. and Belz, Anya and Clinciu, Miruna-Adriana and Gkatzia, Dimitra and Hasan, Sadid A. and Mahamood, Saad and Mille, Simon and van Miltenburg, Emiel and Santhanam, Sashank and Rieser, Verena},
+  title     = {Twenty years of confusion in human evaluation: {NLG} needs evaluation sheets and standardised definitions},
+  booktitle = {Proceedings of the 13th International Conference on Natural Language Generation},
+  year      = {2020},
+  pages     = {169--182},
+  url       = {https://aclanthology.org/2020.inlg-1.23/}
+}
+
+@article{vanderlee2021evaluation,
+  author  = {van der Lee, Chris and Gatt, Albert and van Miltenburg, Emiel and Krahmer, Emiel},
+  title   = {Human evaluation of automatically generated text: {C}urrent trends and best practice guidelines},
+  journal = {Computer Speech \& Language},
+  year    = {2021},
+  volume  = {67},
+  pages   = {101151},
+  doi     = {10.1016/j.csl.2020.101151},
+  note    = {ACCESS: METADATA-ONLY}
+}
+
+@misc{arocaouellette2025prose,
+  author       = {Aroca-Ouellette, Stéphane and Mackraz, Natalie and Theobald, Barry-John and Metcalf, Katherine},
+  title        = {Aligning {LLM}s by predicting preferences from user writing samples},
+  year         = {2025},
+  eprint       = {2505.23815},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL},
+  url          = {https://arxiv.org/abs/2505.23815},
+  note         = {Preprint, nierecenzowany. Podstawa techniczna "karty głosu"; NIE zawiera tezy o rejestrze staccato}
+}
+
+@misc{gao2024prelude,
+  author       = {Gao, Ge and Taymanov, Alexey and Salinas, Eduardo and Mineiro, Paul and Misra, Dipendra},
+  title        = {Aligning {LLM} agents by learning latent preference from user edits},
+  year         = {2024},
+  eprint       = {2404.15269},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL},
+  url          = {https://arxiv.org/abs/2404.15269},
+  note         = {Preprint, nierecenzowany}
+}
+
+% =====================================================================
+% F. STANDARDY, DOSTĘPNOŚĆ, LOKALIZACJA, DŁUGIE FORMY
+% =====================================================================
+
+@misc{iso2449512023,
+  author       = {{International Organization for Standardization}},
+  title        = {{ISO} 24495-1:2023 {P}lain language --- {P}art 1: {G}overning principles and guidelines},
+  year         = {2023},
+  url          = {https://www.iso.org/standard/78907.html},
+  note         = {ACCESS: STRONA-INSTYTUCJI}
+}
+
+@misc{w3c2023wcag22,
+  author       = {{World Wide Web Consortium}},
+  title        = {Web {C}ontent {A}ccessibility {G}uidelines ({WCAG}) 2.2},
+  year         = {2023},
+  howpublished = {W3C Recommendation},
+  url          = {https://www.w3.org/TR/WCAG22/},
+  note         = {Kryteria 3.1.1--3.1.5, 3.2.4, 3.3.3. ACCESS: STRONA-INSTYTUCJI}
+}
+
+@misc{unicodeuts35messageformat,
+  author       = {{Unicode Consortium}},
+  title        = {Unicode {T}echnical {S}tandard \#35: {U}nicode {L}ocale {D}ata {M}arkup {L}anguage ({LDML}), {P}art 9: {M}essage{F}ormat},
+  url          = {https://www.unicode.org/reports/tr35/tr35-73/tr35-messageFormat.html},
+  note         = {ACCESS: STRONA-INSTYTUCJI. Podstawa kontraktu ochrony placeholderów i wariantów}
+}
+
+@inproceedings{liu2024longgenbench,
+  author    = {Liu, Xiang and Dong, Peijie and Hu, Xuming and Chu, Xiaowen},
+  title     = {{L}ong{G}en{B}ench: {L}ong-context generation benchmark},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2024},
+  year      = {2024},
+  pages     = {865--883},
+  url       = {https://aclanthology.org/2024.findings-emnlp.48/},
+  note      = {ACCESS: METADATA-ONLY}
+}
+
+@article{koh2023longsummary,
+  author  = {Koh, Huan Yee and Ju, Jiaxin and Liu, Ming and Pan, Shirui},
+  title   = {An empirical survey on long document summarization: {D}atasets, models, and metrics},
+  journal = {ACM Computing Surveys},
+  year    = {2023},
+  volume  = {55},
+  number  = {8},
+  pages   = {1--35},
+  doi     = {10.1145/3545176},
+  note    = {ACCESS: METADATA-ONLY}
+}
+
+@inproceedings{bavota2012refactoring,
+  author    = {Bavota, Gabriele and De Carluccio, Bernardino and De Lucia, Andrea and Di Penta, Massimiliano and Oliveto, Rocco and Strollo, Orazio},
+  title     = {When does a refactoring induce bugs? {A}n empirical study},
+  booktitle = {2012 IEEE 12th International Working Conference on Source Code Analysis and Manipulation},
+  year      = {2012},
+  pages     = {104--113},
+  doi       = {10.1109/SCAM.2012.20},
+  note      = {Analogia procesowa dla wymogu testów regresji. ACCESS: METADATA-ONLY}
+}

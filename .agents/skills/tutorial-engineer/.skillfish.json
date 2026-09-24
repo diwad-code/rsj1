@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "tutorial-engineer",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/tutorial-engineer",
+  "branch": "main",
+  "sha": "5bb8eb69aac65e1fc8156488fe7f7da1fe88f12a",
+  "source": "manual"
+}

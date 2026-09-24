@@ -1,0 +1,11 @@
+{
+  "name": "experience-design",
+  "source": "local",
+  "description": "Engagement loop design, pacing frameworks, the Experience Triangle (mechanics + dynamics + aesthetics), emotion layering across a session, and evaluating whether choices feel meaningful.",
+  "whenToUse": "**Purpose:** Tools for designing, diagnosing, and improving the player *experience* — not the feature set. Games are systems that generate experiences; this skill helps you build better generators.",
+  "categories": [],
+  "installedAt": "2026-05-26T16:05:46.812Z",
+  "relativePath": "experience-design",
+  "metadataVersion": 2,
+  "installedVia": "legacy"
+}

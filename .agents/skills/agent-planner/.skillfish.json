@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-planner",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-planner",
+  "branch": "main",
+  "sha": "58d3c0d71b28988024dca0f65b97ff59267e90de",
+  "source": "manual"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Game Playtest Personas"
+  short_description: "Synthetic game playtest hypothesis sweeps"
+  default_prompt: "Use $game-playtest-personas to run an evidence-bounded synthetic hypothesis sweep for this game artifact."

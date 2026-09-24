@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "browser",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".claude/skills/browser",
+  "branch": "main",
+  "sha": "a5d74d36db14444bd0d253a224a156758dff9a10",
+  "source": "manual"
+}

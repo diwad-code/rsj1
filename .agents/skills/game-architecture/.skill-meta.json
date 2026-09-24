@@ -1,0 +1,11 @@
+{
+  "name": "game-architecture",
+  "source": "local",
+  "description": "Game architecture patterns and best practices for browser games. Use when designing game systems, planning architecture, structuring a game project, or making architectural decisions about game code.",
+  "whenToUse": "Reference knowledge for building well-structured browser games. These patterns apply to both Three.js (3D) and Phaser (2D) games.",
+  "categories": [],
+  "installedAt": "2026-05-26T16:05:47.281Z",
+  "relativePath": "game-architecture",
+  "metadataVersion": 2,
+  "installedVia": "legacy"
+}

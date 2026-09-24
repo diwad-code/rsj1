@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "agent-memory-coordinator",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": ".agents/skills/agent-memory-coordinator",
+  "branch": "main",
+  "sha": "ae4546738f82077fb934ec14a9c160ae770e76f0",
+  "source": "manual"
+}

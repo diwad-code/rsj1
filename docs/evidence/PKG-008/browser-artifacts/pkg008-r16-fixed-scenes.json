@@ -1,0 +1,1008 @@
+[
+  {
+    "kind": "gate",
+    "requestedAge": 0,
+    "tick": 0,
+    "phase": "GateGreen",
+    "visual": {
+      "pose": "gate",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": -75.42069742433628,
+      "y": 38.92120023795365
+    },
+    "events": [],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-gate-0-960x540.png"
+  },
+  {
+    "kind": "gate",
+    "requestedAge": 7,
+    "tick": 7,
+    "phase": "Inrun",
+    "visual": {
+      "pose": "gatePush",
+      "frameIndex": 1
+    },
+    "position": {
+      "x": -75.41195914483997,
+      "y": 38.91508162877935
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-gate-7-960x540.png"
+  },
+  {
+    "kind": "gate",
+    "requestedAge": 14,
+    "tick": 14,
+    "phase": "Inrun",
+    "visual": {
+      "pose": "gatePush",
+      "frameIndex": 2
+    },
+    "position": {
+      "x": -75.38792946776552,
+      "y": 38.89825586775107
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-gate-14-960x540.png"
+  },
+  {
+    "kind": "gate",
+    "requestedAge": 21,
+    "tick": 21,
+    "phase": "Inrun",
+    "visual": {
+      "pose": "gatePush",
+      "frameIndex": 3
+    },
+    "position": {
+      "x": -75.34861013207494,
+      "y": 38.87072417250313
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-gate-21-960x540.png"
+  },
+  {
+    "kind": "gate",
+    "requestedAge": 28,
+    "tick": 28,
+    "phase": "Inrun",
+    "visual": {
+      "pose": "inrun",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": -75.29400403547443,
+      "y": 38.832488572031245
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-gate-28-960x540.png"
+  },
+  {
+    "kind": "gate",
+    "requestedAge": 60,
+    "tick": 60,
+    "phase": "Inrun",
+    "visual": {
+      "pose": "inrun",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": -74.84984586291915,
+      "y": 38.521485671450606
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-gate-60-960x540.png"
+  },
+  {
+    "kind": "perfect",
+    "requestedAge": 0,
+    "tick": 703,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 679,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 679, v 24.48 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "perfectTakeoff",
+        "detail": "okno ±0.0083 s, impuls +18.0 N·s (+0.277 m/s ⊥)"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.31 m/s, wyprost 2.97 m/s, popęd 99%, pitch 21.6°, timing -0.008 s"
+      }
+    ],
+    "perfect": true,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-perfect-0-960x540.png"
+  },
+  {
+    "kind": "perfect",
+    "requestedAge": 6,
+    "tick": 708,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": 1.0496259488591053,
+      "y": -0.07266560469544579
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 679,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 679, v 24.48 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "perfectTakeoff",
+        "detail": "okno ±0.0083 s, impuls +18.0 N·s (+0.277 m/s ⊥)"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.31 m/s, wyprost 2.97 m/s, popęd 99%, pitch 21.6°, timing -0.008 s"
+      }
+    ],
+    "perfect": true,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-perfect-6-960x540.png"
+  },
+  {
+    "kind": "perfect",
+    "requestedAge": 12,
+    "tick": 714,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 1
+    },
+    "position": {
+      "x": 2.3026097620487014,
+      "y": -0.17235123001352703
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 679,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 679, v 24.48 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "perfectTakeoff",
+        "detail": "okno ±0.0083 s, impuls +18.0 N·s (+0.277 m/s ⊥)"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.31 m/s, wyprost 2.97 m/s, popęd 99%, pitch 21.6°, timing -0.008 s"
+      }
+    ],
+    "perfect": true,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-perfect-12-960x540.png"
+  },
+  {
+    "kind": "perfect",
+    "requestedAge": 24,
+    "tick": 726,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 3
+    },
+    "position": {
+      "x": 4.787287227154085,
+      "y": -0.41125364387202357
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 679,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 679, v 24.48 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "perfectTakeoff",
+        "detail": "okno ±0.0083 s, impuls +18.0 N·s (+0.277 m/s ⊥)"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.31 m/s, wyprost 2.97 m/s, popęd 99%, pitch 21.6°, timing -0.008 s"
+      }
+    ],
+    "perfect": true,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-perfect-24-960x540.png"
+  },
+  {
+    "kind": "perfect",
+    "requestedAge": 25,
+    "tick": 727,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 3
+    },
+    "position": {
+      "x": 4.993073020422686,
+      "y": -0.4334556069792333
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 679,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 679, v 24.48 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "perfectTakeoff",
+        "detail": "okno ±0.0083 s, impuls +18.0 N·s (+0.277 m/s ⊥)"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.31 m/s, wyprost 2.97 m/s, popęd 99%, pitch 21.6°, timing -0.008 s"
+      }
+    ],
+    "perfect": true,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-perfect-25-960x540.png"
+  },
+  {
+    "kind": "ordinary",
+    "requestedAge": 0,
+    "tick": 703,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 671,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 671, v 24.44 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.21 m/s, wyprost 2.19 m/s, popęd 100%, pitch 26.1°, timing +0.058 s"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-ordinary-0-960x540.png"
+  },
+  {
+    "kind": "ordinary",
+    "requestedAge": 6,
+    "tick": 708,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": 1.0413347777883297,
+      "y": -0.11448023957711385
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 671,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 671, v 24.44 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.21 m/s, wyprost 2.19 m/s, popęd 100%, pitch 26.1°, timing +0.058 s"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-ordinary-6-960x540.png"
+  },
+  {
+    "kind": "ordinary",
+    "requestedAge": 12,
+    "tick": 714,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 1
+    },
+    "position": {
+      "x": 2.2839352362224736,
+      "y": -0.2619434469428682
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 671,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 671, v 24.44 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.21 m/s, wyprost 2.19 m/s, popęd 100%, pitch 26.1°, timing +0.058 s"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-ordinary-12-960x540.png"
+  },
+  {
+    "kind": "ordinary",
+    "requestedAge": 24,
+    "tick": 726,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 3
+    },
+    "position": {
+      "x": 4.746358582253252,
+      "y": -0.5904041968155734
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 671,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 671, v 24.44 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.21 m/s, wyprost 2.19 m/s, popęd 100%, pitch 26.1°, timing +0.058 s"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-ordinary-24-960x540.png"
+  },
+  {
+    "kind": "ordinary",
+    "requestedAge": 25,
+    "tick": 727,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 3
+    },
+    "position": {
+      "x": 4.95019053502847,
+      "y": -0.6198205426805667
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 671,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 671, v 24.44 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.21 m/s, wyprost 2.19 m/s, popęd 100%, pitch 26.1°, timing +0.058 s"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-ordinary-25-960x540.png"
+  },
+  {
+    "kind": "gate",
+    "requestedAge": 0,
+    "tick": 0,
+    "phase": "GateGreen",
+    "visual": {
+      "pose": "gate",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": -75.42069742433628,
+      "y": 38.92120023795365
+    },
+    "events": [],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-gate-0-1920x1080.png"
+  },
+  {
+    "kind": "gate",
+    "requestedAge": 7,
+    "tick": 7,
+    "phase": "Inrun",
+    "visual": {
+      "pose": "gatePush",
+      "frameIndex": 1
+    },
+    "position": {
+      "x": -75.41195914483997,
+      "y": 38.91508162877935
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-gate-7-1920x1080.png"
+  },
+  {
+    "kind": "gate",
+    "requestedAge": 14,
+    "tick": 14,
+    "phase": "Inrun",
+    "visual": {
+      "pose": "gatePush",
+      "frameIndex": 2
+    },
+    "position": {
+      "x": -75.38792946776552,
+      "y": 38.89825586775107
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-gate-14-1920x1080.png"
+  },
+  {
+    "kind": "gate",
+    "requestedAge": 21,
+    "tick": 21,
+    "phase": "Inrun",
+    "visual": {
+      "pose": "gatePush",
+      "frameIndex": 3
+    },
+    "position": {
+      "x": -75.34861013207494,
+      "y": 38.87072417250313
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-gate-21-1920x1080.png"
+  },
+  {
+    "kind": "gate",
+    "requestedAge": 28,
+    "tick": 28,
+    "phase": "Inrun",
+    "visual": {
+      "pose": "inrun",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": -75.29400403547443,
+      "y": 38.832488572031245
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-gate-28-1920x1080.png"
+  },
+  {
+    "kind": "gate",
+    "requestedAge": 60,
+    "tick": 60,
+    "phase": "Inrun",
+    "visual": {
+      "pose": "inrun",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": -74.84984586291915,
+      "y": 38.521485671450606
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-gate-60-1920x1080.png"
+  },
+  {
+    "kind": "perfect",
+    "requestedAge": 0,
+    "tick": 703,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 679,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 679, v 24.48 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "perfectTakeoff",
+        "detail": "okno ±0.0083 s, impuls +18.0 N·s (+0.277 m/s ⊥)"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.31 m/s, wyprost 2.97 m/s, popęd 99%, pitch 21.6°, timing -0.008 s"
+      }
+    ],
+    "perfect": true,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-perfect-0-1920x1080.png"
+  },
+  {
+    "kind": "perfect",
+    "requestedAge": 6,
+    "tick": 708,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": 1.0496259488591053,
+      "y": -0.07266560469544579
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 679,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 679, v 24.48 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "perfectTakeoff",
+        "detail": "okno ±0.0083 s, impuls +18.0 N·s (+0.277 m/s ⊥)"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.31 m/s, wyprost 2.97 m/s, popęd 99%, pitch 21.6°, timing -0.008 s"
+      }
+    ],
+    "perfect": true,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-perfect-6-1920x1080.png"
+  },
+  {
+    "kind": "perfect",
+    "requestedAge": 12,
+    "tick": 714,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 1
+    },
+    "position": {
+      "x": 2.3026097620487014,
+      "y": -0.17235123001352703
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 679,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 679, v 24.48 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "perfectTakeoff",
+        "detail": "okno ±0.0083 s, impuls +18.0 N·s (+0.277 m/s ⊥)"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.31 m/s, wyprost 2.97 m/s, popęd 99%, pitch 21.6°, timing -0.008 s"
+      }
+    ],
+    "perfect": true,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-perfect-12-1920x1080.png"
+  },
+  {
+    "kind": "perfect",
+    "requestedAge": 24,
+    "tick": 726,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 3
+    },
+    "position": {
+      "x": 4.787287227154085,
+      "y": -0.41125364387202357
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 679,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 679, v 24.48 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "perfectTakeoff",
+        "detail": "okno ±0.0083 s, impuls +18.0 N·s (+0.277 m/s ⊥)"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.31 m/s, wyprost 2.97 m/s, popęd 99%, pitch 21.6°, timing -0.008 s"
+      }
+    ],
+    "perfect": true,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-perfect-24-1920x1080.png"
+  },
+  {
+    "kind": "perfect",
+    "requestedAge": 25,
+    "tick": 727,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 3
+    },
+    "position": {
+      "x": 4.993073020422686,
+      "y": -0.4334556069792333
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 679,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 679, v 24.48 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "perfectTakeoff",
+        "detail": "okno ±0.0083 s, impuls +18.0 N·s (+0.277 m/s ⊥)"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.31 m/s, wyprost 2.97 m/s, popęd 99%, pitch 21.6°, timing -0.008 s"
+      }
+    ],
+    "perfect": true,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-perfect-25-1920x1080.png"
+  },
+  {
+    "kind": "ordinary",
+    "requestedAge": 0,
+    "tick": 703,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 671,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 671, v 24.44 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.21 m/s, wyprost 2.19 m/s, popęd 100%, pitch 26.1°, timing +0.058 s"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-ordinary-0-1920x1080.png"
+  },
+  {
+    "kind": "ordinary",
+    "requestedAge": 6,
+    "tick": 708,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 0
+    },
+    "position": {
+      "x": 1.0413347777883297,
+      "y": -0.11448023957711385
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 671,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 671, v 24.44 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.21 m/s, wyprost 2.19 m/s, popęd 100%, pitch 26.1°, timing +0.058 s"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-ordinary-6-1920x1080.png"
+  },
+  {
+    "kind": "ordinary",
+    "requestedAge": 12,
+    "tick": 714,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 1
+    },
+    "position": {
+      "x": 2.2839352362224736,
+      "y": -0.2619434469428682
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 671,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 671, v 24.44 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.21 m/s, wyprost 2.19 m/s, popęd 100%, pitch 26.1°, timing +0.058 s"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-ordinary-12-1920x1080.png"
+  },
+  {
+    "kind": "ordinary",
+    "requestedAge": 24,
+    "tick": 726,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 3
+    },
+    "position": {
+      "x": 4.746358582253252,
+      "y": -0.5904041968155734
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 671,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 671, v 24.44 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.21 m/s, wyprost 2.19 m/s, popęd 100%, pitch 26.1°, timing +0.058 s"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-ordinary-24-1920x1080.png"
+  },
+  {
+    "kind": "ordinary",
+    "requestedAge": 25,
+    "tick": 727,
+    "phase": "Flight",
+    "visual": {
+      "pose": "flight",
+      "frameIndex": 3
+    },
+    "position": {
+      "x": 4.95019053502847,
+      "y": -0.6198205426805667
+    },
+    "events": [
+      {
+        "tick": 0,
+        "type": "gateOpen",
+        "detail": "belka 8, rozbieg 85.90 m"
+      },
+      {
+        "tick": 671,
+        "type": "takeoffImpulseStart",
+        "detail": "tick 671, v 24.44 m/s"
+      },
+      {
+        "tick": 702,
+        "type": "takeoffEdge",
+        "detail": "v 25.21 m/s, wyprost 2.19 m/s, popęd 100%, pitch 26.1°, timing +0.058 s"
+      }
+    ],
+    "perfect": false,
+    "evidence": "Deterministyczna scena z rzeczywistych kroków symulacji; nie nagranie wejścia gracza.",
+    "path": "C:\\retro-ski-jumping\\docs\\evidence\\PKG-008\\browser-artifacts/pkg008-r16-fixed-ordinary-25-1920x1080.png"
+  }
+]

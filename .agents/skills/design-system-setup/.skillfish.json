@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "design-system-setup",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/design-system-setup",
+  "branch": "main",
+  "sha": "513c8a0082717dfc386115163a90c7c9c64d5a17",
+  "source": "manual"
+}

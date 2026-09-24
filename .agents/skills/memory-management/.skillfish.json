@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "memory-management",
+  "owner": "ruvnet",
+  "repo": "ruflo",
+  "path": "v3/@claude-flow/codex/.agents/skills/memory-management",
+  "branch": "main",
+  "sha": "7ad6f5bf9cbd74c4b5236058ae08fcefcfaa1975",
+  "source": "manual"
+}

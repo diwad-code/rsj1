@@ -1,0 +1,159 @@
+question: "Jakie cechy tekstów generowanych przez LLM wykazano empirycznie i jak odróżniać naturalne, komunikatywne teksty od schematycznych — ze szczególnym uwzględnieniem polszczyzny?"
+date_run: 2026-08-17
+model_agent: "Claude Sonnet 4.6 (Thinking) — główny badacz"
+subagents_used:
+  - Scout A (empiryczne cechy LLM)
+  - Scout B (polszczyzna i języki fleksyjne)
+  - Scout C (detektory AI i fałszywe pozytywy)
+  - Scout D (naturalność, styl, głos autora)
+  - Scout E (polska norma, uzus, stylistyka)
+
+databases:
+  - name: ACL Anthology
+    url: aclanthology.org
+    queries:
+      - query: "LLM generated text linguistic features empirical"
+        hits: 140
+        kept_after_screen: 8
+      - query: "machine-generated text detection features"
+        hits: 180
+        kept_after_screen: 5
+      - query: "author voice writing style preservation"
+        hits: 187
+        kept_after_screen: 3
+      - query: "text fluency coherence automatic metrics"
+        hits: 890
+        kept_after_screen: 3
+      - query: "LLM homogenization writing diversity"
+        hits: 315
+        kept_after_screen: 3
+      - query: "Slavic NLP LLM evaluation benchmark"
+        hits: 95
+        kept_after_screen: 2
+    date: 2026-08-17
+
+  - name: arXiv (cs.CL)
+    url: arxiv.org
+    queries:
+      - query: "AI-generated text linguistic features systematic analysis 2023 2024"
+        hits: 120
+        kept_after_screen: 6
+      - query: "AI text detection evaluation accuracy false positive"
+        hits: 190
+        kept_after_screen: 5
+      - query: "LLM watermarking detection"
+        hits: 85
+        kept_after_screen: 3
+      - query: "Polish NLP LLM evaluation benchmark"
+        hits: 85
+        kept_after_screen: 3
+      - query: "morphologically rich language LLM evaluation"
+        hits: 310
+        kept_after_screen: 2
+    date: 2026-08-17
+
+  - name: Semantic Scholar
+    url: semanticscholar.org
+    queries:
+      - query: "LLM generated text linguistic features empirical"
+        hits: 140
+        kept_after_screen: 4
+      - query: "GPTZero false positive evaluation"
+        hits: 65
+        kept_after_screen: 2
+    date: 2026-08-17
+
+  - name: Google Scholar
+    url: scholar.google.com
+    queries:
+      - query: "ChatGPT Polish language quality naturalness analysis scholarly 2023 2024"
+        hits: ~300
+        kept_after_screen: 3
+      - query: "prosty język polski standardy badania Piekot Zarzeczny"
+        hits: ~120
+        kept_after_screen: 2
+      - query: "norma językowa polszczyzna uzus Markowski"
+        hits: ~200
+        kept_after_screen: 2
+      - query: "LLM homogenization writing diversity 2023 2024"
+        hits: ~4100
+        kept_after_screen: 3
+    date: 2026-08-17
+
+  - name: CEJSH / BazHum (polskie bazy humanistyczne)
+    url: cejsh.icm.edu.pl / bazhum.muzhp.pl
+    queries:
+      - query: "ChatGPT język polski błędy analiza"
+        hits: ~60
+        kept_after_screen: 2
+      - query: "norma językowa polszczyzna uzus"
+        hits: ~200
+        kept_after_screen: 2
+    date: 2026-08-17
+
+  - name: PolEval / IPI PAN
+    url: poleval.pl / ipipan.waw.pl
+    queries:
+      - query: "PolEval 2025 machine-generated text detection Polish SMIGIEL"
+        hits: 1
+        kept_after_screen: 1
+    date: 2026-08-17
+
+  - name: Rada Języka Polskiego PAN
+    url: rjp.pan.pl
+    queries:
+      - query: "uchwały ortograficzne opinie językowe"
+        hits: 1 (repozytorium)
+        kept_after_screen: 1
+    date: 2026-08-17
+
+  - name: Crossref / DOI verification
+    url: doi.org / crossref.org
+    queries:
+      - query: "DOI resolution and metadata verification for all cited papers"
+        hits: N/A
+        kept_after_screen: "All verified DOIs"
+    date: 2026-08-17
+
+  - name: Web search (scholarly domain restricted)
+    url: N/A
+    queries:
+      - query: "Liang 2023 GPT detectors bias non-native speakers Stanford arxiv"
+        hits: multiple
+        kept_after_screen: 1
+      - query: "Kirchenbauer 2023 watermark LLM arxiv ICML"
+        hits: multiple
+        kept_after_screen: 1
+      - query: "Guo 2023 ChatGPT human comparison HC3 arxiv"
+        hits: multiple
+        kept_after_screen: 1
+    date: 2026-08-17
+
+inclusion_criteria:
+  - "Recenzowane artykuły naukowe z konferencji NLP/CL (ACL, EMNLP, NAACL, EACL, NeurIPS, ICML, ICLR, CHI)"
+  - "Recenzowane czasopisma: Computational Linguistics, TACL, JASIST, Patterns (Cell Press), IJEI"
+  - "Preprinty arXiv z wyraźnym oznaczeniem PREPRINT"
+  - "Autorytety normatywne: Rada Języka Polskiego, WSJP PAN, NKJP, gramatyki opisowe IJP PAN"
+  - "Daty: 2019-2026 dla NLP/LLM; bez ograniczeń dla lingwistyki polskiej i fundamentów"
+  - "Języki: angielski i polski; języki pokrewne jako analogie INDIRECT"
+
+exclusion_criteria:
+  - "Blogi, artykuły SEO, content marketing — REJECT"
+  - "Materiały komercyjne (vendor marketing, whitepaper) — REJECT"
+  - "Posty mediów społecznościowych — REJECT"
+  - "Czasopisma drapieżne (brak DOAJ/Scopus/WoS) — REJECT"
+  - "Artykuły bez weryfikowalnego DOI lub stabilnego rekordu"
+
+counts:
+  identified: ~2800 (przez wszystkie zapytania w różnych bazach)
+  deduplicated: ~320
+  screened_title_abstract: ~320
+  full_text_assessed: ~85
+  included: 52
+  rejected: ~2480
+
+rejected_sources_categories:
+  - "Blogi o 'słowach zdradzających ChatGPT' (OBJECT-OF-STUDY, nie EVIDENCE)"
+  - "Artykuły poradnikowe i SEO"
+  - "Materiały bez recenzji z platform komercyjnych"
+  - "Opracowania popularnonaukowe bez aparatu naukowego"

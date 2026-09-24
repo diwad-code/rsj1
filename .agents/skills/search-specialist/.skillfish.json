@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "search-specialist",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/search-specialist",
+  "branch": "main",
+  "sha": "b184d1c1943e4d17fbc315363268a0be95d64f47",
+  "source": "manual"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "data-driven-feature",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/data-driven-feature",
+  "branch": "main",
+  "sha": "a1f53d72f98d1aaec4b78bca00a8a577a2e859f3",
+  "source": "manual"
+}

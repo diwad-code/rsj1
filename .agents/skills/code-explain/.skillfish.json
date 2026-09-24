@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "code-explain",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/code-explain",
+  "branch": "main",
+  "sha": "f96d32947a330603f2c8633e610293a5b07d1c10",
+  "source": "manual"
+}

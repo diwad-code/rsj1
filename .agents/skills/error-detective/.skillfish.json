@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "error-detective",
+  "owner": "itsimonfredlingjack",
+  "repo": "codex-dev-plugin",
+  "path": ".agents/skills/error-detective",
+  "branch": "main",
+  "sha": "662fd5b7b74b0284f58628bfb995853334363e43",
+  "source": "manual"
+}
